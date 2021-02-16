@@ -3,7 +3,7 @@ import React from 'react';
 function Test() {
     return (
         <div>
-            <h1>hello react!</h1>
+            <h1>wow react!</h1>
         </div>
     )
   }
