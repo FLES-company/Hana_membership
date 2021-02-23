@@ -1,21 +1,25 @@
-import './App.css';
-import React from 'react';
-import Login_btn from './components/Login_button'
-import Signup_btn from './components/SignUp_button'
-import Social_login_btn from './components/Social_login_button'
-import Input_text from './components/Input_text'
+import React from "react";
+import { Link, Route, BrowserRouter as Router } from "react-router-dom"
+import Home from "./Home"
+import Input_text from "./components/Input_text";
+import Find_idpw from "./Find_idpw";
+
+import "./App.css";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-Btn">
-      <Login_btn />
-      <Signup_btn />
-      <Social_login_btn />
-      <Input_text />
-     </div>
-    </div>
-  );
+    <Router>
+        <main>
+          <Route exact paht = "/" component={Home} />
+          <Route path = "/input" component ={Input_text} />
+          <Route path = "/find" component ={Find_idpw} />
+        </main>
+    </Router>
+  
+    
+  )
 }
 
 export default App;

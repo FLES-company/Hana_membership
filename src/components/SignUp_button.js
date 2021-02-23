@@ -5,12 +5,12 @@ import { makeStyles} from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
-        margin: theme.spacing(1),
-        margin:'30px 0 30px',
+        // margin: theme.spacing(1),
+        // margin:'30px 0 30px',
         backgroundColor: '#ffffff',
         fontSize:20,
         lineHeight: 1.5,
-        padding: '6px 100px 6px 100px ',
+        width: '100%',
       },
 
     },
