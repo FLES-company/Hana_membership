@@ -28,14 +28,9 @@ function Input_text() {
         id="standard-basic"
         label="비밀번호"
       />
-       <BrowserRouter>
-        <Link to="/Find_idpw">
-          <button onClick={()=> window.open("Find_idpw", "_blank")}>아이디 / 비밀번호 찾기</button>
-        </Link>
-        <Switch>
-          <Route path="/Find_idpw" component={Find_idpw}></Route>
-        </Switch>
-      </BrowserRouter>
+      <Link to="/find">
+        <button>아이디 / 비밀번호 찾기</button>
+      </Link>
     </form>
   );
 }
