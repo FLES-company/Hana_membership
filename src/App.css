@@ -1,6 +1,5 @@
 .App {
-  text-align: center;
-  margin: 100px;
-  border: 100px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  font-size: 10px;
 }
-보규님 짱짱맨

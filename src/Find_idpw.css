@@ -1,0 +1,22 @@
+.find_idpw{
+    width: 100%;
+    display: block !important;
+}
+.back_header .back_header_inner{
+    display: flex;
+    height: 48px;
+    align-items: center;
+}
+
+.find_idpw .find_idpw_inner{
+    width: 100%;
+}
+.find_idpw .find_idpw_inner .find_item .find_item_wrap{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
