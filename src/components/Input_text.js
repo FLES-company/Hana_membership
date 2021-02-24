@@ -26,13 +26,11 @@ function Input_text() {
       <form className="">
         <input
           className=""
-          id="standard-basic"
           label="이메일"
           placeholder="이메일"
         />
         <input
           className=""
-          id="standard-basic"
           label="비밀번호"
           placeholder="비밀번호"
         />

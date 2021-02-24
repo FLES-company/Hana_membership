@@ -8,6 +8,7 @@ import icon_social_n from "../img/icon_social_n.png";
 function Social_login_btn() {
   return (
     <div className="Social_login_btn">
+      <p>소셜 간편 로그인</p>
       <div className="Social_login_btn_inner">
         <button className="">
           <img src={icon_social_n} />
