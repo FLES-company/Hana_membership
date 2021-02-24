@@ -1,0 +1,9 @@
+.Input_text {
+  width: 100%;
+}
+.Input_text input{
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  border-bottom: 1px solid #d5d5d5;
+}

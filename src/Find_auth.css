@@ -1,0 +1,56 @@
+.find_auth {
+  width: 100%;
+}
+.find_auth .back_header_inner {
+  position: relative;
+}
+.find_auth .back_header_inner button {
+  width: auto;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+.find_auth .find_auth_inner {
+  width: 100%;
+}
+.find_auth .find_auth_inner .find_auth_item {
+  margin: 20px 0;
+}
+
+.find_auth .find_auth_inner .find_auth_item input {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 2px solid #d5d5d5;
+  box-sizing: border-box;
+}
+.find_auth .find_auth_inner .input_number .input_number_item {
+  margin: 10px 0;
+}
+.find_auth .find_auth_inner .input_number .input_number_item input {
+  width: 75%;
+}
+
+.find_auth .find_auth_inner .input_number .input_number_item button {
+  padding: 0 5px;
+  display: inline-block;
+  width: 25%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #333333;
+  border: none;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.find_auth .find_auth_inner .find_auth_item .input_number_item .timer {
+  margin-left: -29px;
+  margin-right: 10px;
+  color: #3482e8;
+}
+.find_auth .find_auth_inner .find_auth_item .input_number_item .auth_fail {
+    display: inline-block;
+    margin-top: 3px;
+    color: #FF5656;
+    font-weight: 600;
+}

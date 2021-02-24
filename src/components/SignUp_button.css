@@ -1,0 +1,8 @@
+.Signup_btn {
+  margin: 10px 0;
+  width: 100%;
+}
+.Signup_btn button {
+  height: 50px;
+  line-height: 50px;
+}
