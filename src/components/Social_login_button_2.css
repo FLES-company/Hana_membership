@@ -1,0 +1,34 @@
+.Social_login_btn_2 {
+  width: 100%;
+}
+
+.Social_login_btn_2 .Social_login_btn_2_inner {
+  margin: 0 auto;
+  width: 100%;
+}
+.Social_login_btn_2 .Social_login_btn_2_inner .btn_item {
+  margin: 5px 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+}
+.Social_login_btn_2 .Social_login_btn_2_inner .icon_naver {
+  background-color: #00bf19;
+}
+.Social_login_btn_2 .Social_login_btn_2_inner .icon_kakao {
+  background-color: #fce000;
+}
+.Social_login_btn_2 .Social_login_btn_2_inner .icon_face {
+  background-color: #4267b2;
+}
+.Social_login_btn_2 .Social_login_btn_2_inner .icon_email {
+  background-color: #333333;
+}

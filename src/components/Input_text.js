@@ -13,9 +13,9 @@ function Input_text() {
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
-          <a href="/input" className="header_icon_item icon_back">
+          <a href="/loginMain" className="header_icon_item icon_back">
             <div className="icon_img">
-              <img src={icon_back} Link to="/input" />
+              <img src={icon_back} Link to="/loginMain" />
             </div>
           </a>
           <h1>로그인</h1>
