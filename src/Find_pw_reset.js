@@ -10,15 +10,15 @@ function Find_pw_reset() {
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
-          <a href="/input" className="header_icon_item icon_back">
+          <a href="/login" className="header_icon_item icon_back">
             <div className="icon_img">
-              <img src={icon_back} Link to="/input" />
+              <img src={icon_back} Link to="/login" />
             </div>
           </a>
           <h1>비밀번호 재설정</h1>
-          <button type="button">
-            <img src={icon_home} />
-          </button>
+          <a href="/" className="header_icon_item icon_home">
+            <img src={icon_home} Link to="/" />
+          </a>
         </div>
       </div>
       {/* back_header : e */}

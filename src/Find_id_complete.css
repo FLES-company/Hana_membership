@@ -4,9 +4,7 @@
 .find_id_complete .back_header_inner {
   position: relative;
 }
-.find_id_complete .back_header_inner button {
-  width: auto;
-  border: none;
+.find_id_complete .back_header_inner .icon_home {
   position: absolute;
   right: 0;
 }

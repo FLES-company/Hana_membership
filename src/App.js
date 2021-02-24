@@ -18,7 +18,7 @@ function App() {
         <Route path="/find" component={Find_idpw} />
         <Route path="/findAuth" component={Find_auth} />
         <Route path="/findidComplete" component={Find_id_complete} />
-        <Route path="/findpwreset" component={Find_pw_reset} />
+        <Route path="/findpwReset" component={Find_pw_reset} />
       </div>
     </Router>
   );

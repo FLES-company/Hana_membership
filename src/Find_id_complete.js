@@ -10,15 +10,15 @@ function Find_id_complete() {
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
-          <a href="/input" className="header_icon_item icon_back">
+          <a href="/login" className="header_icon_item icon_back">
             <div className="icon_img">
-              <img src={icon_back} Link to="/input" />
+              <img src={icon_back} Link to="/login" />
             </div>
           </a>
           <h1>아이디 찾기 완료</h1>
-          <button type="button">
-            <img src={icon_home} />
-          </button>
+          <a href="/" className="header_icon_item icon_home">
+            <img src={icon_home} Link to="/" />
+          </a>
         </div>
       </div>
       {/* back_header : e */}
@@ -26,11 +26,9 @@ function Find_id_complete() {
       {/* contents : s */}
       <div className="find_id_complete_inner">
         <div className="inner_content_text">
-          안녕하세요,
-          <span className="user_name">홍길동</span>
-          님! 찾으시려는 이메일 주소는
-          <span className="user_email">dfd11**@naver.com</span>
-          입니다.
+          안녕하세요,<span className="user_name">홍길동</span>님! <br />
+          찾으시려는 이메일 주소는<br />
+          <span className="user_email">dfd11**@naver.com</span>입니다.
         </div>
         <div className="inner_content_btns">
           <button type="button" className="passwordBtn">
