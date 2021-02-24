@@ -1,0 +1,11 @@
+.Login_btn {
+  margin: 10px 0;
+  width: 100%;
+}
+.Login_btn input {
+  height: 50px;
+  line-height: 50px;
+  background-color: #4A3E52;
+  color: #ffffff;
+
+}

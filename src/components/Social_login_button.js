@@ -1,41 +1,27 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
-import { makeStyles} from "@material-ui/core/styles";
+import React from "react";
+import "./Social_login_button.css";
 
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      '& > *': {
-        margin: theme.spacing(1),
-        color: '#ffffff',
-        fontSize:30,
-        borderRadius:'50%',
-        color: '#ffffff',
-      },
-
-    },
-    naver:{
-        backgroundColor: '#59c030',
-    },
-    kakao:{
-        backgroundColor: '#fce14c',
-    },
-    facebook:{
-        backgroundColor: '#4267b2',
-    },
-  }));
+import icon_social_f from "../img/icon_social_f.png";
+import icon_social_k from "../img/icon_social_k.png";
+import icon_social_n from "../img/icon_social_n.png";
 
 function Social_login_btn() {
-    const classes = useStyles();
-    return (
-        <div className={classes.root}>
-            <Button className={classes.naver}>N</Button>
-            <Button className={classes.kakao}>K</Button>
-            <Button className={classes.facebook}>F</Button>
-        </div>
-    )
-  }
-  
-  export default Social_login_btn;
+  return (
+    <div className="Social_login_btn">
+      <p>소셜 간편 로그인</p>
+      <div className="Social_login_btn_inner">
+        <button className="">
+          <img src={icon_social_n} />
+        </button>
+        <button className="">
+          <img src={icon_social_k} />
+        </button>
+        <button className="">
+          <img src={icon_social_f} />
+        </button>
+      </div>
+    </div>
+  );
+}
 
-  
+export default Social_login_btn;

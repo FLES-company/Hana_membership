@@ -24,6 +24,21 @@ a {
   text-decoration: none;
 }
 
+button{
+  width: 100%;
+  border: 1px solid #d5d5d5;
+  background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

@@ -1,0 +1,47 @@
+.SignUp {
+  width: 100%;
+}
+.SignUp .SinUp_inner {
+  width: 100%;
+}
+.SignUp .SinUp_inner .SinUp_inner_item {
+  margin: 20px 0;
+}
+.SignUp .SinUp_inner .SinUp_inner_item input {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  border-bottom: 1px solid #d5d5d5;
+}
+.SignUp .SinUp_inner .SinUp_inner_item .check_text {
+  margin: 3px 0;
+  display: inline-block;
+  font-weight: 600;
+  color: #3482e8;
+}
+
+.radio_group {
+  padding: 0 10px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fafafa;
+  font-size: 13px;
+}
+.SignUp .SinUp_inner .SinUp_inner_item.radio_group li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+.SignUp .SinUp_inner .SinUp_inner_item.radio_group li input {
+  margin-right: 3px;
+  width: auto;
+  height: auto;
+}
+.SignUp .SinUp_inner .SinUp_inner_item.radio_group li label {
+  width: 80%;
+}
+.SignUp .SinUp_inner .SinUp_inner_item.radio_group li button {
+  width: auto;
+  border: none;
+}

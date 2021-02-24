@@ -1,0 +1,24 @@
+.find_id_complete {
+  width: 100%;
+}
+.find_id_complete .back_header_inner {
+  position: relative;
+}
+.find_id_complete .back_header_inner .icon_home {
+  position: absolute;
+  right: 0;
+}
+.find_id_complete .find_id_complete_inner .inner_content_text {
+  padding: 30px 0;
+  text-align: center;
+}
+.find_id_complete .find_id_complete_inner .inner_content_btns {
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+
+.find_id_complete .find_id_complete_inner .inner_content_btns .loginBtn {
+  background-color: #363636;
+  color: #ffffff;
+}
