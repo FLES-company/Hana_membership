@@ -24,50 +24,58 @@ function SignUp() {
         <form>
           {/* input_email */}
           <div className="SinUp_inner_item input_email">
-            <span>이메일</span>
-            <input className="" label="이메일" placeholder="이메일" />
+            <label htmlFor="email">
+              <span>이메일</span>
+            </label>
+            <input name="email" type="text" placeholder="이메일" required />
           </div>
           {/* input_password */}
           <div className="SinUp_inner_item input_password">
-            <span>비밀번호</span>
-            <input className="" label="비밀번호" placeholder="비밀번호" />
+            <label htmlFor="psw">
+              <span>비밀번호</span>
+            </label>
+            <input name="psw" type="password" placeholder="비밀번호" required />
+            <label htmlFor="psw-repeat" hidden>
+              <span>비밀번호 재입력</span>
+            </label>
             <input
-              className=""
-              label="비밀번호 재입력"
+              name="psw-repeat"
+              type="password"
               placeholder="비밀번호 재입력"
+              required
             />
             <span className="check_text">사용가능한 닉네임 입니다.</span>
           </div>
           {/* radio_group */}
-          <ul class="SinUp_inner_item radio_group">
+          <ul className="SinUp_inner_item radio_group">
             <li>
               <input type="radio" id="check_all" />
-              <label for="check_all">모두 동의합니다.</label>
+              <label htmlFor="check_all">모두 동의합니다.</label>
             </li>
             <li>
               <ul>
                 <li>
-                  <input type="radio" id="check_1" class="normal" />
-                  <label for="check_1">이용약관 필수 동의</label>
-                  <button>보기 ></button>
+                  <input type="radio" id="check_1" className="normal" />
+                  <label htmlFor="check_1">이용약관 필수 동의</label>
+                  <button>보기 &gt;</button>
                 </li>
 
                 <li>
-                  <input type="radio" id="check_2" class="normal" />
-                  <label for="check_2">개인정보 처리방침 필수 동의</label>
-                  <button>보기 ></button>
+                  <input type="radio" id="check_2" className="normal" />
+                  <label htmlFor="check_2">개인정보 처리방침 필수 동의</label>
+                  <button>보기 &gt;</button>
                 </li>
 
                 <li>
-                  <input type="radio" id="check_3" class="normal" />
-                  <label for="check_3">
+                  <input type="radio" id="check_3" className="normal" />
+                  <label htmlFor="check_3">
                     쿠폰 / 이벤트 알림 선택 동의
                     <p>
                       SMS, 이메일을 통해 파격할인/이벤트/쿠폰 정보를 받아보실 수
                       있습니다.
                     </p>
                   </label>
-                  <button>보기 ></button>
+                  <button>보기 &gt;</button>
                 </li>
               </ul>
             </li>

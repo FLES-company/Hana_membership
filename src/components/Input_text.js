@@ -23,17 +23,9 @@ function Input_text() {
       </div>
       {/* back_header : e */}
 
-      <form className="">
-        <input
-          className=""
-          label="이메일"
-          placeholder="이메일"
-        />
-        <input
-          className=""
-          label="비밀번호"
-          placeholder="비밀번호"
-        />
+      <form>
+        <input name="email" type="text" placeholder="이메일" required />
+        <input name="psw" type="password" placeholder="비밀번호" required />
         <Link to="/find">
           <button>아이디 / 비밀번호 찾기</button>
         </Link>

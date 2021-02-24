@@ -2,12 +2,11 @@ import React from "react";
 import "./SignUp_button.css";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
-
 function Signup_btn() {
   return (
     <div className="Signup_btn">
       <Link to="/signup">
-        <button type="submit">회원가입</button>
+        <input type="submit" value="회원가입" />
       </Link>
     </div>
   );
