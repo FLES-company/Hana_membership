@@ -10,17 +10,17 @@
   position: absolute;
   right: 0;
 }
-.find_id_complete .Find_id_complete_inner .inner_content_text{
-    padding: 30px 0;
-    text-align: center;
+.find_id_complete .find_id_complete_inner .inner_content_text {
+  padding: 30px 0;
+  text-align: center;
 }
-.find_id_complete .Find_id_complete_inner .inner_content_btns{
-    display: flex;
-    height: 50px;
-    line-height: 50px;
+.find_id_complete .find_id_complete_inner .inner_content_btns {
+  display: flex;
+  height: 50px;
+  line-height: 50px;
 }
 
-.find_id_complete .Find_id_complete_inner .inner_content_btns .loginBtn{
-    background-color: #363636;
-    color: #ffffff;
+.find_id_complete .find_id_complete_inner .inner_content_btns .loginBtn {
+  background-color: #363636;
+  color: #ffffff;
 }

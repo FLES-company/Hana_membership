@@ -5,6 +5,7 @@ import Input_text from "./components/Input_text";
 import Find_idpw from "./Find_idpw";
 import Find_auth from "./Find_auth";
 import Find_id_complete from "./Find_id_complete";
+import Find_pw_reset from "./Find_pw_reset";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/find" component={Find_idpw} />
         <Route path="/findAuth" component={Find_auth} />
         <Route path="/findidComplete" component={Find_id_complete} />
+        <Route path="/findpwreset" component={Find_pw_reset} />
       </div>
     </Router>
   );
