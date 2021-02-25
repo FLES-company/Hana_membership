@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
 import icon_f_off_1 from "../img/icon_f_off_1.png";
 import icon_f_off_2 from "../img/icon_f_off_2.png";
@@ -20,22 +21,42 @@ function Footer() {
       <div className="footer_inner">
         <ul>
           <li className="footer_inner_item on">
-            <a href="#"><img src={icon_f_on_1} Link to="/"/><span>관심</span></a>
+            <a href="#">
+              <img src={icon_f_on_1} Link to="/" />
+              <span>관심</span>
+            </a>
           </li>
           <li className="footer_inner_item">
-            <a href="#"><img src={icon_f_off_2} Link to="/"/><span>시세</span></a>
+            <a href="#">
+              <img src={icon_f_off_2} Link to="/" />
+              <span>시세</span>
+            </a>
           </li>
           <li className="footer_inner_item">
-            <a href="#"><img src={icon_f_off_3} Link to="/"/><span>주문</span></a>
+            <Link to="/order">
+              <a href="#">
+                <img src={icon_f_off_3}/>
+                <span>주문</span>
+              </a>
+            </Link>
           </li>
           <li className="footer_inner_item">
-            <a href="#"><img src={icon_f_off_4} Link to="/"/><span>차트</span></a>
+            <a href="#">
+              <img src={icon_f_off_4} Link to="/" />
+              <span>차트</span>
+            </a>
           </li>
           <li className="footer_inner_item">
-            <a href="#"><img src={icon_f_off_5} Link to="/"/><span>내역</span></a>
+            <a href="#">
+              <img src={icon_f_off_5} Link to="/" />
+              <span>내역</span>
+            </a>
           </li>
           <li className="footer_inner_item">
-            <a href="#"><img src={icon_f_off_6} Link to="/"/><span>정보</span></a>
+            <a href="#">
+              <img src={icon_f_off_6} Link to="/" />
+              <span>정보</span>
+            </a>
           </li>
         </ul>
       </div>

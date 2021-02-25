@@ -9,6 +9,7 @@ import Find_auth from "./Find_auth";
 import Find_id_complete from "./Find_id_complete";
 import Find_pw_reset from "./Find_pw_reset";
 import Splash from "./Splash";
+import Order from "./Order";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
     <Router>
       <div className="App">
         <Route exact path="/" component={Home} />
+        <Route path="/splash" component={Splash} />
         <Route path="/login" component={Input_text} />
         <Route path="/loginMain" component={Login_main} />
         <Route path="/signup" component={SignUp} />
@@ -24,7 +26,10 @@ function App() {
         <Route path="/findAuth" component={Find_auth} />
         <Route path="/findidComplete" component={Find_id_complete} />
         <Route path="/findpwReset" component={Find_pw_reset} />
-        <Route path="/splash" component={Splash} />
+        <Route path="/order" component={Order} />
+        <Route path="/Tab1" component={Tab1} />
+
+        
       </div>
     </Router>
   );

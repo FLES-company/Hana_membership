@@ -25,7 +25,7 @@
 .header .header_inner .header_icon .icon_alarm {
   position: relative;
 }
-.header .header_inner .header_icon .icon_alarm::after {
+.header .header_inner .header_icon .icon_alarm.has_alarm::after {
   content: "";
   display: inline-block;
   position: absolute;
