@@ -10,6 +10,7 @@ import Find_id_complete from "./Find_id_complete";
 import Find_pw_reset from "./Find_pw_reset";
 import Splash from "./Splash";
 import Order from "./Order";
+import Tab1 from "./Tab1";
 
 import "./App.css";
 
