@@ -12,21 +12,22 @@ function Header() {
           <div className="header_logo_item">
             <img src={logo} />
           </div>
-          <h1>HANA</h1>
+          <h1 hidden>HANA</h1>
         </a>
         <div className="header_icon">
-          <a href="#" className="header_icon_item icon_alarm">
+          {/* icon_alarm */}
+          <a href="#" className="header_icon_item icon_alarm has_alarm">
             <div className="icon_img">
               <img src={icon_alarm} />
             </div>
-            <p className="icon_tit">알림</p>
           </a>
-          <a href="#" className="header_icon_item icon_home">
-            <div className="icon_img">
+
+          {/* icon_home */}
+          {/* <a href="#" className="header_icon_item icon_home" >
+            <div className="icon_img" >
               <img src={icon_home} />
             </div>
-            <p className="icon_tit">홈</p>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

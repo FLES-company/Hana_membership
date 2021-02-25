@@ -1,6 +1,7 @@
 .App {
-  padding: 0 16px;
+  /* padding: 0 16px; */
   box-sizing: border-box;
   font-size: 10px;
   border: 100px;
+  overflow: hidden;
 }

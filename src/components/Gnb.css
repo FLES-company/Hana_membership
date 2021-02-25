@@ -1,6 +1,8 @@
 .gnb {
-  width: 100%;
-  height: 45px;
+  padding: 0 16px;
+  width: max-content;
+  height: 48px;
+  position: relative;
 }
 
 .gnb .gnb_inner {
@@ -13,10 +15,15 @@
   width: 100%;
   height: 100%;
 }
-.gnb .gnb_inner ul .gnb_inner_item {
-  margin-right: 15px;
+.gnb .gnb_inner ul li.gnb_inner_item {
+  margin-right: 17px;
 }
-.gnb .gnb_inner ul .gnb_inner_item a {
-  font-size: 16px;
+.gnb .gnb_inner ul li.gnb_inner_item a {
+  font-size: 20px;
   font-weight: 500;
+  color: #dbdbdb;
+}
+.gnb .gnb_inner ul li.gnb_inner_item.on a {
+  font-weight: 600;
+  color: #0b234a;
 }
