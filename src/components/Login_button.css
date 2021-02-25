@@ -3,9 +3,11 @@
   width: 100%;
 }
 .Login_btn input {
+  font-size: 15px;
   height: 50px;
   line-height: 50px;
-  background-color: #4A3E52;
+  background-color: #0B234A;
   color: #ffffff;
+  border-radius: 20px !important;
 
 }

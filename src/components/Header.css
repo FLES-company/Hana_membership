@@ -1,5 +1,6 @@
 .header {
-  height: 40px;
+  padding: 0 16px;
+  height: 48px;
 }
 .header .header_inner {
   display: flex;
@@ -16,13 +17,27 @@
   display: flex;
 }
 .header .header_inner .header_icon .header_icon_item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.header .header_inner .header_icon .icon_alarm {
+  position: relative;
+}
+.header .header_inner .header_icon .icon_alarm::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #8dc63f;
+  border-radius: 50%;
 }
 .header .header_inner .header_icon .header_icon_item .icon_img {
-    height: 100%;
+  height: 100%;
 }
 .header .header_inner .header_icon .icon_tit {
   margin: 0;

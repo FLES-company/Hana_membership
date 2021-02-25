@@ -1,7 +1,7 @@
 import React from "react";
 import "./Social_login_button_2.css";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
-
+import BI_text_g from "../img/BI_text_g.png";
 import icon_naver from "../img/icon_naver.png";
 import icon_kakao from "../img/icon_kakao.png";
 import icon_face from "../img/icon_face.png";
@@ -11,6 +11,9 @@ function Social_login_btn_2() {
   return (
     <div className="Social_login_btn_2">
       <div className="Social_login_btn_2_inner">
+        <img className="BI_text_g" src={BI_text_g} />
+        <h1>소셜 간편 로그인</h1>
+
         <button className="btn_item icon_naver">
           <img src={icon_naver} />
           <span>네이버로 로그인</span>

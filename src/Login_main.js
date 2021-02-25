@@ -1,8 +1,8 @@
 import React from "react";
 import "./Login_main.css";
-import icon_close from "./img/times-light.png";
+import icon_close from "./img/times-light-w.png";
+import bg_loginMain from "./img/bg_loginMain.jpg";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
-
 import Social_login_btn_2 from "./components/Social_login_button_2";
 
 function Login_main() {
@@ -23,8 +23,7 @@ function Login_main() {
 
       <div className="Login_main_inner">
         <div className="Login_main_inner_text">
-          국내외 통합 회원권 거래소
-          <br /> 하나회원권거래소
+          <p>국내외 통합<br/> 회원권 거래소</p>
         </div>
         <Social_login_btn_2 />
       </div>
