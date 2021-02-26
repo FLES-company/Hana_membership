@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component, useState } from "react";
 import "./Order.css";
 import icon_back from "./img/right-arrow.png";
 import icon_favorites from "./img/icon_favorites.png";
@@ -19,18 +19,12 @@ const obj = {
     4 : <Tab5 />
 }
 
-export default class Order{
+function ClickHandler(){
+  const[obj] = useState(0)
+}
 
-     // 'state' is not defined
-     state = {
-        activeTab : 0
-    }
 
-    // 'clickHandler' is not defined
-    clickHandler = (id) => {
-       this.setState({activeTab : id})
-    }
-    render(){
+  function order(){
         return (
             <div className="Order">
               {/* back_header : s */}
@@ -54,28 +48,25 @@ export default class Order{
               {/* back_header : e */}
               <div className="Order_inner">
                 <ul>
-                  <li className="Order_tab" onClick={this.clickHandler(0)}>
-                    <a href="#tab1">호가</a>
+                  <li className="Order_tab" onClick={ClickHandler(0)}>
+                    <a href="/tab1">호가</a>
                   </li>
-                  <li className="Order_tab" onClick={() => this.clickHandler(1)}>
-                    <a href="#tab2">차트</a>
+                  <li className="Order_tab" onClick={ClickHandler(1)}>
+                    <a href="/tab2">차트</a>
                   </li>
-                  <li className="Order_tab" onClick={() => this.clickHandler(2)}>
+                  <li className="Order_tab" onClick={ClickHandler(2)}>
                     <a href="#tab3">정보</a>
                   </li>
-                  <li className="Order_tab" onClick={() => this.clickHandler(3)}>
+                  <li className="Order_tab" onClick={ClickHandler(3)}>
                     <a href="#tab4">매도</a>
                   </li>
-                  <li className="Order_tab" onClick={() => this.clickHandler(4)}>
+                  <li className="Order_tab" onClick={ClickHandler(4)}>
                     <a href="#tab5">매수</a>
                   </li>
                 </ul>
-                <div className="Ordr_tab_items">
-                 {obj[this.state.activeTab]}
-                </div>
               </div>
               <Footer />
             </div>
           );
     }
-}
+export default order
