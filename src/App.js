@@ -11,6 +11,10 @@ import Find_pw_reset from "./Find_pw_reset";
 import Splash from "./Splash";
 import Order from "./Order";
 import Tab1 from "./Tab1";
+import Tab2 from "./Tab2";
+import Tab3 from "./Tab3";
+import Tab4 from "./Tab4";
+import Tab5 from "./Tab5";
 
 import "./App.css";
 
@@ -28,7 +32,11 @@ function App() {
         <Route path="/findidComplete" component={Find_id_complete} />
         <Route path="/findpwReset" component={Find_pw_reset} />
         <Route path="/order" component={Order} />
-        <Route path="/Tab1" component={Tab1} />
+        <Route path="/tab1" component={Tab1} />
+        <Route path="/tab2" component={Tab2} />
+        <Route path="/tab3" component={Tab3} />
+        <Route path="/tab4" component={Tab4} />
+        <Route path="/tab5" component={Tab5} />
 
         
       </div>
