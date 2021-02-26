@@ -7,7 +7,6 @@ import btn_buy from "./img/btn_buy.png";
 // 호가 탭 내 가격(li) 터치 시 팝업
 // 이미지 보이면 버튼으로 변경하기
 
-
 function touch() {
   console.log("hi");
 
@@ -30,37 +29,55 @@ function Tab1() {
             <li className="sell_item up" onClick={touch}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
-                <li className="sell quantity">9,542</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
               </ul>
             </li>
-            <li className="sell_item up">
+            <li className="sell_item up" onClick={touch}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
-                <li className="sell quantity">9,542</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
               </ul>
             </li>
-            <li className="sell_item up">
+            <li className="sell_item up" onClick={touch}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
-                <li className="sell quantity">9,542</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
               </ul>
             </li>
-            <li className="sell_item up">
+            <li className="sell_item up" onClick={touch}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
-                <li className="sell quantity">9,542</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
               </ul>
             </li>
-            <li className="sell_item up">
+            <li className="sell_item up" onClick={touch}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
-                <li className="sell quantity">9,542</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
               </ul>
             </li>
-            <li className="sell_item up">
+            <li className="sell_item up" onClick={touch}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
-                <li className="sell quantity">9,542</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
               </ul>
             </li>
           </ul>
@@ -97,19 +114,28 @@ function Tab1() {
             <li className="buy_item up">
               <ul className="buy_buyQuantity_item">
                 <li className="buy price">20,950</li>
-                <li className="buy quantity">9,542</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
               </ul>
             </li>
             <li className="buy_item">
               <ul className="buy_buyQuantity_item">
                 <li className="buy price">20,950</li>
-                <li className="buy quantity">9,542</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
               </ul>
             </li>
             <li className="buy_item down">
               <ul className="buy_buyQuantity_item">
                 <li className="buy price">20,950</li>
-                <li className="buy quantity">9,542</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
               </ul>
             </li>
           </ul>

@@ -32,12 +32,17 @@ function App() {
         <Route path="/findidComplete" component={Find_id_complete} />
         <Route path="/findpwReset" component={Find_pw_reset} />
         <Route path="/order" component={Order} />
-        <Route path="/tab1" component={Tab1} />
-        <Route path="/tab2" component={Tab2} />
-        <Route path="/tab3" component={Tab3} />
-        <Route path="/tab4" component={Tab4} />
-        <Route path="/tab5" component={Tab5} />
 
+        {/* Tab1 : 호가 */}
+        <Route path="/tab1" component={Tab1} />
+        {/* Tab2 : 차트 */}
+        <Route path="/tab2" component={Tab2} />
+        {/* Tab3 : 정보 */}
+        <Route path="/tab3" component={Tab3} />
+        {/* Tab4 : 매도 */}
+        <Route path="/tab4" component={Tab4} />
+        {/* Tab4 : 매수 */}
+        <Route path="/tab5" component={Tab5} />
         
       </div>
     </Router>

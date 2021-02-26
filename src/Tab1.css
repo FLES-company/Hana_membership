@@ -5,18 +5,17 @@
   width: 100%;
   display: flex;
 }
-.Tab1_contents.btm {
-  flex-direction: row-reverse;
-  border-top: solid 1px #ebebeb;
-}
+
 .Tab1_contents.top .sell_items,
 .Tab1_contents.btm .buy_items {
   flex: 2;
 }
-.Tab1_contents .sell_item,
-.Tab1_contents .buy_item {
-  box-sizing: border-box;
+
+.Tab1_contents.btm {
+  flex-direction: row-reverse;
+  border-top: solid 1px #ebebeb;
 }
+
 .Tab1_contents .sell_item:active .price,
 .Tab1_contents .buy_item:active .price {
   height: 38px;
@@ -77,33 +76,41 @@
   font-weight: 400;
   color: #777777;
 }
+.sell_sellQuantity_item .quantity .width,
+.buy_buyQuantity_item .quantity .width {
+  display: inline-block;
+  position: absolute;
+  margin: 6px auto;
+  width: 16px;
+  height: 28px;
+  opacity: 0.4;
+  z-index: 0;
+}
+.sell_sellQuantity_item .quantity .width {
+  right: 0;
+  background-color: #c3dcff;
+}
+.buy_buyQuantity_item .quantity .width {
+  left: 0;
+  background-color: #ffc7d0;
+}
+
+.sell_sellQuantity_item .quantity .width span,
+.buy_buyQuantity_item .quantity .width span {
+  position: absolute;
+  padding: 0 8px;
+}
+.sell_sellQuantity_item .quantity .width span {
+  right: 0;
+}
+.buy_buyQuantity_item .quantity .width span {
+  left: 0;
+}
 .sell_sellQuantity_item .quantity {
   text-align: right;
 }
-.sell_sellQuantity_item .quantity::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  margin: 6px auto;
-  width: 50px;
-  height: 28px;
-  opacity: 0.4;
-  background-color: #c3dcff;
-}
 .buy_buyQuantity_item .quantity {
   text-align: left;
-}
-.buy_buyQuantity_item .quantity::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  margin: 6px auto;
-  width: 50px;
-  height: 28px;
-  opacity: 0.4;
-  background-color: #ffc7d0;
 }
 
 .Tab1_contents.top .side_item .side_standard {

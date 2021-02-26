@@ -1,0 +1,69 @@
+.Tab2 {
+  width: 100%;
+}
+.Tab2 .Order_items {
+  padding: 34px 32px;
+  width: auto;
+  box-sizing: border-box;
+}
+.Tab2 .Order_items .tit {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+.Tab2 .Order_items .price {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+.Tab2 .Order_items .price span {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222222;
+}
+.Tab2 .Order_items .info {
+  display: flex;
+  align-items: center;
+}
+.Tab2 .Order_items .info .flow {
+  margin-right: 11px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+.Tab2 .Order_items .info .flow.up {
+  color: #ff1414;
+}
+.Tab2 .Order_items .info .flow.down {
+  color: #1752f0;
+}
+.Tab2 .Order_items .info .flow.up::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  background-image: url(./img/icon_up_flow.png);
+  background-repeat: no-repeat;
+  background-size: 8px 6px;
+  background-position: center;
+}
+.Tab2 .Order_items .info .flow.down::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  background-image: url(./img/icon_down_flow.png);
+  background-repeat: no-repeat;
+  background-size: 8px 6px;
+  background-position: center;
+}
+.Tab2 .Order_items .info .flow span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #777777;
+}
+.Tab2 .Order_items .info .quantity {
+  font-size: 12px;
+  font-weight: 400;
+  color: #555555;
+}
