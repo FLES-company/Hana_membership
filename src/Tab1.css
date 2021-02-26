@@ -1,0 +1,167 @@
+.Tab1 {
+  width: 100%;
+}
+.Tab1_contents {
+  width: 100%;
+  display: flex;
+}
+.Tab1_contents.btm {
+  flex-direction: row-reverse;
+  border-top: solid 1px #ebebeb;
+}
+.Tab1_contents.top .sell_items,
+.Tab1_contents.btm .buy_items {
+  flex: 2;
+}
+.Tab1_contents .sell_item,
+.Tab1_contents .buy_item {
+  box-sizing: border-box;
+}
+.Tab1_contents .sell_item:active .price,
+.Tab1_contents .buy_item:active .price {
+  height: 38px;
+  line-height: 38px;
+  border: 2px solid #96ea24;
+  box-sizing: border-box;
+}
+.Tab1_contents .sell_item ul,
+.Tab1_contents .buy_item ul {
+  height: 40px;
+  line-height: 40px;
+}
+.Tab1_contents .side_item {
+  flex: 1;
+}
+.Tab1_contents .sell_item.up .price,
+.Tab1_contents .buy_item.up .price {
+  color: #bc001d;
+}
+.Tab1_contents .sell_item.down .price,
+.Tab1_contents .buy_item.down .price {
+  color: #1752f0;
+}
+.Tab1_contents .sell_item .price,
+.Tab1_contents .buy_item .price {
+  color: #333333;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+}
+.sell_sellQuantity_item,
+.buy_buyQuantity_item {
+  display: flex;
+}
+.sell_sellQuantity_item {
+  flex-direction: row-reverse;
+}
+.sell_sellQuantity_item li,
+.buy_buyQuantity_item li {
+  padding: 0 8px;
+  flex: 1;
+}
+.sell_sellQuantity_item .price,
+.buy_buyQuantity_item .price {
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+}
+.sell_sellQuantity_item .price {
+  background-color: #f5f9ff;
+}
+.buy_buyQuantity_item .price {
+  background-color: #ffecec;
+}
+.sell_sellQuantity_item .quantity,
+.buy_buyQuantity_item .quantity {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+.sell_sellQuantity_item .quantity {
+  text-align: right;
+}
+.sell_sellQuantity_item .quantity::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  margin: 6px auto;
+  width: 50px;
+  height: 28px;
+  opacity: 0.4;
+  background-color: #c3dcff;
+}
+.buy_buyQuantity_item .quantity {
+  text-align: left;
+}
+.buy_buyQuantity_item .quantity::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  margin: 6px auto;
+  width: 50px;
+  height: 28px;
+  opacity: 0.4;
+  background-color: #ffc7d0;
+}
+
+.Tab1_contents.top .side_item .side_standard {
+  padding: 8px;
+  border-bottom: 1px solid #ebebeb;
+}
+.Tab1_contents.top .side_item .side_static {
+  padding: 8px;
+}
+.Tab1_contents .side_item .tit {
+  margin: 3px 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #777777;
+}
+.Tab1_contents .side_item .tit span {
+  color: #aaaaaa;
+}
+.Tab1_contents .side_item .price {
+  margin: 3px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+.Tab1_contents .side_item .flow {
+  margin: 6px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff1414;
+}
+.Tab1_contents.top .side_item .flow::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+  background-image: url(./img/icon_up_flow.png);
+  background-repeat: no-repeat;
+  background-size: 8px 6px;
+  background-position: center;
+}
+.Tab1_contents .side_item .flow span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.Tab1_contents.btm .side_item table {
+  width: 100%;
+}
+.Tab1_contents.btm .side_item table caption {
+  font-size: 12px;
+  font-weight: 400;
+  color: #555555;
+  background-color: #f9f9f9;
+}
+.Tab1_contents.btm .side_item table th {
+  margin: 0 16px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #bc001d;
+}

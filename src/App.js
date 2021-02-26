@@ -34,13 +34,10 @@ function App() {
         <Route path="/order" component={Order} />
         <Route path="/tab1" component={Tab1} />
         <Route path="/tab2" component={Tab2} />
-<<<<<<< HEAD
         <Route path="/tab3" component={Tab3} />
         <Route path="/tab4" component={Tab4} />
         <Route path="/tab5" component={Tab5} />
 
-=======
->>>>>>> fa53335cbce88e1d5d6640d4a6dc8b0bbe35ec2b
         
       </div>
     </Router>
