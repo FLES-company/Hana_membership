@@ -35,16 +35,18 @@ function Footer() {
           <li className="footer_inner_item">
             <Link to="/order">
               <a href="#">
-                <img src={icon_f_off_3}/>
+                <img src={icon_f_off_3} />
                 <span>주문</span>
               </a>
             </Link>
           </li>
           <li className="footer_inner_item">
-            <a href="#">
-              <img src={icon_f_off_4} Link to="/" />
-              <span>차트</span>
-            </a>
+            <Link to="/tab2">
+              <a href="#">
+                <img src={icon_f_off_4} />
+                <span>차트</span>
+              </a>
+            </Link>
           </li>
           <li className="footer_inner_item">
             <a href="#">
