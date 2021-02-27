@@ -1,7 +1,10 @@
 import React from "react";
 import "./Body.css";
 import img_banner1 from "../img/img_banner1.png";
+import Chart from "../Chart_top10"
+import Chart_down from "../Chart_down"
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
+import {Line} from 'react-chartjs-2';
 
 function Body() {
   return (
@@ -29,9 +32,11 @@ function Body() {
                   4,550
                   <span className="price_up">
                     37,450 (<span className="percent">823%</span>)
+                    <Chart />
                   </span>
                 </p>
-                <div className="item_graph"></div>
+                <div className="item_graph">
+                </div>
               </a>
             </li>
             <li className="week_item">
@@ -41,6 +46,7 @@ function Body() {
                   4,550
                   <span className="price_up">
                     37,450 (<span className="percent">823%</span>)
+                    <Chart />
                   </span>
                 </p>
                 <div className="item_graph"></div>
@@ -53,6 +59,7 @@ function Body() {
                   4,550
                   <span className="price_up">
                     37,450 (<span className="percent">823%</span>)
+                    <Chart />
                   </span>
                 </p>
                 <div className="item_graph"></div>
@@ -65,6 +72,7 @@ function Body() {
                   4,550
                   <span className="price_up">
                     37,450 (<span className="percent">823%</span>)
+                    <Chart />
                   </span>
                 </p>
                 <div className="item_graph"></div>
@@ -83,6 +91,7 @@ function Body() {
                   4,550
                   <span className="price_down">
                     37,450 (<span className="percent">823%</span>)
+                    <Chart_down />
                   </span>
                 </p>
                 <div className="item_graph"></div>
@@ -95,6 +104,7 @@ function Body() {
                   4,550
                   <span className="price_down">
                     37,450 (<span className="percent">823%</span>)
+                    <Chart_down />
                   </span>
                 </p>
                 <div className="item_graph"></div>
@@ -107,6 +117,7 @@ function Body() {
                   4,550
                   <span className="price_down">
                     37,450 (<span className="percent">823%</span>)
+                    <Chart_down />
                   </span>
                 </p>
                 <div className="item_graph"></div>
@@ -119,6 +130,7 @@ function Body() {
                   4,550
                   <span className="price_down">
                     37,450 (<span className="percent">823%</span>)
+                    <Chart_down />
                   </span>
                 </p>
                 <div className="item_graph"></div>
