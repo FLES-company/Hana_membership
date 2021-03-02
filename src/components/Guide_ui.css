@@ -1,0 +1,366 @@
+.article {
+  margin: 20px 0;
+}
+.Guide_ui .guide.wrap {
+  margin: 0 auto;
+  background-color: #fff;
+}
+.guide.wrap #guide_container {
+  padding-top: 0;
+}
+.guide_h1 {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+.guide_h2 {
+  background-color: #333;
+  color: aliceblue;
+  padding: 7px 10px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+.guide_h2:hover:after {
+  content: "scrolltop";
+  margin-left: 30px;
+  font-size: 13px;
+  color: crimson;
+  vertical-align: middle;
+}
+.guide_h3 {
+  background-color: #666;
+  padding: 3px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.guide .item-inner {
+  position: relative;
+  margin-bottom: 20px;
+}
+.guide .item-inner iframe #trp-debug {
+  display: none;
+}
+.guide .item-inner .codelabel-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 25px;
+  opacity: 0.7;
+  background-color: #000;
+  z-index: 1;
+}
+.guide .item-inner .codelabel-btn.show {
+  opacity: 0;
+}
+.guide .item-inner pre {
+  display: none;
+  position: relative;
+  margin-top: 15px;
+  min-height: 25px;
+  border: 1px solid #ccc;
+}
+.guide .item-inner code {
+  display: block;
+}
+.guide .item-inner code.html::before {
+  content: "[HTML ]";
+  display: inline-block;
+  padding: 2px 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Malgun Gothic;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff8c88;
+  border-radius: 0 0 5px 5px;
+}
+.guide .item-inner code.css::before {
+  content: "[CSS ]";
+  display: inline-block;
+  padding: 2px 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Malgun Gothic;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #85d8d8;
+  border-radius: 0 0 5px 5px;
+}
+.guide .item-inner code.js::before {
+  content: "[JS ]";
+  display: inline-block;
+  padding: 2px 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Malgun Gothic;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #fab309;
+  border-radius: 0 0 5px 5px;
+}
+.guide .item-inner code {
+  font-family: verdana;
+  font-size: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.guide .tab_guide-list {
+  overflow: hidden;
+  list-style-type: none;
+}
+.guide .tab_guide-list li {
+  float: left;
+}
+.guide .tab_guide-list li a {
+  display: block;
+  margin: 10px 5px;
+  padding: 7px 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f29027;
+  border: 0;
+  border-radius: 5px;
+}
+.guide #guide_footer {
+  background-color: #333333;
+  width: 100%;
+  min-width: 1080px;
+}
+.guide #guide_footer .footer-inner {
+  position: relative;
+  width: 1080px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  color: #ccc;
+  font-size: 11px;
+}
+samp {
+  margin: 10px;
+  display: block;
+}
+samp > * {
+  margin: 5px 0;
+}
+
+.Btn_default input {
+  width: 100%;
+  height: 48px;
+  border-radius: 22px;
+  color: #ffffff;
+  background-color: #f5f5f5;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.Btn_default input.gray {
+  color: #333333;
+  background-color: #f5f5f5;
+}
+.Btn_default input.navy {
+  background-color: #0b234a;
+}
+.Btn_default input.border {
+  border-radius: 2px !important;
+  border: solid 1px #dbdbdb;
+  color: #999999;
+}
+.Btn_default input.gradient {
+  border-radius: 8px !important;
+  color: #ffffff;
+}
+.Btn_default input.gradient.blue {
+  background-image: linear-gradient(99deg, #1e66ed, #0039d1 100%);
+}
+.Btn_default input.gradient.red {
+  background-image: linear-gradient(99deg, #e20e2f, #bc001d 100%);
+}
+.Btn_default input.w72 {
+  width: 72px;
+  border-radius: 10px;
+  background: #808080;
+  color: #333333;
+  border-radius: 10px !important;
+}
+.Btn_default input.w80 {
+  width: 76px;
+  height: 46px;
+  line-height: 40px;
+  border-radius: 30px !important;
+  border: 4px solid #ffffff;
+}
+.Btn_default input.w80.blue {
+  background-color: #0039d1;
+}
+.Btn_default input.w80.gray {
+  background-color: #555555;
+}
+.Btn_default input.w80.red {
+  background-color: #bc001d;
+}
+form input {
+  position: relative;
+  width: 100%;
+  height: 47px;
+  line-height: 47px;
+  border-radius: 8px;
+  border: solid 1px #aaaaaa;
+  background-color: #ffffff;
+}
+form .input_auth::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+form .input_unit {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+form .input_unit .check_ok {
+  display: block;
+  position: absolute;
+  right: 20px;
+  width: 19px;
+  height: 15px;
+  background-image: url(../img/icon_confirm.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form .input_unit .check_fail {
+  display: block;
+  position: absolute;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icon_fail.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+form input:disabled {
+  border-radius: 8px;
+  border: solid 1px #ebebeb;
+  background-color: #ffffff;
+  color: #cccccc;
+}
+
+form .input_auth {
+  position: relative;
+  height: 48px;
+}
+form .input_auth::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+form .input_auth input {
+  width: 70%;
+  height: 100%;
+  margin-right: 8px;
+}
+
+form .input_auth button {
+  width: 30%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #dbdbdb;
+  color: #ffffff;
+  float: right;
+}
+form .input_auth.confirm button {
+  background-color: #0b234a;
+  color: #ffffff;
+}
+form .input_auth span {
+  position: relative;
+  margin-left: -52px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b234a;
+}
+
+form .input_search button {
+  position: absolute;
+  left: 16px;
+  z-index: 9;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../img/icon_search.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+form .input_search input {
+  padding-left: 44px;
+  background-color: #ebebeb;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+form .select {
+  position: relative;
+}
+form select {
+  appearance: none;
+  width: 100%;
+  background-color: #f5f5f5;
+  display: inline-block;
+  color: #000;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 10px 20px 10px 13px;
+  margin: 0;
+  box-sizing: border-box;
+}
+form .select::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  width: 14px;
+  height: 8px;
+  background-color: transparent;
+  background-image: url(../img/icon_btm_arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form .count {
+  width: 100%;
+  border-radius: 2px;
+  border: solid 1px #dbdbdb;
+  background-color: #ffffff;
+}
+form .count input {
+  border: none;
+  text-align: center;
+}
+form .count button {
+  padding: 12px 18px;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  border: none;
+}
+form .count .minusBtn {
+  background-image: url(../img/icon_minus.png);
+}
+form .count .plusBtn {
+  background-image: url(../img/icon_plus.png);
+}
+form .checkbox input {
+  width: auto;
+}

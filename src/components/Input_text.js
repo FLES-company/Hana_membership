@@ -3,7 +3,7 @@ import "./Input_text.css";
 import icon_back from "../img/right-arrow.png";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
-import Login_btn from "./Login_button";
+import Btn_default from "./Btn_default";
 import Signup_btn from "./SignUp_button";
 import Social_login_btn from "./Social_login_button";
 import Social_login_btn_2 from "./Social_login_button_2";
@@ -39,7 +39,7 @@ function Input_text() {
         <Link to="/find">
           <button>아이디 / 비밀번호 찾기</button>
         </Link>
-        <Login_btn />
+        <Btn_default />
         <Signup_btn />
         <Social_login_btn />
       </form>

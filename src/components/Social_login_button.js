@@ -10,16 +10,16 @@ function Social_login_btn() {
     <div className="Social_login_btn">
       <h1>소셜 간편 로그인</h1>
       <div className="Social_login_btn_inner">
-        <button className="">
-          <img src={icon_social_n} />
+        <button>
+          <div className="iconImg"><img src={icon_social_n} /></div>
           <span>네이버로 로그인</span>
         </button>
-        <button className="">
-          <img src={icon_social_k} />
+        <button>
+          <div className="iconImg"><img src={icon_social_k} /></div>
           <span>카카오로 로그인</span>
         </button>
-        <button className="">
-          <img src={icon_social_f} />
+        <button>
+          <div className="iconImg"><img src={icon_social_f} /></div>
           <span>페이스북으로 로그인</span>
         </button>
       </div>
