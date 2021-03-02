@@ -1,6 +1,9 @@
 .Body {
   padding: 0 16px;
 }
+.Body .Body_inner{
+  padding-bottom: 56px;
+}
 /* Body_inner_banner */
 .Body .Body_inner_banner {
   margin: 8px 0 34px;

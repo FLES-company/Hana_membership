@@ -16,6 +16,9 @@ import Tab3 from "./Tab3";
 import Tab4 from "./Tab4";
 import Tab5 from "./Tab5";
 
+import Guide_ui from "./components/Guide_ui";
+
+
 import "./App.css";
 
 function App() {
@@ -43,6 +46,9 @@ function App() {
         <Route path="/tab4" component={Tab4} />
         {/* Tab4 : 매수 */}
         <Route path="/tab5" component={Tab5} />
+
+        {/* Guideui */}
+        <Route path="/Guide_ui" component={Guide_ui} />
         
       </div>
     </Router>

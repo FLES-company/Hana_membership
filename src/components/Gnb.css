@@ -1,7 +1,8 @@
 .gnb {
   padding: 0 16px;
-  width: max-content;
   height: 48px;
+  overflow-x: auto;
+  white-space: nowrap;
   position: relative;
 }
 
