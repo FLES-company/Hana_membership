@@ -361,6 +361,11 @@ form .count .minusBtn {
 form .count .plusBtn {
   background-image: url(../img/icon_plus.png);
 }
+form .checkbox {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333;
+}
 form .checkbox input {
   width: auto;
 }

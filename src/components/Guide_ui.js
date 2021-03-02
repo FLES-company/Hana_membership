@@ -138,7 +138,7 @@ function Guide_ui() {
                 <input id="checkbox1" type="checkbox" name="" class="chk_blue" />
                 <label for="checkbox1" class="chk">checkbox1</label>
                 <input id="checkbox2" type="checkbox" name="" class="chk_red" />
-                <label for="checkbox2" class="chk">checkbox1</label>
+                <label for="checkbox2" class="chk">checkbox2</label>
               </div>
             </form>
           </div>
