@@ -1,25 +1,27 @@
-.Input_text {
+.Login {
+  padding: 0 32px;
+  box-sizing: border-box;
   width: 100%;
 }
-.Input_text .back_header {
+.Login .back_header {
   margin-bottom: 27px;
 }
-.Input_text form::after{
+.Login form::after {
   content: "";
   display: block;
   clear: both;
 }
-.Input_text form li{
+.Login form li {
   margin-bottom: 15px;
 }
-.Input_text form span {
+.Login form span {
   display: inline-block;
   margin: 3px;
   font-size: 13px;
   font-weight: 500;
   color: #aaaaaa;
 }
-.Input_text form input {
+.Login form input {
   padding: 0 5px;
   width: -webkit-fill-available;
   height: 42px;
@@ -27,17 +29,20 @@
   border: 1px solid #ebebeb;
   border-radius: 5px;
 }
-.Input_text form input::placeholder {
+.Login form input::placeholder {
   font-size: 14px;
   color: #cccccc;
 }
-.Input_text form button{
+.Login form button {
   margin-bottom: 27px;
   width: auto;
   float: right;
   border: none;
 }
-
-.Input_text .Social_login_btn_2 .Social_login_btn_2_inner > img{
+.Login form .findBtn {
+  font-size: 14px;
+  color: #777777;
+}
+.Login .Social_login_btn_2 .Social_login_btn_2_inner > img {
   display: none;
 }

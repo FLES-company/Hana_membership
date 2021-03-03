@@ -15,20 +15,28 @@ function Social_login_btn_2() {
         <h1>소셜 간편 로그인</h1>
 
         <button className="btn_item icon_naver">
-          <img src={icon_naver} />
+          <div className="iconImg">
+            <img src={icon_naver} />
+          </div>
           <span>네이버로 로그인</span>
         </button>
         <button className="btn_item icon_kakao">
-          <img src={icon_kakao} />
+          <div className="iconImg">
+            <img src={icon_kakao} />
+          </div>
           <span>카카오로 로그인</span>
         </button>
         <button className="btn_item icon_face">
-          <img src={icon_face} />
+          <div className="iconImg">
+            <img src={icon_face} />
+          </div>
           <span>페이스북으로 로그인</span>
         </button>
         <Link to="/login">
           <button className="btn_item icon_email">
-            <img src={icon_email} />
+            <div className="iconImg">
+              <img src={icon_email} />
+            </div>
             <span>이메일로 로그인</span>
           </button>
         </Link>

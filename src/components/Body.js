@@ -15,6 +15,7 @@ class Body extends React.Component {
   render() {
     let owl_carousel = require('owl.carousel');
     window.fn = owl_carousel;
+    
   return(
   //   앱 실행 초기화면
   <div className="Body">
@@ -33,9 +34,9 @@ class Body extends React.Component {
       <div className="Body_inner_item Body_week">
         <h1>주간 관심 TOP 10</h1>
         <ul>
-        <OwlCarousel loop margin={10}>
+        <OwlCarousel  margin={10} autoWidth loop items={2}>
           
-          <li className="week_item">
+          <li className="item week_item">
             <a href="#">
               <p className="item_tit">이포</p>
               <p className="item_dec">
@@ -50,7 +51,7 @@ class Body extends React.Component {
             </a>
           </li>
           
-          <li className="week_item">
+          <li className="item week_item">
             <a href="#">
               <p className="item_tit">아시아나2800</p>
               <p className="item_dec">
@@ -66,7 +67,7 @@ class Body extends React.Component {
           
 
           
-          <li className="week_item">
+          <li className="item week_item">
             <a href="#">
               <p className="item_tit">이포</p>
               <p className="item_dec">
@@ -82,7 +83,7 @@ class Body extends React.Component {
           
 
           
-          <li className="week_item">
+          <li className="item week_item">
             <a href="#">
               <p className="item_tit">아시아나2800</p>
               <p className="item_dec">
