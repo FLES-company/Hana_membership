@@ -67,20 +67,7 @@ class Login extends Component {
                 Change={this.Change} />
             </li>
           </ul>
-          </form>
-
-      <form>
-        <ul>
-          <li>
-            <span>이메일</span>
-            <input name="email" type="text" placeholder="이메일" required />
-          </li>
-          <li>
-            <span>비밀번호</span>
-            <input name="password" type="password" placeholder="비밀번호를 입력해주세요." required />
-          </li>
-        </ul>
-
+          
           <Link to="/find">
             <button className="findBtn">아이디 / 비밀번호 찾기</button>
           </Link>
@@ -88,7 +75,8 @@ class Login extends Component {
           <Btn_default />
           <Signup_btn />
           <Social_login_btn />
-        </form>
+          </form>
+        
       </div>
     );
   }
