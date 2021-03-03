@@ -1,6 +1,7 @@
 import React from "react";
 import "./Find_idpw.css";
 import icon_back from "./img/right-arrow.png";
+import Btn_default from "./components/Btn_default";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
 function Find_idpw() {
@@ -14,40 +15,25 @@ function Find_idpw() {
               <img src={icon_back} Link to="/login" />
             </div>
           </a>
-          <h1>아이디/비밀번호 찾기</h1>
         </div>
       </div>
       {/* back_header : e */}
 
       {/* contents : s */}
       <div className="find_idpw_inner">
-        <ul>
+        <h1>아이디/비밀번호 찾기</h1>
+        <h3>회원님께서 필요하신 사항을 선택해주세요</h3>
+
+        {/* 아이디찾기, 비밀번호 찾기 함수로 value값 바꾸기 */}
+        <div className="find_idpw_wrap">
           <Link to="/findAuth">
-            <li className="find_item find_id">
-              <a href className="find_item_wrap">
-                <p className="item_tit">ID</p>
-                <p className="item_sub">아이디 찾기</p>
-                <p className="item_dec">
-                  휴대폰 인증을 통하여
-                  <br /> 아이디를 찾습니다.
-                </p>
-              </a>
-            </li>
+            <Btn_default />
           </Link>
 
           <Link to="/findAuth">
-            <li className="find_item find_pw">
-              <a href className="find_item_wrap">
-                <p className="item_tit">PW</p>
-                <p className="item_sub">비밀번호 찾기</p>
-                <p className="item_dec">
-                  휴대폰 인증을 통하여
-                  <br /> 비밀번호를 찾습니다.
-                </p>
-              </a>
-            </li>
+            <Btn_default />
           </Link>
-        </ul>
+        </div>
       </div>
       {/* contents : e */}
     </div>

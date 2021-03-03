@@ -1,5 +1,10 @@
 .Social_login_btn {
   width: 100%;
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  padding: 0 23px;
+  box-sizing: border-box;
 }
 .Social_login_btn h1 {
   color: #aaaaaa;

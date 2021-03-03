@@ -1,41 +1,37 @@
-.find_idpw{
-    width: 100%;
-    display: block !important;
+.find_idpw {
+  padding: 0 16px;
+  box-sizing: border-box;
+  display: block !important;
+  width: 100%;
 }
-.back_header .back_header_inner{
-    display: flex;
-    height: 48px;
-    align-items: center;
+.back_header .back_header_inner {
+  display: flex;
+  height: 48px;
+  align-items: center;
 }
 
-.find_idpw .find_idpw_inner{
-    width: 100%;
+.find_idpw .find_idpw_inner {
+  padding: 0 16px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 30%;
 }
-.find_idpw .find_idpw_inner .find_item{
-    margin: 3px 0;
-    padding: 15px;
-    box-sizing: border-box;
-    width: 100%;
-    border: 1px solid #d5d5d5;
-    border-radius: 10px;
+.find_idpw .find_idpw_inner h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333333;
 }
-.find_idpw .find_idpw_inner .find_item:hover,
-.find_idpw .find_idpw_inner .find_item:active{
-    border: 2px solid #999999;
-    border-radius: 10px;
-    box-sizing: border-box;
+.find_idpw .find_idpw_inner h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
 }
-.find_idpw .find_idpw_inner .find_item .find_item_wrap{
-    
-    text-align: left;
-    cursor: pointer;
+.find_idpw .find_idpw_inner .find_idpw_wrap {
+  margin-top: 44px;
 }
-.find_idpw .find_idpw_inner .find_item .find_item_wrap .item_tit{
-    font-size: 24px;
-    font-weight: 600;
+.Btn_default {
+  margin: 12px 0;
 }
-.find_idpw .find_idpw_inner .find_item .find_item_wrap .item_sub{
-    margin: 3px 0;
-}
-.find_idpw .find_idpw_inner .find_item .find_item_wrap .item_dec{
+.find_idpw .find_idpw_inner .Btn_default input {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }
