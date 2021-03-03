@@ -20,9 +20,9 @@ class Login extends Component {
   onChange = (e) => {
     const input_text = this.setState({[e.target.name]: e.target.value})
     if (input_text != ""){
-      this.setState(() => ({ disabled: true }))
-    } else if (!this.state.disabled) {
       this.setState(() => ({ disabled: false }))
+    } else if (!this.state.disabled) {
+      this.setState(() => ({ disabled: true }))
     }
       
     }
@@ -48,7 +48,7 @@ class Login extends Component {
             <li>
               <span>이메일</span>
               <input  
-                style={Object.assign({}, styles.input, !this.state.email && styles.check_image)}
+                style={Object.assign({}, styles.input, this.state.email && styles.check_image)}
                 name="email" 
                 type="text" placeholder="이메일" required 
                 onChange={this.onChange} />
@@ -56,7 +56,7 @@ class Login extends Component {
             <li>
               <span>비밀번호</span>
               <input 
-                style={Object.assign({}, styles.input, !this.state.psw && styles.check_image)}
+                style={Object.assign({}, styles.input, this.state.psw && styles.check_image)}
                 name="psw" type="password" placeholder="비밀번호를 입력해주세요." required 
                 onChange={this.onChange} />
             </li>
@@ -78,8 +78,6 @@ const styles = {
   check_image: {
   backgroundImage: `url(${check_ok})`,
   backgroundRepeat: 'no-repeat',
-  display: 'block',
-  position: 'absolute',
   
   
   
