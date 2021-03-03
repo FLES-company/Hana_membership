@@ -125,3 +125,6 @@
   font-weight: 400;
   color: #ffffff;
   }
+.owl-item {
+  width: 240px !important;
+}
