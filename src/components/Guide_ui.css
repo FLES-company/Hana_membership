@@ -355,17 +355,226 @@ form .count button {
   background-position: center;
   border: none;
 }
-form .count .minusBtn {
+form .count .dec {
   background-image: url(../img/icon_minus.png);
 }
-form .count .plusBtn {
+form .count .inc {
   background-image: url(../img/icon_plus.png);
 }
 form .checkbox {
+  position: relative;
   font-size: 15px;
   font-weight: 400;
   color: #333333;
 }
+form .checkbox::after {
+  display: block;
+  clear: both;
+  content: "";
+}
 form .checkbox input {
+  margin: 8px;
   width: auto;
+}
+form .checkbox input[type="checkbox"] {
+  display: none;
+}
+form .checkbox input[type="checkbox"] + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: solid 1px #dbdbdb;
+  cursor: pointer;
+  border-radius: 2px;
+  float: right;
+}
+form .checkbox input[type="checkbox"]:checked + label {
+  border: solid 1px #dbdbdb;
+  background-image: url(../img/icon_check_blue.png);
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: right;
+}
+form .checkbox.blue input[type="checkbox"]:checked + label {
+  background-image: url(../img/icon_check_blue.png);
+}
+form .checkbox.red input[type="checkbox"]:checked + label {
+  background-image: url(../img/icon_check_red.png);
+}
+form .checkbox input[type="checkbox"] + label span {
+  position: absolute;
+  top: 0;
+  left: 28px;
+  display: block;
+}
+
+.Policy_inner ul {
+  width: 100%;
+}
+.Policy_inner ul li {
+  width: 100%;
+}
+.Policy_inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.Policy_inner input[type="checkbox"] {
+  display: none;
+}
+.Policy_inner input[type="checkbox"] + label {
+  margin-right: 8px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon_check_white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #dbdbdb;
+  border: solid 1px #dbdbdb;
+  border-radius: 50%;
+  cursor: pointer;
+  float: left;
+}
+
+.Policy_inner input[type="checkbox"]:checked + label {
+  border: solid 1px #dbdbdb;
+  background-image: url(../img/icon_check_white.png);
+  background-color: #8dc63f;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+}
+.Policy_inner input[type="checkbox"] + span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 8px;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.Policy_inner span {
+  display: table;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.Policy_inner p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.accordion_inner .header-area {
+  padding: 24px 16px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  height: 96px;
+  background-color: #ffffff;
+}
+.accordion_inner .header-area .tagImg {
+  margin-right: 12px;
+  width: 48px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.accordion_inner .header-area .tagImg.notice {
+  background-image: url(../img/icon_notice.png);
+}
+.accordion_inner .header-area .tagImg.event {
+  background-image: url(../img/icon_notice_event.png);
+}
+.accordion_inner .header-area .tagImg.alarm {
+  background-image: url(../img/icon_notice_alarm.png);
+}
+.accordion_inner .header-area .tit {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: #333333;
+}
+.accordion_inner .header-area .tit .sub .item {
+  margin-right: 13px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: left;
+}
+.accordion_inner .header-area .tit .sub .dateNtime {
+  color: #aaaaaa;
+}
+.accordion_inner .header-area .tit .sub .view {
+  color: #cccccc;
+}
+.accordion_inner .header-area .acc_btn {
+  position: absolute;
+  right: 16px;
+  border: none;
+  width: auto;
+  height: 8px;
+  transition: 0.5s;
+}
+.accordion_inner .header-area .acc_btn::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  background-image: url(../img/icon_acc_btm.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+.accordion_inner .con-area {
+  display: none;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.accordion_inner .con-area p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.accordion_inner li.on .con-area {
+  display: block;
+}
+.accordion_inner li.on .header-area .acc_btn::after {
+  transform: rotate(180deg);
+}
+
+.tab_inner ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tab_inner ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+}
+.tab_inner ul li.on {
+  box-sizing: border-box;
+  border-bottom: 2px solid #0b234a;
+}
+.tab_inner ul li.on a {
+  font-weight: 600;
+  color: #0b234a;
+}
+.tab_inner ul li a {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: #777777;
 }
