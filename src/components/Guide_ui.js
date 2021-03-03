@@ -6,6 +6,12 @@ import Signup_btn from "./SignUp_button";
 import Social_login_btn from "./Social_login_button";
 import Social_login_btn_2 from "./Social_login_button_2";
 
+const open = document.getElementById('open');
+const close = document.getElementById('close');
+const modal = document.querySelector('.modal-wrapper');
+
+// open.onclick = ()
+
 // function Counter(){
 //   const [ number, setNumber ] = useState(0);
 //   const onInc = () => {
@@ -44,6 +50,12 @@ function Guide_ui() {
             </li>
             <li>
               <a href="#accordion">accordion</a>
+            </li>
+            <li>
+              <a href="#slide">slide</a>
+            </li>
+            <li>
+              <a href="#modal">modal</a>
             </li>
           </ul>
         </div>
@@ -371,6 +383,30 @@ function Guide_ui() {
                   </div>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div className="article" id="slide">
+            <h2 className="guide_h2">slide</h2>
+            <h3 className="guide_h3">- slide</h3>
+          </div>
+          <div className="article" id="modal">
+            <h2 className="guide_h2">modal</h2>
+            <h3 className="guide_h3">- modal</h3>
+            <div className="modal_inner">
+              <button className="" id="open">
+                모달열기
+              </button>
+              <div className="modal_wrapper">
+                <div className="modal">
+                  <div className="modal_tit">title</div>
+                  <div className="modal_content">content</div>
+                  <div className="modal_close_wrapper">
+                    <button className="" id="close">
+                      닫기
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

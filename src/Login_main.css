@@ -1,4 +1,6 @@
 .Login_main{
+    padding: 0 32px;
+    box-sizing: border-box;
     position: relative;
     z-index: 9;
 }

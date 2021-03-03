@@ -1,5 +1,6 @@
 import React from "react";
-import "./Input_text.css";
+import "./Login.css";
+import "./Guide_ui.css";
 import icon_back from "../img/right-arrow.png";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
@@ -8,9 +9,9 @@ import Signup_btn from "./SignUp_button";
 import Social_login_btn from "./Social_login_button";
 import Social_login_btn_2 from "./Social_login_button_2";
 
-function Input_text() {
+function Login() {
   return (
-    <div className="Input_text">
+    <div className="Login">
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
@@ -37,8 +38,9 @@ function Input_text() {
         </ul>
 
         <Link to="/find">
-          <button>아이디 / 비밀번호 찾기</button>
+          <button className="findBtn">아이디 / 비밀번호 찾기</button>
         </Link>
+
         <Btn_default />
         <Signup_btn />
         <Social_login_btn />
@@ -47,4 +49,4 @@ function Input_text() {
   );
 }
 
-export default Input_text;
+export default Login;

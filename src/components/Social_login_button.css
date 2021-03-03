@@ -25,7 +25,7 @@
   line-height: 43px;
   box-sizing: border-box;
   border-radius: 10px;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #ebebeb;
   color: #777777;
 }
 .Social_login_btn .Social_login_btn_inner button .iconImg {
@@ -33,7 +33,6 @@
   display: flex;
   justify-content: center;
   width: 20px;
-
 }
 .Social_login_btn .Social_login_btn_inner button span {
   margin-left: 26px;

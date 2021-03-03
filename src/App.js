@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 import Home from "./Home";
-import Input_text from "./components/Input_text";
+import Login from "./components/Login";
 import Login_main from "./Login_main";
 import SignUp from "./SignUp";
 import Find_idpw from "./Find_idpw";
@@ -27,7 +27,7 @@ function App() {
       <div className="App">
         <Route exact path="/" component={Home} />
         <Route path="/splash" component={Splash} />
-        <Route path="/login" component={Input_text} />
+        <Route path="/login" component={Login} />
         <Route path="/loginMain" component={Login_main} />
         <Route path="/signup" component={SignUp} />
         <Route path="/find" component={Find_idpw} />
