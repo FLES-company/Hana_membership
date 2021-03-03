@@ -40,6 +40,9 @@ function Guide_ui() {
               <a href="#policy">policy</a>
             </li>
             <li>
+              <a href="#tab">tab</a>
+            </li>
+            <li>
               <a href="#accordion">accordion</a>
             </li>
           </ul>
