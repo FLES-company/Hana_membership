@@ -28,3 +28,13 @@
   border: 1px solid #aaaaaa;
   color: #777777;
 }
+.Social_login_btn .Social_login_btn_inner button .iconImg {
+  margin-left: 26px;
+  display: flex;
+  justify-content: center;
+  width: 20px;
+
+}
+.Social_login_btn .Social_login_btn_inner button span {
+  margin-left: 26px;
+}

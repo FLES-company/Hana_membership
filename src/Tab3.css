@@ -1,0 +1,10 @@
+.Tab3 table {
+  width: 100%;
+  text-align: left;
+}
+.Tab3 table caption {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #333333;
+}
