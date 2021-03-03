@@ -48,7 +48,6 @@ class Login extends Component {
         </div>
         {/* back_header : e */}
 
-
         <form>
           <ul>
             <li>
@@ -67,7 +66,6 @@ class Login extends Component {
                 Change={this.Change} />
             </li>
           </ul>
-          
           <Link to="/find">
             <button className="findBtn">아이디 / 비밀번호 찾기</button>
           </Link>
