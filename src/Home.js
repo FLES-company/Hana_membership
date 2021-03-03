@@ -5,6 +5,7 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
+
 class Home extends Component {
   render() {
     return (

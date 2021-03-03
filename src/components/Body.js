@@ -6,19 +6,15 @@ import Chart_down from "../Chart_down"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 
-
-
-export default class Responsive extends Component {
+class Body extends React.Component {
   render() {
-    var settings = {
-      slidesToShow: 0,
-      slidesToScroll:1,
-      dots: false,
-      infinite: false,
-      speed: 500,
-    }
+    let owl_carousel = require('owl.carousel');
+    window.fn = owl_carousel;
   return(
   //   앱 실행 초기화면
   <div className="Body">
@@ -36,10 +32,9 @@ export default class Responsive extends Component {
       {/* 주간 관심 TOP 10 */}
       <div className="Body_inner_item Body_week">
         <h1>주간 관심 TOP 10</h1>
-        <div>
-        <Slider {...settings}>
-        <div>
         <ul>
+        <OwlCarousel loop margin={10}>
+          
           <li className="week_item">
             <a href="#">
               <p className="item_tit">이포</p>
@@ -69,6 +64,8 @@ export default class Responsive extends Component {
             </a>
           </li>
           
+
+          
           <li className="week_item">
             <a href="#">
               <p className="item_tit">이포</p>
@@ -83,6 +80,8 @@ export default class Responsive extends Component {
             </a>
           </li>
           
+
+          
           <li className="week_item">
             <a href="#">
               <p className="item_tit">아시아나2800</p>
@@ -96,15 +95,13 @@ export default class Responsive extends Component {
               <div className="item_graph"></div>
             </a>
           </li>
+          
+          </OwlCarousel>       
         </ul>
-        </div>
-        </Slider>
-        </div>
       </div>
       {/* 월간 상승ㆍ하락 회원권 */}
       <div className="Body_inner_item Body_month">
         <h1>월간 상승ㆍ하락 회원권</h1>
-        <Slider {...settings}>
         <div>
         <ul>
           <li className="month_item">
@@ -161,12 +158,10 @@ export default class Responsive extends Component {
           </li>
         </ul>
         </div>
-        </Slider>
       </div>
       {/* 추천 상품 */}
       <div className="Body_inner_item recommend_items">
         <h1>추천 상품</h1>
-        <Slider {...settings}>
         <div>
         <ul>
           <li className="recommend_item">
@@ -219,7 +214,6 @@ export default class Responsive extends Component {
           </li>
         </ul>
         </div>
-        </Slider>
       </div>
     </div>
   </div>
@@ -227,3 +221,4 @@ export default class Responsive extends Component {
 )
   }   
 }
+export default Body
