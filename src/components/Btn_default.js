@@ -1,6 +1,6 @@
 import React from "react";
 import "./Btn_default.css";
-
+import "./Guide_ui.css";
 
 
 function Btn_default() {
@@ -17,8 +17,9 @@ function Btn_default() {
 
   return (
     <div className="Btn_default">
-      <input type="submit" value="로그인" />
+      <input className="navy" type="submit" value="로그인" />
     </div>
+    
   );
 }
 

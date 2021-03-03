@@ -3,9 +3,17 @@
   box-sizing: border-box;
   width: 100%;
 }
+/* back_header */
 .Login .back_header {
   margin-bottom: 27px;
 }
+.Login .Btn_default {
+  margin: 12px 0;
+}
+.Login .Btn_default input.gray{
+  border: none;
+}
+/* form */
 .Login form::after {
   content: "";
   display: block;
@@ -22,12 +30,9 @@
   color: #aaaaaa;
 }
 .Login form input {
-  padding: 0 5px;
+  padding: 0 12px;
   width: -webkit-fill-available;
-  height: 42px;
-  line-height: 42px;
   border: 1px solid #ebebeb;
-  border-radius: 5px;
 }
 .Login form input::placeholder {
   font-size: 14px;
