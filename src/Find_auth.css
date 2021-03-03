@@ -1,160 +1,11 @@
-.guide.wrap {
-  margin: 0 auto;
-  background-color: #fff;
-}
-.guide.wrap #guide_container {
-  padding-top: 0;
-}
-.guide_h1 {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  color: black;
-}
-.guide_h2 {
-  background-color: #333;
-  color: aliceblue;
-  padding: 7px 10px;
-  height: 40px;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: bold;
-}
-.guide_h2:hover:after {
-  content: "scrolltop";
-  margin-left: 30px;
-  font-size: 13px;
-  color: crimson;
-  vertical-align: middle;
-}
-.guide_h3 {
-  background-color: #666;
-  padding: 3px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: aliceblue;
-}
-.guide .item-inner {
-  position: relative;
-  margin-bottom: 20px;
-}
-.guide .item-inner iframe #trp-debug {
-  display: none;
-}
-.guide .item-inner .codelabel-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 75px;
-  height: 25px;
-  opacity: 0.70;
-  background-color: #000;
-  z-index: 1;
-}
-.guide .item-inner .codelabel-btn.show {
-  opacity: 0;
-}
-.guide .item-inner pre {
-  display: none;
-  position: relative;
-  margin-top: 15px;
-  min-height: 25px;
-  border: 1px solid #ccc;
-}
-.guide .item-inner code {
-  display: block;
-}
-.guide .item-inner code.html::before {
-  content: "[HTML ]";
-  display: inline-block;
-  padding: 2px 5px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-family: Malgun Gothic;
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #ff8c88;
-  border-radius: 0 0 5px 5px;
-}
-.guide .item-inner code.css::before {
-  content: "[CSS ]";
-  display: inline-block;
-  padding: 2px 5px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-family: Malgun Gothic;
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #85d8d8;
-  border-radius: 0 0 5px 5px;
-}
-.guide .item-inner code.js::before {
-  content: "[JS ]";
-  display: inline-block;
-  padding: 2px 5px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-family: Malgun Gothic;
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #fab309;
-  border-radius: 0 0 5px 5px;
-}
-.guide .item-inner code {
-  font-family: verdana;
-  font-size: 12px;
-  max-height: 300px;
-  overflow-y: auto;
-}
-.guide .tab_guide-list {
-  overflow: hidden;
-  list-style-type: none;
-}
-.guide .tab_guide-list li {
-  float: left;
-}
-.guide .tab_guide-list li a {
-  display: block;
-  margin: 10px 5px;
-  padding: 7px 15px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #f29027;
-  border: 0;
-  border-radius: 5px;
-}
-.guide #guide_footer {
-  background-color: #333333;
-  width: 100%;
-  min-width: 1080px;
-}
-.guide #guide_footer .footer-inner {
-  position: relative;
-  width: 1080px;
-  margin: 0 auto;
-  padding: 20px 30px;
-  color: #ccc;
-  font-size: 11px;
-}
-samp {
-  margin: 10px;
-  display: block;
-}
-samp > * {
-  margin: 5px 0;
-}
-
 .find_auth {
+  padding: 0 16px;
+  box-sizing: border-box;
   width: 100%;
 }
 .find_auth .back_header_inner {
   position: relative;
+  width: 100%;
 }
 .find_auth .back_header_inner button {
   width: auto;
@@ -163,19 +14,26 @@ samp > * {
   right: 0;
 }
 .find_auth .find_auth_inner {
+  padding: 0 16px;
+  box-sizing: border-box;
   width: 100%;
 }
-.find_auth .find_auth_inner .find_auth_item {
-  margin: 20px 0;
+.find_auth .find_auth_inner h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333333;
 }
 
-.find_auth .find_auth_inner .find_auth_item input {
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  border-bottom: 2px solid #d5d5d5;
-  box-sizing: border-box;
+.find_auth .find_auth_inner span {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #aaaaaa;
 }
+
+/* 인증번호 발송,완료 수정 */
+
 .find_auth .find_auth_inner .input_number .input_number_item {
   margin: 10px 0;
 }
@@ -201,8 +59,8 @@ samp > * {
   color: #3482e8;
 }
 .find_auth .find_auth_inner .find_auth_item .input_number_item .auth_fail {
-    display: inline-block;
-    margin-top: 3px;
-    color: #FF5656;
-    font-weight: 600;
+  display: inline-block;
+  margin-top: 3px;
+  color: #ff5656;
+  font-weight: 600;
 }
