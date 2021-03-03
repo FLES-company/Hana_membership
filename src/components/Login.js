@@ -33,7 +33,7 @@ function Login() {
           </li>
           <li>
             <span>비밀번호</span>
-            <input name="psw" type="password" placeholder="비밀번호를 입력해주세요." required />
+            <input name="password" type="password" placeholder="비밀번호를 입력해주세요." required />
           </li>
         </ul>
 
