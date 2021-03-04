@@ -49,35 +49,42 @@ function Find_auth() {
               {/* <span className="check_ok"></span> */}
             </div>
           </div>
+          {/* input_number */}
           <div className="input_number">
             <span>휴대폰 번호 인증</span>
-            <div className="input_unit">
-              <input
-                type="text"
-                minlength={5}
-                placeholder="본인 명의 휴대폰 번호"
-                name="phoneNum"
-              />
-              <button>인증번호 발송</button>
+            <div className="input_wrap">
+              <div className="input_unit">
+                <input
+                  type="text"
+                  minlength={5}
+                  placeholder="본인 명의 휴대폰 번호"
+                  name="phoneNum"
+                />
+              </div>
+              <button className="">인증번호 발송</button>
 
               {/* 체크사항 */}
               {/* <span className="check_fail"></span> */}
             </div>
-            <div className="input_unit">
-              <input
-                type="text"
-                minlength={5}
-                placeholder="인증번호 입력"
-                name="authNum"
-              />
-              <span className="timer">3:00</span>
-              <button>인증완료</button>
+            <div className="input_wrap">
+              <div className="input_unit">
+                <input
+                  type="text"
+                  minlength={5}
+                  placeholder="인증번호 입력"
+                  name="authNum"
+                />
+                <span className="timer">3:00</span>
 
-              {/* 체크사항 */}
-              {/* <span className="check_fail"></span> */}
+                {/* 체크사항 */}
+                {/* <span className="check_fail"></span> */}
+              </div>
+              <button className="">인증완료</button>
             </div>
           </div>
         </form>
+        <Btn_default/>
+        {/* 버튼 text '확인'으로 변경 필요 */}
       </div>
       {/* contents : e */}
     </div>
