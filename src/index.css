@@ -125,3 +125,12 @@ h1{
   width: 100%;
   height: 100%;
 }
+
+.footer_fixed{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 31px;
+  padding: 0 32px;
+}

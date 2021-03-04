@@ -1,7 +1,7 @@
 import React from "react";
 import "./Find_idpw.css";
 import icon_back from "./img/right-arrow.png";
-import Btn_default from "./components/Btn_default";
+import Btn_navy from "./components/Btn_navy";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
 function Find_idpw() {
@@ -27,11 +27,11 @@ function Find_idpw() {
         {/* 아이디찾기, 비밀번호 찾기 함수로 value값 바꾸기 */}
         <div className="find_idpw_wrap">
           <Link to="/findAuth">
-            <Btn_default />
+            <Btn_navy />
           </Link>
 
           <Link to="/findAuth">
-            <Btn_default />
+            <Btn_navy />
           </Link>
         </div>
       </div>

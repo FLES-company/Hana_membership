@@ -3,7 +3,7 @@ import "./SignUp_complete.css";
 import "./components/Guide_ui.css";
 import icon_complete from "./img/icon_complete.png";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
-import Btn_default from "./components/Btn_default";
+import Btn_navy from "./components/Btn_navy";
 
 function SignUp_complete() {
   return (
@@ -20,7 +20,7 @@ function SignUp_complete() {
       </div>
       <div className="footer_fixed">
         <Link to="/">
-          <Btn_default />
+          <Btn_navy />
         </Link>
       </div>
     </div>

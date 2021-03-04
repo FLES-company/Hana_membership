@@ -3,7 +3,7 @@ import "./SignUp.css";
 import "./components/Guide_ui.css";
 import icon_back from "./img/right-arrow.png";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
-import Btn_default from "./components/Btn_default";
+import Btn_navy from "./components/Btn_navy";
 
 function SignUp() {
   return (
@@ -100,7 +100,7 @@ function SignUp() {
                 </li>
               </ul>
             </div>
-            <Btn_default />
+            <Btn_navy />
           </div>
         </form>
       </div>
