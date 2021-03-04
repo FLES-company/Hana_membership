@@ -80,14 +80,14 @@ function Find_auth() {
                 {/* 체크사항 */}
                 {/* <span className="check_fail"></span> */}
               </div>
-              <button className="">인증완료</button>
+              <button className="on">인증완료</button>
             </div>
           </div>
         </form>
         <div className="footer_fixed">
+          {/* 버튼 text '확인'으로 변경 필요 */}
           <Btn_gray />
         </div>
-        {/* 버튼 text '확인'으로 변경 필요 */}
       </div>
       {/* contents : e */}
     </div>
