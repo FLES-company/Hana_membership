@@ -52,6 +52,7 @@ class Login extends Component {
                 name="email" 
                 type="text" placeholder="이메일" required 
                 onChange={this.onChange} />
+                <span className="check_ok" style={Object.assign({},styles.check_image)}></span>
             </li>
             <li>
               <span>비밀번호</span>
@@ -78,6 +79,11 @@ const styles = {
   check_image: {
   backgroundImage: `url(${check_ok})`,
   backgroundRepeat: 'no-repeat',
+  width:19,
+  height:15,
+  position:'absolute',
+  right:8,
+  top:38,
   
   
   
