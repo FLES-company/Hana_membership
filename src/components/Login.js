@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+
 import "./Login.css";
 import "./Guide_ui.css";
 import icon_back from "../img/right-arrow.png";
@@ -12,26 +13,20 @@ import Social_login_btn_2 from "./Social_login_button_2";
 
 class Login extends Component {
   state = {
-    disabled: true,
+    email: '',
+    psw: '' 
+
   }
   onChange = (e) => {
-      const length = e.target.value.length;
-      if (length >= 4) {
-        this.setState(() => ({ disabled: false }))
-      } else if (!this.state.disabled) {
-        this.setState(() => ({ disabled: true }))
-      }
-      console.log(e)
+    const input_text = this.setState({[e.target.name]: e.target.value})
+    if (input_text != ""){
+      this.setState(() => ({ disabled: false }))
+    } else if (!this.state.disabled) {
+      this.setState(() => ({ disabled: true }))
+    }
+      
     }
 
-    Change = (a) => {
-      const length = a.target.value.length;
-      if (length >= 4) {
-        this.setState(() => ({ disabled: false }))
-      } else if (!this.state.disabled) {
-        this.setState(() => ({ disabled: true }))
-      }
-    }
   render(){
     return (
       <div className="Login">
@@ -53,7 +48,7 @@ class Login extends Component {
             <li>
               <span>이메일</span>
               <input  
-                style={Object.assign({}, styles.input, !this.state.disabled && styles.check_image)}
+                style={Object.assign({}, styles.input, this.state.email && styles.check_image)}
                 name="email" 
                 type="text" placeholder="이메일" required 
                 onChange={this.onChange} />
@@ -61,9 +56,9 @@ class Login extends Component {
             <li>
               <span>비밀번호</span>
               <input 
-                style={Object.assign({}, styles.input, !this.state.disabled && styles.check_image)}
+                style={Object.assign({}, styles.input, this.state.psw && styles.check_image)}
                 name="psw" type="password" placeholder="비밀번호를 입력해주세요." required 
-                Change={this.Change} />
+                onChange={this.onChange} />
             </li>
           </ul>
           <Link to="/find">
@@ -83,8 +78,6 @@ const styles = {
   check_image: {
   backgroundImage: `url(${check_ok})`,
   backgroundRepeat: 'no-repeat',
-  display: 'block',
-  position: 'absolute',
   
   
   

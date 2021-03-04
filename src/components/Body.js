@@ -105,6 +105,7 @@ class Body extends React.Component {
         <h1>월간 상승ㆍ하락 회원권</h1>
         <div>
         <ul>
+        <OwlCarousel  margin={10} autoWidth loop items={2}>
           <li className="month_item">
             <a href="#">
               <p className="item_tit">베이사이드(프리미어)</p>
@@ -157,6 +158,7 @@ class Body extends React.Component {
               <div className="item_graph"></div>
             </a>
           </li>
+          </OwlCarousel>     
         </ul>
         </div>
       </div>
@@ -165,6 +167,7 @@ class Body extends React.Component {
         <h1>추천 상품</h1>
         <div>
         <ul>
+        <OwlCarousel  margin={10} autoWidth loop items={2}>
           <li className="recommend_item">
             <a href="#">
               <p className="item_tit">
@@ -213,6 +216,7 @@ class Body extends React.Component {
               </div>
             </a>
           </li>
+          </OwlCarousel>     
         </ul>
         </div>
       </div>
