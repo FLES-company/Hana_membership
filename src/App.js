@@ -4,6 +4,7 @@ import Home from "./Home";
 import Login from "./components/Login";
 import Login_main from "./Login_main";
 import SignUp from "./SignUp";
+import SignUp_complete from "./SignUp_complete";
 import Find_idpw from "./Find_idpw";
 import Find_auth from "./Find_auth";
 import Find_id_complete from "./Find_id_complete";
@@ -30,6 +31,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/loginMain" component={Login_main} />
         <Route path="/signup" component={SignUp} />
+        <Route path="/signUpComplete" component={SignUp_complete} />
         <Route path="/find" component={Find_idpw} />
         <Route path="/findAuth" component={Find_auth} />
         <Route path="/findidComplete" component={Find_id_complete} />

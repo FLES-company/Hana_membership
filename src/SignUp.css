@@ -22,6 +22,9 @@
 .SignUp .SinUp_inner .SinUp_inner_item > li:first-child {
   border-bottom: solid 1px #ebebeb;
 }
+.SignUp .SinUp_inner .SinUp_inner_item > span {
+  margin: 0 8px;
+}
 .SignUp .SinUp_inner .SinUp_inner_item span {
   display: inline-block;
   margin-bottom: 5px;
@@ -44,6 +47,8 @@
   margin-bottom: 40px;
 }
 .SignUp .SinUp_inner .Policy_inner span {
+  display: flex;
+  flex-direction: column;
   font-size: 15px;
   font-weight: 400;
   color: #555555;
