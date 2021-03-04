@@ -1,5 +1,5 @@
 import React from "react";
-import "./Social_login_button_2.css";
+import "./Btn_social_bg.css";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 import BI_text_g from "../img/BI_text_g.png";
 import icon_naver from "../img/icon_naver.png";
@@ -7,10 +7,10 @@ import icon_kakao from "../img/icon_kakao.png";
 import icon_face from "../img/icon_face.png";
 import icon_email from "../img/icon_email.png";
 
-function Social_login_btn_2() {
+function Btn_social_bg() {
   return (
-    <div className="Social_login_btn_2">
-      <div className="Social_login_btn_2_inner">
+    <div className="Btn_social_bg">
+      <div className="Btn_social_bg_inner">
         <img className="BI_text_g" src={BI_text_g} />
         <h1>소셜 간편 로그인</h1>
 
@@ -45,4 +45,4 @@ function Social_login_btn_2() {
   );
 }
 
-export default Social_login_btn_2;
+export default Btn_social_bg;

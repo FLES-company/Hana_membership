@@ -3,7 +3,7 @@ import "./Login_main.css";
 import icon_close from "./img/times-light-w.png";
 import bg_loginMain from "./img/bg_loginMain.jpg";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
-import Social_login_btn_2 from "./components/Social_login_button_2";
+import Btn_social_bg from "./components/Btn_social_bg";
 
 function Login_main() {
   return (
@@ -25,7 +25,7 @@ function Login_main() {
         <div className="Login_main_inner_text">
           <p>국내외 통합<br/> 회원권 거래소</p>
         </div>
-        <Social_login_btn_2 />
+        <Btn_social_bg />
       </div>
     </div>
   );

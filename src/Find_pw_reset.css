@@ -17,11 +17,6 @@
   padding: 0 16px;
   box-sizing: border-box;
 }
-.find_pw_reset_inner h1 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #333333;
-}
 .find_pw_reset_inner .inner_content_text {
   margin: 30px 0;
   font-size: 15px;
@@ -39,4 +34,12 @@
 }
 .find_pw_reset_inner .input_unit{
   margin: 8px 0;
+}
+.find_pw_reset_inner .Btn_navy{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 31px;
+  padding: 0 32px;
 }

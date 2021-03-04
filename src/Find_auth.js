@@ -3,7 +3,8 @@ import "./Find_auth.css";
 import "./components/Guide_ui.css";
 import icon_back from "./img/right-arrow.png";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
-import Btn_default from "./components/Btn_default";
+import Btn_navy from "./components/Btn_navy";
+import Btn_gray from "./components/Btn_gray";
 
 function Find_auth() {
   return (
@@ -83,7 +84,9 @@ function Find_auth() {
             </div>
           </div>
         </form>
-        <Btn_default/>
+        <div className="footer_fixed">
+          <Btn_gray />
+        </div>
         {/* 버튼 text '확인'으로 변경 필요 */}
       </div>
       {/* contents : e */}
