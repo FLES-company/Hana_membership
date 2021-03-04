@@ -8,11 +8,6 @@
   box-sizing: border-box;
   width: 100%;
 }
-.SignUp .SinUp_inner h1 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #333333;
-}
 .SignUp .SinUp_inner .SinUp_inner_item {
   margin: 20px 0;
 }

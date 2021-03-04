@@ -11,8 +11,8 @@
   margin: 0 auto;
   width: 100%;
 }
-.Social_login_btn_2 .Social_login_btn_2_inner h1{
-  color: #AAAAAA;
+.Social_login_btn_2 .Social_login_btn_2_inner h1 {
+  color: #aaaaaa;
   font-size: 14px;
   font-weight: 300;
 }
@@ -23,8 +23,8 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 42px;
-  line-height: 42px;
+  height: 44px;
+  line-height: 44px;
   box-sizing: border-box;
   border-radius: 8px;
   border: none;
@@ -35,7 +35,6 @@
   display: flex;
   justify-content: center;
   width: 20px;
-
 }
 .Social_login_btn_2 .Social_login_btn_2_inner button span {
   margin-left: 26px;

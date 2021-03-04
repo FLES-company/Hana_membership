@@ -113,6 +113,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+h1{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: -1.1px;
+  color: #333333;
+}
 
 #root {
   width: 100%;

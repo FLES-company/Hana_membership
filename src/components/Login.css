@@ -7,9 +7,6 @@
 .Login .back_header {
   margin-bottom: 27px;
 }
-.Login .Btn_default {
-  margin: 12px 0;
-}
 .Login .Btn_default input.gray {
   border: none;
 }
@@ -30,12 +27,7 @@
   font-weight: 500;
   color: #aaaaaa;
 }
-.Login form input {
-  padding: 0 12px;
-  position: relative;
-  width: 100%;
-  border: 1px solid #ebebeb;
-}
+
 .Login form li.check_ok::after {
   content: "";
   display: inline-block;

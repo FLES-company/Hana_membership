@@ -18,11 +18,7 @@
   box-sizing: border-box;
   width: 100%;
 }
-.find_auth .find_auth_inner h1 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #333333;
-}
+
 /* find_auth_inner > form */
 .find_auth .find_auth_inner span {
   display: inline-block;
