@@ -1,4 +1,4 @@
-.Social_login_btn_2 {
+.Btn_social_bg {
   width: 100%;
   position: fixed;
   bottom: 60px;
@@ -7,16 +7,16 @@
   box-sizing: border-box;
 }
 
-.Social_login_btn_2 .Social_login_btn_2_inner {
+.Btn_social_bg .Btn_social_bg_inner {
   margin: 0 auto;
   width: 100%;
 }
-.Social_login_btn_2 .Social_login_btn_2_inner h1 {
+.Btn_social_bg .Btn_social_bg_inner h1 {
   color: #aaaaaa;
   font-size: 14px;
   font-weight: 300;
 }
-.Social_login_btn_2 .Social_login_btn_2_inner .btn_item {
+.Btn_social_bg .Btn_social_bg_inner .btn_item {
   margin: 5px 0;
   padding: 0 20px;
   display: flex;
@@ -30,24 +30,24 @@
   border: none;
   color: #ffffff;
 }
-.Social_login_btn_2 .Social_login_btn_2_inner button .iconImg {
+.Btn_social_bg .Btn_social_bg_inner button .iconImg {
   margin-left: 5px;
   display: flex;
   justify-content: center;
   width: 20px;
 }
-.Social_login_btn_2 .Social_login_btn_2_inner button span {
+.Btn_social_bg .Btn_social_bg_inner button span {
   margin-left: 26px;
 }
-.Social_login_btn_2 .Social_login_btn_2_inner .icon_naver {
+.Btn_social_bg .Btn_social_bg_inner .icon_naver {
   background-color: #00bf19;
 }
-.Social_login_btn_2 .Social_login_btn_2_inner .icon_kakao {
+.Btn_social_bg .Btn_social_bg_inner .icon_kakao {
   background-color: #fce000;
 }
-.Social_login_btn_2 .Social_login_btn_2_inner .icon_face {
+.Btn_social_bg .Btn_social_bg_inner .icon_face {
   background-color: #4267b2;
 }
-.Social_login_btn_2 .Social_login_btn_2_inner .icon_email {
+.Btn_social_bg .Btn_social_bg_inner .icon_email {
   background-color: #333333;
 }

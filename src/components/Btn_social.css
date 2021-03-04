@@ -1,4 +1,4 @@
-.Social_login_btn {
+.Btn_social {
   width: 100%;
   position: fixed;
   bottom: 60px;
@@ -6,13 +6,13 @@
   padding: 0 23px;
   box-sizing: border-box;
 }
-.Social_login_btn h1 {
+.Btn_social h1 {
   color: #aaaaaa;
   font-size: 14px;
   font-weight: 300;
 }
 
-.Social_login_btn .Social_login_btn_inner {
+.Btn_social .Btn_social_inner {
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -21,7 +21,7 @@
   align-items: center;
 }
 
-.Social_login_btn .Social_login_btn_inner button {
+.Btn_social .Btn_social_inner button {
   margin: 5px 0;
   display: flex;
   align-items: center;
@@ -33,12 +33,12 @@
   border: 1px solid #ebebeb;
   color: #777777;
 }
-.Social_login_btn .Social_login_btn_inner button .iconImg {
+.Btn_social .Btn_social_inner button .iconImg {
   margin-left: 26px;
   display: flex;
   justify-content: center;
   width: 20px;
 }
-.Social_login_btn .Social_login_btn_inner button span {
+.Btn_social .Btn_social_inner button span {
   margin-left: 26px;
 }

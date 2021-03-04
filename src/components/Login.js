@@ -8,8 +8,8 @@ import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
 import Btn_navy from "./Btn_navy";
 import Btn_gray from "./Btn_gray";
-import Social_login_btn from "./Social_login_button";
-import Social_login_btn_2 from "./Social_login_button_2";
+import Btn_social from "./Btn_social";
+import Btn_social_bg from "./Btn_social_bg";
 
 class Login extends Component {
   state = {
@@ -68,7 +68,7 @@ class Login extends Component {
 
           <Btn_navy />
           <Btn_gray />
-          <Social_login_btn />
+          <Btn_social />
           </form>
         
       </div>
