@@ -238,25 +238,25 @@ form .input_unit {
   display: flex;
   align-items: center;
 }
-form .input_unit .check_ok {
-  display: block;
-  position: absolute;
-  right: 20px;
-  width: 19px;
-  height: 15px;
-  background-image: url(../img/icon_confirm.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+form .input_unit.check_ok::after{
+    content: "";
+    position: absolute;
+    right: 20px;
+    width: 19px;
+    height: 15px;
+    background-image: url(../img/icon_confirm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-form .input_unit .check_fail {
-  display: block;
-  position: absolute;
-  right: 20px;
-  width: 15px;
-  height: 15px;
-  background-image: url(../img/icon_fail.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+form .input_unit.check_fail::after{
+    content: "";
+    position: absolute;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icon_fail.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 form input:disabled {
