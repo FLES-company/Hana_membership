@@ -20,6 +20,7 @@
   clear: both;
 }
 .Login form li {
+  position: relative;
   margin-bottom: 15px;
 }
 .Login form span {
