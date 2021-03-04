@@ -23,44 +23,64 @@
   font-weight: 600;
   color: #333333;
 }
-
+/* find_auth_inner > form */
 .find_auth .find_auth_inner span {
   display: inline-block;
   margin-bottom: 5px;
+  padding: 0 8px;
   font-size: 13px;
   font-weight: 600;
   color: #aaaaaa;
 }
-
-/* 인증번호 발송,완료 수정 */
-
-.find_auth .find_auth_inner .input_number .input_number_item {
-  margin: 10px 0;
+.find_auth .find_auth_inner .input_email,
+.find_auth .find_auth_inner .input_name,
+.find_auth .find_auth_inner .input_number {
+  margin: 17px 0;
 }
-.find_auth .find_auth_inner .input_number .input_number_item input {
-  width: 75%;
+.find_auth .find_auth_inner .input_number .input_wrap {
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.find_auth .find_auth_inner .input_number .input_number_item button {
+.find_auth .find_auth_inner .input_number .input_wrap .input_unit {
+  width: calc(100% - 96px);
+}
+.find_auth .find_auth_inner .input_number input {
+  width: calc(100% - 4px);
+}
+.find_auth .find_auth_inner .input_number button {
+  margin-left: 4px;
   padding: 0 5px;
   display: inline-block;
-  width: 25%;
-  height: 40px;
-  line-height: 40px;
-  background-color: #333333;
+  width: 96px;
+  height: 48px;
+  line-height: 48px;
+  background-color: #f5f5f5;
   border: none;
+  color: #cccccc;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 8px;
+}
+.find_auth .find_auth_inner .input_number button.on {
+  background-color: #0b234a;
   color: #ffffff;
-  font-size: 10px;
+}
+.find_auth .find_auth_inner .input_number .timer {
+  padding: 0;
+  position: absolute;
+  right: 17px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b234a;
 }
 
-.find_auth .find_auth_inner .find_auth_item .input_number_item .timer {
-  margin-left: -30px;
-  margin-right: 10px;
-  color: #3482e8;
-}
-.find_auth .find_auth_inner .find_auth_item .input_number_item .auth_fail {
-  display: inline-block;
-  margin-top: 3px;
-  color: #ff5656;
-  font-weight: 600;
+.find_auth .find_auth_inner .Btn_default {
+  position: fixed;
+  bottom: 31px;
+  width: 100%;
+  left: 0;
+  padding: 0 32px;
+  box-sizing: border-box;
 }
