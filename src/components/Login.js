@@ -45,16 +45,16 @@ class Login extends Component {
 
         <form>
           <ul>
-            <li>
+            <li className="check_ok">
               <span>이메일</span>
               <input  
                 style={Object.assign({}, styles.input, this.state.email && styles.check_image)}
                 name="email" 
                 type="text" placeholder="이메일" required 
                 onChange={this.onChange} />
-                <span className="check_ok" style={Object.assign({},styles.check_image)}></span>
+                {/* <span className="check_ok" style={Object.assign({},styles.check_image)}></span> */}
             </li>
-            <li>
+            <li className="check_error">
               <span>비밀번호</span>
               <input 
                 style={Object.assign({}, styles.input, this.state.psw && styles.check_image)}

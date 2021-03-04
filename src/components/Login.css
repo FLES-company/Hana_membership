@@ -10,7 +10,7 @@
 .Login .Btn_default {
   margin: 12px 0;
 }
-.Login .Btn_default input.gray{
+.Login .Btn_default input.gray {
   border: none;
 }
 /* form */
@@ -32,8 +32,33 @@
 }
 .Login form input {
   padding: 0 12px;
-  width: -webkit-fill-available;
+  position: relative;
+  width: 100%;
   border: 1px solid #ebebeb;
+}
+.Login form li.check_ok::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icon_confirm.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 19px;
+  height: 15px;
+  position: absolute;
+  right: 14px;
+  top: 39px;
+}
+.Login form li.check_error::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/icon_fail.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 14px;
+  top: 39px;
 }
 .Login form input::placeholder {
   font-size: 14px;
