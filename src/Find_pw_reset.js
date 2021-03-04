@@ -5,6 +5,7 @@ import icon_back from "./img/right-arrow.png";
 import icon_home from "./img/icon_home.png";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 import Btn_navy from "./components/Btn_navy";
+import Btn_gray from "./components/Btn_gray";
 
 
 function Find_pw_reset() {
@@ -58,7 +59,10 @@ function Find_pw_reset() {
             </div>
           </form>
         </div>
-        <Btn_navy />
+        <div className="footer_fixed">
+          {/* 버튼 text '확인'으로 변경 필요 */}
+          <Btn_gray />
+        </div>
 
       </div>
       {/* contents : e */}
