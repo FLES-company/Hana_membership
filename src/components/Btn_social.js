@@ -1,15 +1,15 @@
 import React from "react";
-import "./Social_login_button.css";
+import "./Btn_social.css";
 
 import icon_social_f from "../img/icon_social_f.png";
 import icon_social_k from "../img/icon_social_k.png";
 import icon_social_n from "../img/icon_social_n.png";
 
-function Social_login_btn() {
+function Btn_social() {
   return (
-    <div className="Social_login_btn">
+    <div className="Btn_social">
       <h1>소셜 간편 로그인</h1>
-      <div className="Social_login_btn_inner">
+      <div className="Btn_social_inner">
         <button>
           <div className="iconImg"><img src={icon_social_n} /></div>
           <span>네이버로 로그인</span>
@@ -27,4 +27,4 @@ function Social_login_btn() {
   );
 }
 
-export default Social_login_btn;
+export default Btn_social;

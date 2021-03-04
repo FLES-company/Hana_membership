@@ -4,7 +4,7 @@ import "./components/Guide_ui.css";
 import icon_back from "./img/right-arrow.png";
 import icon_home from "./img/icon_home.png";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
-import Btn_default from "./components/Btn_default";
+import Btn_navy from "./components/Btn_navy";
 
 
 function Find_pw_reset() {
@@ -58,7 +58,7 @@ function Find_pw_reset() {
             </div>
           </form>
         </div>
-        <Btn_default />
+        <Btn_navy />
 
       </div>
       {/* contents : e */}

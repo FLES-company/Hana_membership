@@ -16,11 +16,7 @@
   width: 100%;
   margin-top: 30%;
 }
-.find_idpw .find_idpw_inner h1 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #333333;
-}
+
 .find_idpw .find_idpw_inner h3 {
   font-size: 14px;
   font-weight: 400;
@@ -29,9 +25,9 @@
 .find_idpw .find_idpw_inner .find_idpw_wrap {
   margin-top: 44px;
 }
-.Btn_default {
+.Btn_navy {
   margin: 12px 0;
 }
-.find_idpw .find_idpw_inner .Btn_default input {
+.find_idpw .find_idpw_inner .Btn_navy input {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }

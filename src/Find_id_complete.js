@@ -3,8 +3,8 @@ import "./Find_id_complete.css";
 import icon_back from "./img/right-arrow.png";
 import icon_home from "./img/icon_home.png";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
-import Btn_default from "./components/Btn_default";
-import Signup_btn from "./components/SignUp_button";
+import Btn_navy from "./components/Btn_navy";
+import Btn_gray from "./components/Btn_gray";
 
 function Find_id_complete() {
   return (
@@ -32,8 +32,8 @@ function Find_id_complete() {
           <span className="user_email">dfd11**@naver.com</span>
         </div>
         <div className="inner_content_btns">
-          <Btn_default className="loginBtn" value="로그인하러 가기" />
-          <Btn_default className="passwordBtn" value="비밀번호 찾기" />
+          <Btn_navy />
+          <Btn_gray />
         </div>
       </div>
       {/* contents : e */}

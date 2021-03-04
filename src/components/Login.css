@@ -7,10 +7,7 @@
 .Login .back_header {
   margin-bottom: 27px;
 }
-.Login .Btn_default {
-  margin: 12px 0;
-}
-.Login .Btn_default input.gray {
+.Login .Btn_navy input.gray {
   border: none;
 }
 /* form */
@@ -30,12 +27,7 @@
   font-weight: 500;
   color: #aaaaaa;
 }
-.Login form input {
-  padding: 0 12px;
-  position: relative;
-  width: 100%;
-  border: 1px solid #ebebeb;
-}
+
 .Login form li.check_ok::after {
   content: "";
   display: inline-block;
@@ -74,6 +66,6 @@
   font-size: 14px;
   color: #777777;
 }
-.Login .Social_login_btn_2 .Social_login_btn_2_inner > img {
+.Login .Btn_social_bg .Btn_social_bg_inner > img {
   display: none;
 }

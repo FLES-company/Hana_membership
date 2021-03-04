@@ -1,0 +1,26 @@
+.SignUp_complete {
+  margin-top: -48px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+.SignUp_complete_inner {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.SignUp_complete_inner .icon_img {
+  margin-bottom: 50px;
+}
+.SignUp_complete_inner h2 {
+  margin: 19px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.63;
+  letter-spacing: -0.8px;
+  color: #777777;
+}
+

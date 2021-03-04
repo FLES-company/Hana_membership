@@ -73,7 +73,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont,"Noto Sans KR", "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -117,4 +117,90 @@ code {
 #root {
   width: 100%;
   height: 100%;
+}
+
+/* 페이지 주 제목 */
+h1{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: -1.1px;
+  color: #333333;
+}
+
+/* ----------------------COLOR------------------------------*/
+
+/* navy */
+.colorN{
+  color: #0b234a !important;
+}
+/* gray */
+.colorGf0{
+  color: #f0f0f0 !important;
+}
+.colorGf5{
+  color: #f5f5f5 !important;
+}
+.colorGdb{
+  color: #dbdbdb !important;
+}
+.colorG2{
+  color: #222222 !important;
+}
+.colorG3{
+  color: #333333 !important;
+}
+.colorG5{
+  color: #555555 !important;
+}
+.colorG7{
+  color: #777777 !important;
+}
+.colorGa{
+  color: #aaaaaa !important;
+}
+.colorGc{
+  color: #cccccc !important;
+}
+/* blue */
+.colorB{
+  color: #0039D1 !important;
+}
+/* blue - medium */
+.colorBM{
+  color: #1752f0 !important;
+}
+/* blue - light */
+.colorBL{
+  color: #c3dcff !important;
+}
+/* red */
+.colorR{
+  color: #bc001d !important;
+}
+/* red - bold*/
+.colorRB{
+  color: #ff1414 !important;
+}
+/* red - medium */
+.colorRM{
+  color: #ffc7d0 !important;
+}
+/* red - light */
+.colorRL{
+  color: #fff2f2 !important;
+}
+
+/* ----------------------// COLOR----------------------------*/
+
+
+/* 하단 FIXED 클래스 지정 */
+
+.footer_fixed{
+  position: fixed;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 31px;
+  padding: 0 32px;
 }

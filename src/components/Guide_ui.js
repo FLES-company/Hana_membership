@@ -1,30 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Guide_ui.css";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import Btn_default from "./Btn_default";
-import Signup_btn from "./SignUp_button";
-import Social_login_btn from "./Social_login_button";
-import Social_login_btn_2 from "./Social_login_button_2";
-
-const open = document.getElementById('open');
-const close = document.getElementById('close');
-const modal = document.querySelector('.modal-wrapper');
-
-// open.onclick = ()
-
-// function Counter(){
-//   const [ number, setNumber ] = useState(0);
-//   const onInc = () => {
-//     setNumber(number + 1);
-//   };
-//   const onDec = () => {
-//     setNumber(number - 1);
-//   };
-// };
-
-function accordion() {
-  console.log("hi");
-}
+import Btn_navy from "./Btn_navy";
+import Btn_gray from "./Btn_gray";
+import Btn_social from "./Btn_social";
+import Btn_social_bg from "./Btn_social_bg";
 
 function Guide_ui() {
   return (
@@ -64,42 +44,42 @@ function Guide_ui() {
           <div className="article" id="button">
             <h2 className="guide_h2">button 샘플</h2>
             <h3 className="guide_h3">- BUTTON</h3>
-            <div className="Btn_default">
+            <div className="Btn_navy">
               <input
                 className="gray"
                 type="submit"
-                value="Btn_default_rouund"
+                value="Btn_navy_rouund"
               />
             </div>
-            <div className="Btn_default">
+            <div className="Btn_navy">
               <input
                 className="navy"
                 type="submit"
-                value="Btn_default_rouund"
+                value="Btn_navy_rouund"
               />
             </div>
-            <div className="Btn_default">
+            <div className="Btn_navy">
               <input
                 className="border"
                 type="submit"
-                value="Btn_default_border"
+                value="Btn_navy_border"
               />
             </div>
-            <div className="Btn_default">
+            <div className="Btn_navy">
               <input
                 className="gradient blue"
                 type="submit"
-                value="Btn_default_gradient"
+                value="Btn_navy_gradient"
               />
             </div>
-            <div className="Btn_default">
+            <div className="Btn_navy">
               <input
                 className="gradient red"
                 type="submit"
-                value="Btn_default_gradient"
+                value="Btn_navy_gradient"
               />
             </div>
-            <div className="Btn_default opacity">
+            <div className="Btn_navy opacity">
               <input className="w80 blue" type="submit" value="Btn_w80" />
               <input className="w80 gray" type="submit" value="Btn_w80" />
               <input className="w80 red" type="submit" value="Btn_w80" />
@@ -274,7 +254,7 @@ function Guide_ui() {
             <h3 className="guide_h3">- Accordion Menu</h3>
             <div className="accordion_inner">
               <ul className="accordion-list qna">
-                <li className="on" onClick={accordion}>
+                <li className="on" >
                   <div className="header-area">
                     <div className="tagImg notice"></div>
                     <div className="tit">

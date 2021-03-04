@@ -1,14 +1,14 @@
-/* .Btn_default {
+.Btn_gray {
   margin: 10px 0;
   width: 100%;
 }
-.Btn_default input {
+.Btn_gray input {
   font-size: 15px;
   width: 100%;
   height: 50px;
   line-height: 50px;
-  background-color: #0B234A;
-  color: #ffffff;
+  background-color: #F5F5F5;
+  color: #333333;
   border-radius: 20px !important;
-
-} */
+  border: none !important;
+}

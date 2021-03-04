@@ -6,10 +6,10 @@ import icon_back from "../img/right-arrow.png";
 import check_ok from "../img/icon_confirm.png";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
-import Btn_default from "./Btn_default";
-import Signup_btn from "./SignUp_button";
-import Social_login_btn from "./Social_login_button";
-import Social_login_btn_2 from "./Social_login_button_2";
+import Btn_navy from "./Btn_navy";
+import Btn_gray from "./Btn_gray";
+import Btn_social from "./Btn_social";
+import Btn_social_bg from "./Btn_social_bg";
 
 class Login extends Component {
   
@@ -68,9 +68,9 @@ class Login extends Component {
             <button className="findBtn">아이디 / 비밀번호 찾기</button>
           </Link>
 
-          <Btn_default />
-          <Signup_btn />
-          <Social_login_btn />
+          <Btn_navy />
+          <Btn_gray />
+          <Btn_social />
           </form>
         
       </div>
