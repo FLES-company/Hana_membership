@@ -17,7 +17,7 @@ function Btn_default() {
 
   return (
     <div className="Btn_default">
-      <input className="navy" type="submit" value="로그인" />
+      <input className="navy" type="submit" value="로그인"/>
     </div>
     
   );

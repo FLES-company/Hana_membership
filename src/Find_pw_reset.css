@@ -1,6 +1,9 @@
 .find_pw_reset {
   width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
+/* back_header_inner */
 .find_pw_reset .back_header_inner {
   position: relative;
 }
@@ -9,26 +12,31 @@
   position: absolute;
   right: 0;
 }
-
-.find_pw_reset_inner .inner_content_text {
-  margin: 30px 0;
-  text-align: center;
-  line-height: 2;
-}
-
-.find_pw_reset_inner .inner_content_input input {
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  border-bottom: 2px solid #d5d5d5;
+/* find_id_complete_inner */
+.find_pw_reset_inner {
+  padding: 0 16px;
   box-sizing: border-box;
 }
-
-.find_pw_reset_inner button {
-  margin-top: 30px;
-  border: none;
-  height: 50px;
-  line-height: 50px;
-  background-color: #404040;
-  color: #ffffff;
+.find_pw_reset_inner h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333333;
+}
+.find_pw_reset_inner .inner_content_text {
+  margin: 30px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.75px;
+  color: #777777;
+}
+.find_pw_reset_inner .input_password span {
+  margin: 3px 8px;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #aaaaaa;
+}
+.find_pw_reset_inner .input_unit{
+  margin: 8px 0;
 }

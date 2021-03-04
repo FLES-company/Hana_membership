@@ -32,14 +32,8 @@ function Find_id_complete() {
           <span className="user_email">dfd11**@naver.com</span>
         </div>
         <div className="inner_content_btns">
-          <button type="button" className="passwordBtn">
-            비밀번호 찾기
-          </button>
-          <button type="button" className="loginBtn">
-            로그인
-          </button>
-          <Btn_default />
-          <Btn_default />
+          <Btn_default className="loginBtn" value="로그인하러 가기" />
+          <Btn_default className="passwordBtn" value="비밀번호 찾기" />
         </div>
       </div>
       {/* contents : e */}

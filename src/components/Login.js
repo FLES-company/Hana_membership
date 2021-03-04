@@ -76,18 +76,7 @@ class Login extends Component {
   }
 }
 const styles = {
-  check_image: {
-  backgroundImage: `url(${check_ok})`,
-  backgroundRepeat: 'no-repeat',
-  width:19,
-  height:15,
-  position:'absolute',
-  right:8,
-  top:38,
-  
-  
-  
-}
+ 
 }
 
 export default Login;

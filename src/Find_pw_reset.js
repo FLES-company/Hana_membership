@@ -1,8 +1,11 @@
 import React from "react";
 import "./Find_pw_reset.css";
+import "./components/Guide_ui.css";
 import icon_back from "./img/right-arrow.png";
 import icon_home from "./img/icon_home.png";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
+import Btn_default from "./components/Btn_default";
+
 
 function Find_pw_reset() {
   return (
@@ -15,16 +18,13 @@ function Find_pw_reset() {
               <img src={icon_back} Link to="/login" />
             </div>
           </a>
-          <h1>비밀번호 재설정</h1>
-          <a href="/" className="header_icon_item icon_home">
-            <img src={icon_home} Link to="/" />
-          </a>
         </div>
       </div>
       {/* back_header : e */}
 
       {/* contents : s */}
       <div className="find_pw_reset_inner">
+        <h1>비밀번호 재설정</h1>
         <div className="inner_content_text">
           안녕하세요, <span className="user_name">홍길동</span>님!
           <br />
@@ -33,11 +33,33 @@ function Find_pw_reset() {
           비밀번호를 잊어버리지 않게 주의하세요!
         </div>
         <div className="inner_content_input">
-          <span>새 비밀번호</span>
-          <input type="text" placeholder="비밀번호" />
-          <input type="text" placeholder="비밀번호 재입력" />
+          <form action="">
+            {/* input_password */}
+            <div className="input_password">
+              <span>새 비밀번호</span>
+              <div className="input_unit check_ok">
+                <input
+                  type="password"
+                  minlength={5}
+                  placeholder="비밀번호를 입력해주세요."
+                  name="password"
+                  required
+                />
+              </div>
+              <div className="input_unit check_fail">
+                <input
+                  type="password"
+                  minlength={5}
+                  placeholder="비밀번호를 다시 한번 입력해주세요."
+                  name="password-repeat"
+                  required
+                />
+              </div>
+            </div>
+          </form>
         </div>
-        <button type="button">비밀번호 변경 후 로그인</button>
+        <Btn_default />
+
       </div>
       {/* contents : e */}
     </div>
