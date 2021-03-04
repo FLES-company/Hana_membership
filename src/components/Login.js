@@ -12,17 +12,19 @@ import Social_login_btn from "./Social_login_button";
 import Social_login_btn_2 from "./Social_login_button_2";
 
 class Login extends Component {
+  
   state = {
-    email: '',
-    psw: '' 
-
+    email : '',
+    psw: '',
   }
+
+  
   onChange = (e) => {
     const input_text = this.setState({[e.target.name]: e.target.value})
     if (input_text != ""){
-      this.setState(() => ({ disabled: false }))
+      this.setState(() => ({ 'className':"check_ok"}))
     } else if (!this.state.disabled) {
-      this.setState(() => ({ disabled: true }))
+      this.setState(() => ({ 'className':"check_error" }))
     }
       
     }
@@ -45,7 +47,7 @@ class Login extends Component {
 
         <form>
           <ul>
-            <li className="check_ok">
+            <li className={this.state.className}>
               <span>이메일</span>
               <input  
                 style={Object.assign({}, styles.input, this.state.email && styles.check_image)}
@@ -54,7 +56,7 @@ class Login extends Component {
                 onChange={this.onChange} />
                 {/* <span className="check_ok" style={Object.assign({},styles.check_image)}></span> */}
             </li>
-            <li className="check_error">
+            <li className={this.state.className}>
               <span>비밀번호</span>
               <input 
                 style={Object.assign({}, styles.input, this.state.psw && styles.check_image)}
