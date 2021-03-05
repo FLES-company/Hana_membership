@@ -10,7 +10,10 @@ import Find_auth from "./Find_auth";
 import Find_id_complete from "./Find_id_complete";
 import Find_pw_reset from "./Find_pw_reset";
 import Splash from "./Splash";
+import Interest from "./Interest";
 import Order from "./Order";
+import History from "./History";
+import Mypage from "./Mypage";
 import Tab1 from "./Tab1";
 import Tab2 from "./Tab2";
 import Tab3 from "./Tab3";
@@ -37,7 +40,10 @@ function App() {
         <Route path="/findAuth" component={Find_auth} />
         <Route path="/findidComplete" component={Find_id_complete} />
         <Route path="/findpwReset" component={Find_pw_reset} />
+        <Route path="/interest" component={Interest} />
         <Route path="/order" component={Order} />
+        <Route path="/history" component={History} />
+        <Route path="/Mypage" component={Mypage} />
 
         {/* Tab1 : 호가 */}
         <Route path="/tab1" component={Tab1} />

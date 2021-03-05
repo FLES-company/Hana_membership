@@ -48,7 +48,7 @@ function ClickHandler(){
               {/* back_header : e */}
               <div className="Order_inner">
                 <ul>
-                  <li className="Order_tab" onClick={ClickHandler(0)}>
+                  <li className="Order_tab on" onClick={ClickHandler(0)}>
                     <a href="/tab1">호가</a>
                   </li>
                   <li className="Order_tab" onClick={ClickHandler(1)}>
