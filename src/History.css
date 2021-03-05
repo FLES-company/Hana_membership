@@ -1,0 +1,16 @@
+.History {
+  padding: 0 32px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.History .back_header {
+  padding: 0 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.History .back_header .back_header_inner {
+  justify-content: center;
+}
+.History .back_header .back_header_inner .header_icon_item {
+  display: none;
+}
