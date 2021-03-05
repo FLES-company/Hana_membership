@@ -33,7 +33,7 @@ function Find_id_complete() {
         </div>
         <div className="inner_content_btns">
           <Btn_navy />
-          <Btn_gray />
+          <Btn_gray border />
         </div>
       </div>
       {/* contents : e */}
