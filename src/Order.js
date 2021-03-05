@@ -55,13 +55,13 @@ function ClickHandler(){
                     <a href="/tab2">차트</a>
                   </li>
                   <li className="Order_tab" onClick={ClickHandler(2)}>
-                    <a href="#tab3">정보</a>
+                    <a href="/tab3">정보</a>
                   </li>
                   <li className="Order_tab" onClick={ClickHandler(3)}>
-                    <a href="#tab4">매도</a>
+                    <a href="/tab4">매도</a>
                   </li>
                   <li className="Order_tab" onClick={ClickHandler(4)}>
-                    <a href="#tab5">매수</a>
+                    <a href="/tab5">매수</a>
                   </li>
                 </ul>
               </div>
