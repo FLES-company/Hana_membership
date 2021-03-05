@@ -16,13 +16,15 @@ function Find_idpw() {
 
         {/* 아이디찾기, 비밀번호 찾기 함수로 value값 바꾸기 */}
         <div className="find_idpw_wrap">
-          {/* <Link to="/findAuth"> */}
-          <Btn_navy />
-          {/* </Link> */}
-
+          
           <Link to="/findAuth">
-            <Btn_navy />
+            <Btn_navy link to = "/findAuth"/>
           </Link>
+
+          <Link to="/findpwReset">
+            <Btn_navy link to = "/findpwReset"/>
+          </Link>
+
         </div>
       </div>
       {/* contents : e */}

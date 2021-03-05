@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component, useState, useEffect, useHistory } from "react";
 
 import "./Login.css";
 import "./Guide_ui.css";
@@ -28,6 +28,7 @@ class Login extends Component {
     }
       
     }
+     
 
   render(){
     return (
@@ -64,11 +65,15 @@ class Login extends Component {
                 onChange={this.onChange} />
             </li>
           </ul>
+
           <Link to="/find">
             <button className="findBtn">아이디 / 비밀번호 찾기</button>
           </Link>
 
-          <Btn_navy />
+          <Link to="/findidComplete">
+            <Btn_navy Link to="/findidComplete"/>
+          </Link>  
+
           <Btn_gray />
           <Btn_social />
           </form>
