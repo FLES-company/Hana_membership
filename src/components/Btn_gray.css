@@ -12,3 +12,8 @@
   border-radius: 20px !important;
   border: none !important;
 }
+.Btn_gray input.border{
+  color: #0b234a;
+  border: solid 1px #0b234a !important;
+  background-color: #ffffff;
+}
