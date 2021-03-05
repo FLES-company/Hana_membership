@@ -3,15 +3,6 @@
   padding: 0 16px;
   box-sizing: border-box;
 }
-/* back_header_inner */
-.find_pw_reset .back_header_inner {
-  position: relative;
-}
-
-.find_pw_reset .back_header_inner .icon_home {
-  position: absolute;
-  right: 0;
-}
 /* find_id_complete_inner */
 .find_pw_reset_inner {
   padding: 0 16px;

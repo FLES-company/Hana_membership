@@ -4,12 +4,6 @@
   display: block !important;
   width: 100%;
 }
-.back_header .back_header_inner {
-  display: flex;
-  height: 48px;
-  align-items: center;
-}
-
 .find_idpw .find_idpw_inner {
   padding: 0 16px;
   box-sizing: border-box;
