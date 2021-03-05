@@ -5,6 +5,9 @@
   width: 100%;
   display: flex;
 }
+.Tab1_contents.top {
+  position: relative;
+}
 
 .Tab1_contents.top .sell_items,
 .Tab1_contents.btm .buy_items {
@@ -113,6 +116,16 @@
   text-align: left;
 }
 
+.Tab1_contents.top .side_item {
+  position: relative;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+}
+.Tab1_contents.top .side_item > div {
+}
 .Tab1_contents.top .side_item .side_standard {
   padding: 8px;
   border-bottom: 1px solid #ebebeb;

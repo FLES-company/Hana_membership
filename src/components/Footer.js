@@ -21,10 +21,12 @@ function Footer() {
       <div className="footer_inner">
         <ul>
           <li className="footer_inner_item on">
-            <a href="#">
-              <img src={icon_f_on_1} Link to="/" />
-              <span>관심</span>
-            </a>
+            <Link to="/interest">
+              <a href="#">
+                <img src={icon_f_on_1} Link to="/" />
+                <span>관심</span>
+              </a>
+            </Link>
           </li>
           <li className="footer_inner_item">
             <a href="#">
@@ -49,16 +51,20 @@ function Footer() {
             </Link>
           </li>
           <li className="footer_inner_item">
-            <a href="#">
-              <img src={icon_f_off_5} Link to="/" />
-              <span>내역</span>
-            </a>
+            <Link to="/history">
+              <a href="#">
+                <img src={icon_f_off_5} Link to="/" />
+                <span>내역</span>
+              </a>
+            </Link>
           </li>
           <li className="footer_inner_item">
-            <a href="#">
-              <img src={icon_f_off_6} Link to="/" />
-              <span>정보</span>
-            </a>
+            <Link to="/mypage">
+              <a href="#">
+                <img src={icon_f_off_6} Link to="/" />
+                <span>정보</span>
+              </a>
+            </Link>
           </li>
         </ul>
       </div>
