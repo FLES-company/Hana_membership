@@ -1,26 +1,14 @@
 import React from "react";
 import "./Find_id_complete.css";
-import icon_back from "./img/right-arrow.png";
-import icon_home from "./img/icon_home.png";
-import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 import Btn_navy from "./components/Btn_navy";
 import Btn_gray from "./components/Btn_gray";
+import Btn_default from "./components/Btn_default";
+import Header_back from "./components/Header_back";
 
 function Find_id_complete() {
   return (
     <div className="find_id_complete">
-      {/* back_header : s */}
-      <div className="back_header">
-        <div className="back_header_inner">
-          <a href="/login" className="header_icon_item icon_back">
-            <div className="icon_img">
-              <img src={icon_back} Link to="/login" />
-            </div>
-          </a>
-        </div>
-      </div>
-      {/* back_header : e */}
-
+      <Header_back />
       {/* contents : s */}
       <div className="find_id_complete_inner">
         <h1>아이디 찾기 완료</h1>
@@ -34,6 +22,8 @@ function Find_id_complete() {
         <div className="inner_content_btns">
           <Btn_navy />
           <Btn_gray border />
+          <Btn_default blue />
+          <Btn_default red />
         </div>
       </div>
       {/* contents : e */}

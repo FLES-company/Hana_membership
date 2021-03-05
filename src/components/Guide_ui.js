@@ -110,7 +110,6 @@ function Guide_ui() {
                   <div className="input_unit">
                     <input
                       type="password"
-                      minlength={5}
                       placeholder="비밀번호를 입력해주세요."
                       name="password"
                     />

@@ -1,28 +1,15 @@
 import React from "react";
 import "./SignUp.css";
 import "./components/Guide_ui.css";
-import icon_back from "./img/right-arrow.png";
-import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
+import Header_back from "./components/Header_back";
 import Btn_navy from "./components/Btn_navy";
 
 function SignUp() {
   return (
     <div className="SignUp">
-      {/* back_header : s */}
-      <div className="back_header">
-        <div className="back_header_inner">
-          <a href="/login" className="header_icon_item icon_back">
-            <div className="icon_img">
-              <img src={icon_back} Link to="/login" />
-            </div>
-          </a>
-        </div>
-      </div>
-      {/* back_header : e */}
-
+      <Header_back />
       <div className="SinUp_inner">
         <h1>회원가입</h1>
-
         <form>
           {/* input_email */}
           <div className="SinUp_inner_item input_email">

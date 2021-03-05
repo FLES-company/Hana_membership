@@ -3,16 +3,6 @@
   box-sizing: border-box;
   width: 100%;
 }
-.find_auth .back_header_inner {
-  position: relative;
-  width: 100%;
-}
-.find_auth .back_header_inner button {
-  width: auto;
-  border: none;
-  position: absolute;
-  right: 0;
-}
 .find_auth .find_auth_inner {
   padding: 0 16px;
   box-sizing: border-box;
