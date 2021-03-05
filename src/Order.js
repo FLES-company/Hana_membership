@@ -48,20 +48,20 @@ function ClickHandler(){
               {/* back_header : e */}
               <div className="Order_inner">
                 <ul>
-                  <li className="Order_tab" onClick={ClickHandler(0)}>
+                  <li className="Order_tab on" onClick={ClickHandler(0)}>
                     <a href="/tab1">호가</a>
                   </li>
                   <li className="Order_tab" onClick={ClickHandler(1)}>
                     <a href="/tab2">차트</a>
                   </li>
                   <li className="Order_tab" onClick={ClickHandler(2)}>
-                    <a href="#tab3">정보</a>
+                    <a href="/tab3">정보</a>
                   </li>
                   <li className="Order_tab" onClick={ClickHandler(3)}>
-                    <a href="#tab4">매도</a>
+                    <a href="/tab4">매도</a>
                   </li>
                   <li className="Order_tab" onClick={ClickHandler(4)}>
-                    <a href="#tab5">매수</a>
+                    <a href="/tab5">매수</a>
                   </li>
                 </ul>
               </div>

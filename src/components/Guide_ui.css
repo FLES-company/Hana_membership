@@ -286,7 +286,7 @@ form select {
 form .select::after {
   content: "";
   position: absolute;
-  right: 0;
+  right: 12px;
   display: inline-block;
   width: 14px;
   height: 8px;

@@ -1,0 +1,77 @@
+.Tab5 {
+  padding: 24px 32px;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+/* 배경 -> 매도 : blue / 매수 : red */
+.Tab5.blue {
+  background-color: #f5f9ff;
+}
+.Tab5.red {
+  background-color: #fff5f5;
+}
+
+/* form */
+.Tab5 form::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.Tab5 .content {
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+.Tab5 .content.check {
+  width: 75px;
+  float: right;
+}
+.Tab5 .content.total{
+  margin: 32px 0;
+}
+.Tab5 .content.total input {
+  border: solid 1px #dbdbdb;
+  background-color: transparent;
+}
+.Tab5 .content.total input::placeholder {
+  text-align: right;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333;
+}
+.Tab5 .content span {
+  width: calc(100% - 200px);
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+.Tab5 .content .input_unit {
+  width: 200px !important;
+}
+.Tab5 .content .input_unit.checkbox span {
+  width: auto;
+}
+.Tab5 .content .input_unit select {
+  box-sizing: border-box;
+  padding: 9px 12px 8px;
+  border-radius: 2px;
+  border: solid 1px #dbdbdb;
+  background-color: #ffffff;
+  position: relative;
+}
+.Tab5 .content .input_unit input {
+  width: 100%;
+  height: 34px;
+  border-radius: 2px;
+}
+
+/* disabled */
+.Tab5 .content.disabled .count {
+  background-color: transparent;
+}
+.Tab5 .content.disabled input {
+  background-color: transparent;
+  color: #dbdbdb;
+}

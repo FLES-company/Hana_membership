@@ -22,8 +22,6 @@ function Find_id_complete() {
         <div className="inner_content_btns">
           <Btn_navy />
           <Btn_gray border />
-          <Btn_default blue />
-          <Btn_default red />
         </div>
       </div>
       {/* contents : e */}
