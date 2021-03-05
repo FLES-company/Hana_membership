@@ -5,11 +5,13 @@ import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
 
 function Btn_navy() {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState('로그인');
 
   const onChangeValue = e => { 
-    setValue(e.target.value)
-    console.log(setValue(e.target.value))
+    if(document.querySelectorAll('div .Btn_navy [value="로그인"]')){
+      setValue(e.target.value = "안뇽")
+    }
+    console.log(value)
   }
 
   return (
