@@ -1,5 +1,7 @@
 import React from "react";
 import "./Tab3.css";
+import img_guide from "./img/img_guide.png";
+
 
 function Tab3() {
   return (
@@ -63,6 +65,10 @@ function Tab3() {
             </tr>
           </tbody>
         </table>
+        <div className="Tab3_contents_guide">
+          <p>업체 제공 회원권 안내</p>
+          <img src={img_guide} alt=""/>
+        </div>
       </div>
     </div>
   );

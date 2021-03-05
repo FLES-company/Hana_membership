@@ -80,6 +80,69 @@ function Tab1() {
                 </li>
               </ul>
             </li>
+            <li className="sell_item up" onClick={touch}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">20,950</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={touch}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">20,950</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={touch}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">20,950</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={touch}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">20,950</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={touch}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">20,950</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={touch}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">20,950</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={touch}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">20,950</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
         <div className="content side_item">
@@ -121,6 +184,69 @@ function Tab1() {
               </ul>
             </li>
             <li className="buy_item">
+              <ul className="buy_buyQuantity_item">
+                <li className="buy price">20,950</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="buy_item down">
+              <ul className="buy_buyQuantity_item">
+                <li className="buy price">20,950</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="buy_item down">
+              <ul className="buy_buyQuantity_item">
+                <li className="buy price">20,950</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="buy_item down">
+              <ul className="buy_buyQuantity_item">
+                <li className="buy price">20,950</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="buy_item down">
+              <ul className="buy_buyQuantity_item">
+                <li className="buy price">20,950</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="buy_item down">
+              <ul className="buy_buyQuantity_item">
+                <li className="buy price">20,950</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="buy_item down">
+              <ul className="buy_buyQuantity_item">
+                <li className="buy price">20,950</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>9,542</span>
+                </li>
+              </ul>
+            </li>
+            <li className="buy_item down">
               <ul className="buy_buyQuantity_item">
                 <li className="buy price">20,950</li>
                 <li className="buy quantity">
