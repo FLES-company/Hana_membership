@@ -1,5 +1,4 @@
 .History {
-  padding: 0 32px;
   box-sizing: border-box;
   width: 100%;
 }
@@ -13,4 +12,105 @@
 }
 .History .back_header .back_header_inner .header_icon_item {
   display: none;
+}
+/* 거래내역 */
+.History .History_contents .month {
+  padding: 0 24px;
+  height: 32px;
+  line-height: 32px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+.History .History_contents .month span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #cccccc;
+}
+.History .History_contents ul {
+  position: relative;
+  width: 100%;
+}
+.History .History_contents ul li.item {
+  position: relative;
+  padding: 19px 20px 23px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.History .History_contents ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.History .History_contents ul li.item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+}
+.History .History_contents ul li.item .date {
+  display: block;
+  margin-bottom: 11px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #cccccc;
+}
+.History .History_contents ul li.item .icon_product {
+  display: flex;
+  align-items: center;
+}
+.History .History_contents ul li.item .icon_product p {
+  margin-left: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555555;
+}
+.History .History_contents ul li.item .info {
+  text-align: right;
+  margin-top: -23px;
+}
+.History .History_contents ul li.item .info .amount {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+.History .History_contents ul li.item .info .amount .conclusion {
+  font-size: 14px;
+  font-weight: 500;
+}
+.History .History_contents ul li.item .info .amount .conclusion.buy {
+  color: #e20e2f;
+}
+.History .History_contents ul li.item .info .amount .conclusion.sell {
+  color: #1e66ed;
+}
+.History .History_contents ul li.item .info .price {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+}
+.History .History_contents ul li.item .info .price span {
+  font-size: 20px;
+  font-weight: 500;
+}
+/* empty */
+.History .empty {
+  box-sizing: border-box;
+  padding: 77px 0;
+  text-align: center;
+}
+.History .empty h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+}
+.History .empty p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+.History .empty .Btn_navy {
+  margin: 54px 32px;
 }

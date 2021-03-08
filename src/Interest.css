@@ -1,0 +1,135 @@
+.Interest {
+  width: 100%;
+}
+.Interest .back_header {
+  margin-bottom: 0;
+  padding: 0 16px;
+  background-color: #0b234a;
+  box-sizing: border-box;
+}
+.Interest .back_header .back_header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Interest .back_header .back_header_inner select {
+  background: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ebebeb;
+}
+.Interest_contents {
+  box-sizing: border-box;
+}
+.Interest_contents table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.Interest_contents table thead {
+  text-align: left;
+  background-color: #0b234a;
+}
+
+.Interest_contents table thead th {
+  padding: 11px 16px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 300;
+  color: #cccccc;
+}
+.Interest_contents table tbody tr {
+  height: 56px;
+  border-bottom: 1px solid #ebebeb;
+}
+.Interest_contents table tbody th {
+  padding: 0 16px;
+  text-align: left;
+  font-size: 15px;
+}
+.Interest_contents table tbody .productName {
+  font-weight: 600;
+  color: #222222;
+}
+.Interest_contents table tbody .price {
+  font-weight: 500;
+  color: #333333;
+}
+
+.Interest_contents table tbody .info_compared {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+}
+.Interest_contents table tbody .info_compared.up {
+  color: #ff1414;
+}
+.Interest_contents table tbody .info_compared.down {
+  color: #1e66ed;
+}
+.Interest_contents table tbody .info_compared::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 6px;
+    background-image: url(./img/icon_equal_flow.png);
+    background-repeat: no-repeat;
+  }
+.Interest_contents table tbody .info_compared.up::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 6px;
+  background-image: url(./img/icon_up_flow.png);
+  background-repeat: no-repeat;
+}
+.Interest_contents table tbody .info_compared.down::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 6px;
+    background-image: url(./img/icon_down_flow.png);
+    background-repeat: no-repeat;
+  }
+.Interest_contents table tbody .info_compared span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #777777;
+}
+.Interest_contents table tbody .regi_quantity {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+}
+
+/* empty */
+.Interest_contents.empty {
+  padding: 0 32px;
+  margin: 50px 0;
+  text-align: center;
+}
+.Interest_contents.empty h2 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+}
+.Interest_contents.empty p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+.Interest_contents.empty .input_search {
+  margin: 54px 0;
+}
