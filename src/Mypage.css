@@ -1,0 +1,44 @@
+.Mypage {
+  box-sizing: border-box;
+  width: 100%;
+}
+.Mypage .back_header {
+  padding: 0 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.Mypage .back_header .back_header_inner {
+  justify-content: center;
+}
+
+.Mypage_contents {
+  margin: 20px 0;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+.Mypage_contents form .input_unit {
+  margin: 17px 0;
+  display: block;
+}
+.Mypage_contents form .input_unit span {
+  margin: 5px 8px;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #999999;
+}
+.Mypage_contents form input {
+  height: 44px;
+  line-height: 44px;
+}
+.Mypage_contents .Btn_gray,
+.Mypage_contents .Btn_navy {
+  margin: 24px 0;
+}
+.Mypage_contents .Btn_gray input,
+.Mypage_contents .Btn_navy input {
+  height: 48px !important;
+}
+.Mypage_contents .Btn_gray input{
+    color: #cccccc;
+  }
