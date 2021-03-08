@@ -1,0 +1,25 @@
+.Notice {
+  box-sizing: border-box;
+  width: 100%;
+}
+.Notice .back_header {
+  padding: 0 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.Notice .back_header .back_header_inner {
+  justify-content: space-between;
+}
+.Notice_contents .Notice_text {
+  padding: 0 16px;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #cccccc;
+  background-color: #f9f9f9;
+}
+.Notice_contents .header-area{
+    border-bottom: 1px solid #ebebeb;
+}
