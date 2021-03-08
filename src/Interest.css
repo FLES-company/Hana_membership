@@ -1,3 +1,6 @@
+#Interest.openModal .modal_wrapper {
+  display: block;
+}
 .Interest {
   width: 100%;
 }

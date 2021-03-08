@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Interest.css";
 import icon_back from "./img/right-arrow.png";
 import icon_info from "./img/icon_info.png";
@@ -8,8 +8,15 @@ import icon_alarm_white from "./img/icon_alarm_white.png";
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 
 function Interest() {
+  const [modal, setModal] = useState(false);
+  const openModal = () => {
+    setModal(true);
+    console.log(modal);
+    // 최상단에 클래스네임.openModal으로 모달창 띄우기
+  };
+
   return (
-    <div className="Interest">
+    <div className="Interest openModal">
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
@@ -45,7 +52,7 @@ function Interest() {
             </tr>
           </thead>
           <tbody>
-            <tr id="open">
+            <tr onClick={openModal}>
               <th className="productName">88(팔팔)</th>
               <th className="price">21,000</th>
               <th className="info_compared up">
@@ -57,7 +64,7 @@ function Interest() {
                 <span>1,979</span>
               </th>
             </tr>
-            <tr>
+            <tr onClick={openModal}>
               <th className="productName">88(팔팔)</th>
               <th className="price">21,000</th>
               <th className="info_compared equal">
@@ -69,7 +76,7 @@ function Interest() {
                 <span>1,979</span>
               </th>
             </tr>
-            <tr>
+            <tr onClick={openModal}>
               <th className="productName">88(팔팔)</th>
               <th className="price">21,000</th>
               <th className="info_compared down">
@@ -100,7 +107,7 @@ function Interest() {
       {/* 관심회원권없음 empty : e */}
 
       {/* 관심회원권터치 : s ( 현재 modal_wrapper -> display:none; )*/}
-      <div className="Interest_contents modal_wrapper">
+      <div className="Interest_contents modal_wrapper" open={modal}>
         <div className="modal">
           <div className="modal_favorite">
             <img src={img_favorite} alt="등록" />
