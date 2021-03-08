@@ -23,10 +23,9 @@ class Login extends Component {
     const input_text = this.setState({[e.target.name]: e.target.value})
     if (input_text != ""){
       this.setState(() => ({ 'className':"check_ok"}))
-    } else if (!this.state.disabled) {
-      this.setState(() => ({ 'className':"check_error" }))
-    }
-      
+    } else if (this.state.disabled) {
+      this.setState(() => ({ 'className':"check_error"}))
+    } 
     }
      
 
