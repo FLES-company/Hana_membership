@@ -104,7 +104,7 @@ input {
   outline: none;
   cursor: pointer;
 }
-select{
+select {
   border: none;
   outline: none;
 }
@@ -120,7 +120,7 @@ code {
 }
 
 /* 페이지 주 제목 */
-h1{
+h1 {
   font-size: 22px;
   font-weight: 600;
   line-height: 1.36;
@@ -131,72 +131,77 @@ h1{
 /* ----------------------COLOR------------------------------*/
 
 /* navy */
-.colorN{
+.colorN {
   color: #0b234a !important;
 }
+.bgN {
+  background-color: #0b234a !important;
+}
 /* gray */
-.colorGf0{
+.colorGf0 {
   color: #f0f0f0 !important;
 }
-.colorGf5{
+.colorGf5 {
   color: #f5f5f5 !important;
 }
-.colorGdb{
+.bgGf5 {
+  background-color: #f5f5f5 !important;
+}
+.colorGdb {
   color: #dbdbdb !important;
 }
-.colorG2{
+.colorG2 {
   color: #222222 !important;
 }
-.colorG3{
+.colorG3 {
   color: #333333 !important;
 }
-.colorG5{
+.colorG5 {
   color: #555555 !important;
 }
-.colorG7{
+.colorG7 {
   color: #777777 !important;
 }
-.colorGa{
+.colorGa {
   color: #aaaaaa !important;
 }
-.colorGc{
+.colorGc {
   color: #cccccc !important;
 }
 /* blue */
-.colorB{
-  color: #0039D1 !important;
+.colorB {
+  color: #0039d1 !important;
 }
 /* blue - medium */
-.colorBM{
+.colorBM {
   color: #1752f0 !important;
 }
 /* blue - light */
-.colorBL{
+.colorBL {
   color: #c3dcff !important;
 }
 /* red */
-.colorR{
+.colorR {
   color: #bc001d !important;
 }
 /* red - bold*/
-.colorRB{
+.colorRB {
   color: #ff1414 !important;
 }
 /* red - medium */
-.colorRM{
+.colorRM {
   color: #ffc7d0 !important;
 }
 /* red - light */
-.colorRL{
+.colorRL {
   color: #fff2f2 !important;
 }
 
 /* ----------------------// COLOR----------------------------*/
 
-
 /* 하단 FIXED 클래스 지정 */
 
-.footer_fixed{
+.footer_fixed {
   position: fixed;
   left: 0;
   width: 100%;
