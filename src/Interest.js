@@ -123,19 +123,19 @@ function Interest() {
             <table>
               <tr>
                 <th>기준가(만원)</th>
-                <th>20,000</th>
+                <th className="standard_price">20,000</th>
               </tr>
               <tr>
                 <th>고가(만원)</th>
-                <th>24,000</th>
+                <th className="high_price">24,000</th>
               </tr>
               <tr>
                 <th>저가(만원)</th>
-                <th>19,900</th>
+                <th className="low_price">19,900</th>
               </tr>
               <tr>
                 <th>총 거래량</th>
-                <th>320</th>
+                <th className="total_quantity">320</th>
               </tr>
             </table>
             <div className="btn_wrapper Btn">
