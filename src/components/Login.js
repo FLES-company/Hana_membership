@@ -25,7 +25,6 @@ class Login extends Component {
       this.setState(() => ({ 'className':"check_error"}))
     } 
     }
-  };
 
   render() {
     return (
@@ -83,7 +82,7 @@ class Login extends Component {
           </Link>
 
           <Link to="/findidComplete">
-            <Btn_navy Link to="/findidComplete" text="로그인" />
+            <Btn_navy text="로그인" />
           </Link>
 
           <Link to="/signup">
