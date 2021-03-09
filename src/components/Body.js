@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import item from "../mock/Weekly_interest.json"
+import item from "../mock/weekly_interest.json"
 
 
 class Body extends React.Component {
@@ -16,6 +16,7 @@ class Body extends React.Component {
     let owl_carousel = require('owl.carousel');
     window.fn = owl_carousel;
 
+    
     const item_name = item.map(item => (<p className="item_tit">{item.Membership_name}</p>))
     const item_current = item.map(item => (<p className="item_dec">{item.Current_price}<span className="price_up">{item.Current_price-item.Base_price}(<span className="percent">{((item.Current_price-item.Base_price)/item.Base_price*100).toFixed(2)}%</span>)<Chart /></span></p>))
     
