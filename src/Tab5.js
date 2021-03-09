@@ -91,7 +91,7 @@ function Tab5() {
               </div>
             </div>
             {/*  버튼텍스트 : 매도(blue)/매수 신청(red) */}
-            <Btn_default red />
+            <Btn_default color="red" text="매수신청"/>
           </div>
         </form>
       </div>

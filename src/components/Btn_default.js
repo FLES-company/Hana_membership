@@ -4,12 +4,14 @@ import "./Guide_ui.css";
 import classNames from 'classnames'; 
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
-function Btn_default(style) {
+function Btn_default({text, color, size}) {
   return (
-    <div className="Btn_default">
-      <input className={classNames(style)} type="button" value="회원가입" />
-    </div>
+      <input className={classNames('Btn_default',color, size)} type="button" value={text} />
   );
 }
 
 export default Btn_default;
+
+Btn_default.defaultProps ={
+  size: 'h47',
+}
