@@ -1,0 +1,27 @@
+[
+    {
+      "Membership_name": "고성노벨",
+      "Current_price": 15500,
+      "Base_price": 16000
+    },
+    {
+      "Membership_name": "뉴서울",
+      "Current_price": 4350,
+      "Base_price": 4900
+    },
+    {
+      "Membership_name": "휘슬링락",
+      "Current_price": 140200,
+      "Base_price": 145000
+    },
+    {
+      "Membership_name": "동원썬밸리",
+      "Current_price": 42550,
+      "Base_price": 49000
+    },
+    {
+      "Membership_name": "라데나",
+      "Current_price": 7550,
+      "Base_price": 8000
+    }
+   ]
