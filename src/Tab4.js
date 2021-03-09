@@ -1,9 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Tab4.css";
 import "./components/Guide_ui.css";
 import Btn_default from "./components/Btn_default";
 
 function Tab4() {
+   // 수량 카운트
+   const [quantity, setquantity] = useState(0);
+
+   const onIn_quantity = () => {
+     setquantity(quantity + 1);
+   };
+   const onDe_quantity = () => {
+     setquantity(quantity - 1);
+   };
+   // 가격 카운트
+   const [price, setprice] = useState(42000);
+ 
+   const onIn_price = () => {
+     setprice(price + 1);
+   };
+   const onDe_price = () => {
+     setprice(price - 1);
+   };
   return (
     // 배경 -> 매도 : blue / 매수 : red
     // 체크박스 -> 매도 : chk_blue / 매수 : chk_red
@@ -41,18 +59,18 @@ function Tab4() {
           <div className="content quantity">
             <span>수량</span>
             <div className="input_unit count">
-              <button type="button" className="dec"></button>
-              <input type="text" value="1" />
-              <button type="button" className="inc"></button>
+              <button type="button" className="dec" onClick={onDe_quantity}></button>
+              <input type="text" value={quantity} />
+              <button type="button" className="inc" onClick={onIn_quantity}></button>
             </div>
           </div>
           {/* 가격(만원) */}
           <div className="content quantity disabled">
             <span>가격(만원)</span>
             <div className="input_unit count">
-              <button type="button" className="dec"></button>
-              <input type="text" value="42,000" disabled/>
-              <button type="button" className="inc"></button>
+              <button type="button" className="dec" onClick={onDe_price} disabled></button>
+              <input type="text" value={price} disabled/>
+              <button type="button" className="inc" onClick={onIn_price} disabled></button>
             </div>
           </div>
           {/* 시장가 */}
@@ -73,7 +91,7 @@ function Tab4() {
               </div>
             </div>
             {/*  버튼텍스트 : 매도(blue)/매수 신청(red) */}
-            <Btn_default blue />
+            <Btn_default color="blue" text="매도신청" />
           </div>
         </form>
       </div>

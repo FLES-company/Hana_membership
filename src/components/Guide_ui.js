@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Guide_ui.css";
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
-import Btn_navy from "./Btn_navy";
-import Btn_gray from "./Btn_gray";
-import Btn_social from "./Btn_social";
-import Btn_social_bg from "./Btn_social_bg";
 
 function Guide_ui() {
+  const [number, setNumber] = useState(0);
+
+  const onIn = () => {
+    setNumber(number + 1);
+  };
+  const onDe = () => {
+    setNumber(number - 1);
+  };
   return (
+    <>
     <div className="wrapper">
       <div className="guide wrap">
         <div id="guide_header">
@@ -99,7 +103,6 @@ function Guide_ui() {
                       type="text"
                       placeholder="이름"
                       name="name"
-                      minlength={2}
                     />
                     <span className="check_ok"></span>
                   </div>
@@ -144,9 +147,9 @@ function Guide_ui() {
                 </select>
               </div>
               <div className="input_unit count">
-                <button type="button" className="dec" onClick="onDec"></button>
-                <input type="text" value={0} />
-                <button type="button" className="inc" onClick="onInc"></button>
+                <button type="button" className="dec" onClick={onDe}></button>
+                <input type="text" value={number} />
+                <button type="button" className="inc" onClick={onIn}></button>
               </div>
               <div className="input_unit checkbox blue">
                 <input id="checkbox1" type="checkbox" className="chk_blue" />
@@ -230,19 +233,19 @@ function Guide_ui() {
                 </ul>
               </div>
               <div className="tab_cont_wrap">
-                <div class="tab_cont" id="tab1">
+                <div className="tab_cont" id="tab1">
                   11111
                 </div>
-                <div class="tab_cont" id="tab2">
+                <div className="tab_cont" id="tab2">
                   22222
                 </div>
-                <div class="tab_cont" id="tab3">
+                <div className="tab_cont" id="tab3">
                   33333
                 </div>
-                <div class="tab_cont" id="tab4">
+                <div className="tab_cont" id="tab4">
                   44444
                 </div>
-                <div class="tab_cont" id="tab5">
+                <div className="tab_cont" id="tab5">
                   55555
                 </div>
               </div>
@@ -391,6 +394,7 @@ function Guide_ui() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
