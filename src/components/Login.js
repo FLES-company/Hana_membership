@@ -12,25 +12,21 @@ import Btn_social from "./Btn_social";
 import Btn_social_bg from "./Btn_social_bg";
 
 class Login extends Component {
-  
   state = {
-    email : '',
-    psw: '',
-  }
+    email: "",
+    psw: "",
+  };
 
-  
   onChange = (e) => {
-    const input_text = this.setState({[e.target.name]: e.target.value})
-    if (input_text != ""){
-      this.setState(() => ({ 'className':"check_ok"}))
+    const input_text = this.setState({ [e.target.name]: e.target.value });
+    if (input_text != "") {
+      this.setState(() => ({ className: "check_ok" }));
     } else if (!this.state.disabled) {
-      this.setState(() => ({ 'className':"check_error" }))
+      this.setState(() => ({ className: "check_error" }));
     }
-      
-    }
-     
+  };
 
-  render(){
+  render() {
     return (
       <div className="Login">
         {/* back_header : s */}
@@ -50,19 +46,34 @@ class Login extends Component {
           <ul>
             <li className={this.state.className}>
               <span>이메일</span>
-              <input  
-                style={Object.assign({}, styles.input, this.state.email && styles.check_image)}
-                name="email" 
-                type="text" placeholder="이메일" required 
-                onChange={this.onChange} />
-                {/* <span className="check_ok" style={Object.assign({},styles.check_image)}></span> */}
+              <input
+                style={Object.assign(
+                  {},
+                  styles.input,
+                  this.state.email && styles.check_image
+                )}
+                name="email"
+                type="text"
+                placeholder="이메일"
+                required
+                onChange={this.onChange}
+              />
+              {/* <span className="check_ok" style={Object.assign({},styles.check_image)}></span> */}
             </li>
             <li className={this.state.className}>
               <span>비밀번호</span>
-              <input 
-                style={Object.assign({}, styles.input, this.state.psw && styles.check_image)}
-                name="psw" type="password" placeholder="비밀번호를 입력해주세요." required 
-                onChange={this.onChange} />
+              <input
+                style={Object.assign(
+                  {},
+                  styles.input,
+                  this.state.psw && styles.check_image
+                )}
+                name="psw"
+                type="password"
+                placeholder="비밀번호를 입력해주세요."
+                required
+                onChange={this.onChange}
+              />
             </li>
           </ul>
 
@@ -71,19 +82,18 @@ class Login extends Component {
           </Link>
 
           <Link to="/findidComplete">
-            <Btn_navy Link to="/findidComplete"/>
-          </Link>  
+            <Btn_navy Link to="/findidComplete" text="로그인" />
+          </Link>
 
-          <Btn_gray />
+          <Link to="/signup">
+            <Btn_gray text="회원가입" />
+          </Link>
           <Btn_social />
-          </form>
-        
+        </form>
       </div>
     );
   }
 }
-const styles = {
- 
-}
+const styles = {};
 
 export default Login;

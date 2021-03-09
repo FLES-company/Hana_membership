@@ -27,18 +27,16 @@
   font-weight: 500;
   color: #999999;
 }
-.Mypage_contents form input {
-  height: 44px;
-  line-height: 44px;
-}
-.Mypage_contents .Btn_gray,
-.Mypage_contents .Btn_navy {
+
+.Mypage_contents .Btn_gray {
   margin: 24px 0;
-}
-.Mypage_contents .Btn_gray input,
-.Mypage_contents .Btn_navy input {
   height: 48px !important;
 }
-.Mypage_contents .Btn_gray input{
-    color: #cccccc;
-  }
+
+.Mypage_contents input.Btn_gray {
+  color: #cccccc;
+}
+.Mypage_contents.checkAll input.Btn_gray {
+  color: #ffffff;
+  background-color: #0b234a;
+}

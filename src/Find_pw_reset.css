@@ -1,14 +1,14 @@
-.find_pw_reset {
+.Find_pw_reset {
   width: 100%;
   padding: 0 16px;
   box-sizing: border-box;
 }
 /* find_id_complete_inner */
-.find_pw_reset_inner {
+.Find_pw_reset_inner {
   padding: 0 16px;
   box-sizing: border-box;
 }
-.find_pw_reset_inner .inner_content_text {
+.Find_pw_reset_inner .inner_content_text {
   margin: 30px 0;
   font-size: 15px;
   font-weight: 400;
@@ -16,21 +16,20 @@
   letter-spacing: -0.75px;
   color: #777777;
 }
-.find_pw_reset_inner .input_password span {
+.Find_pw_reset_inner .input_password span {
   margin: 3px 8px;
   display: inline-block;
   font-size: 13px;
   font-weight: 600;
   color: #aaaaaa;
 }
-.find_pw_reset_inner .input_unit{
+.Find_pw_reset_inner .input_unit {
   margin: 8px 0;
 }
-.find_pw_reset_inner .Btn_navy{
-  position: fixed;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-  bottom: 31px;
-  padding: 0 32px;
+.Find_pw_reset .Btn_gray {
+  color: #999999;
+}
+.Find_pw_reset.checkAll .Btn_gray {
+  color: #ffffff;
+  background-color: #0b234a;
 }

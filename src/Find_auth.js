@@ -2,16 +2,17 @@ import React from "react";
 import "./Find_auth.css";
 import "./components/Guide_ui.css";
 import Header_back from "./components/Header_back";
-import Btn_navy from "./components/Btn_navy";
 import Btn_gray from "./components/Btn_gray";
+import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
+
 
 function Find_auth() {
   return (
-    <div className="find_auth">
+    <div className="Find_auth checkAll">
       <Header_back />
 
       {/* contents : s */}
-      <div className="find_auth_inner">
+      <div className="Find_auth_inner">
         <h1>아이디/비밀번호 찾기</h1>
         <form action="">
           {/* input_email */}
@@ -51,7 +52,7 @@ function Find_auth() {
                   name="phoneNum"
                 />
               </div>
-              <button className="">인증번호 발송</button>
+              <button className="on">인증번호 발송</button>
 
               {/* 체크사항 */}
               {/* <span className="check_fail"></span> */}
@@ -75,7 +76,9 @@ function Find_auth() {
         </form>
         <div className="footer_fixed">
           {/* 버튼 text '확인'으로 변경 필요 */}
-          <Btn_gray />
+          <Link to="/findidComplete">
+            <Btn_gray text="확인" />
+          </Link>
         </div>
       </div>
       {/* contents : e */}

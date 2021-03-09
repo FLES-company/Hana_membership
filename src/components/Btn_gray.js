@@ -2,15 +2,19 @@ import React from "react";
 import "./Btn_gray.css";
 import "./Guide_ui.css";
 import classNames from 'classnames'; 
-import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
-function Btn_gray(style) {
+function Btn_gray({ text, color }) {
   return (
-    <div className="Btn_gray">
-      <input className={classNames(style)} type="button" value="회원가입" />
-    </div>
+      <input className={classNames('Btn_gray', text, color)} type="button" value={text} />
+  //    <div className="Btn_gray">
+  //    <input className={classNames(style, text, color)} type="button" value={text} />
+  //  </div>
   );
 }
 
 
 export default Btn_gray;
+
+
+Btn_gray.defaultProps ={
+}

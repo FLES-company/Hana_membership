@@ -73,7 +73,7 @@ function History() {
       <div className="History_contents empty">
         <h2>회원권 거래내역이 없습니다.</h2>
         <p>주문을 통해 회원권을 거래해보세요.</p>
-        <Btn_navy />
+        <Btn_navy text="주문하러 가기"/>
       </div>
       {/* 거래내역없음 empty : e */}
     </div>

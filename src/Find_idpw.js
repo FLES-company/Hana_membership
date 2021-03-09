@@ -14,17 +14,15 @@ function Find_idpw() {
         <h1>아이디/비밀번호 찾기</h1>
         <h3>회원님께서 필요하신 사항을 선택해주세요</h3>
 
-        {/* 아이디찾기, 비밀번호 찾기 함수로 value값 바꾸기 */}
+        {/* 아이디찾기, 비밀번호 찾기 : value값 바꾸기 */}
         <div className="find_idpw_wrap">
-          
           <Link to="/findAuth">
-            <Btn_navy link to = "/findAuth"/>
+            <Btn_navy link to="/findAuth" text="아이디 찾기" />
           </Link>
 
           <Link to="/findpwReset">
-            <Btn_navy link to = "/findpwReset"/>
+            <Btn_navy link to="/findpwReset" text="비밀번호 찾기" />
           </Link>
-
         </div>
       </div>
       {/* contents : e */}
