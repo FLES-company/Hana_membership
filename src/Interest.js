@@ -5,6 +5,7 @@ import icon_info from "./img/icon_info.png";
 import icon_favorites from "./img/icon_favorites.png";
 import img_favorite from "./img/img_favorite.png";
 import icon_alarm_white from "./img/icon_alarm_white.png";
+import icon_search_white from "./img/icon_search_white.png";
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 
 function Interest() {
@@ -25,14 +26,19 @@ function Interest() {
               <img src={icon_back} Link to="/login" hidden />
             </div>
           </a>
-          <select name="Order_items">
+          <select className="Order_items">
             <option value="관심회원권">관심회원권</option>
             <option value="1">1</option>
             <option value="2">2</option>
           </select>
-          <a href="/login" className="header_icon_item icon_alarm_white">
+          {/* <a href="/notice" className="header_icon_item icon_alarm_white">
             <div className="icon_img">
-              <img src={icon_alarm_white} Link to="/login" />
+              <img src={icon_alarm_white} />
+            </div>
+          </a> */}
+          <a href="/search" className="header_icon_item icon_alarm_white">
+            <div className="icon_img">
+              <img src={icon_search_white} />
             </div>
           </a>
         </div>

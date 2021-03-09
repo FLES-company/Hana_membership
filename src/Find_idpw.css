@@ -12,6 +12,7 @@
 }
 
 .find_idpw .find_idpw_inner h3 {
+  margin-top: 10px;
   font-size: 14px;
   font-weight: 400;
   color: #999999;
@@ -19,9 +20,7 @@
 .find_idpw .find_idpw_inner .find_idpw_wrap {
   margin-top: 44px;
 }
-.Btn_navy {
-  margin: 12px 0;
-}
-.find_idpw .find_idpw_inner .Btn_navy input {
+.find_idpw .find_idpw_inner input.Btn_navy {
+  margin: 8px 0;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }

@@ -3,6 +3,9 @@
   padding: 0 16px;
   box-sizing: border-box;
 }
+.Find_id_complete .back_header{
+  margin-bottom: 0;
+}
 /* Find_id_complete_inner */
 .Find_id_complete .Find_id_complete_inner {
   padding: 0 16px;

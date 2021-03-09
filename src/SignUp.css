@@ -3,6 +3,9 @@
   box-sizing: border-box;
   width: 100%;
 }
+.SignUp .back_header{
+  margin-bottom: 10px;
+}
 .SignUp .SinUp_inner {
   padding: 0 16px;
   box-sizing: border-box;
@@ -11,10 +14,11 @@
 .SignUp .SinUp_inner .SinUp_inner_item {
   margin: 20px 0;
 }
-.SignUp .SinUp_inner .SinUp_inner_item li{
-  margin: 10px 0;
+.SignUp .SinUp_inner .SinUp_inner_item li {
+  margin: 16px 0;
 }
 .SignUp .SinUp_inner .SinUp_inner_item > li:first-child {
+  padding: 14px 0;
   border-bottom: solid 1px #ebebeb;
 }
 .SignUp .SinUp_inner .SinUp_inner_item > span {

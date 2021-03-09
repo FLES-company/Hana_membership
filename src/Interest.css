@@ -1,5 +1,7 @@
-#Interest.openModal .modal_wrapper {
-  display: block;
+/* openModal */
+.Interest.openModal .modal_wrapper {
+  /* display: block; */
+  display: none;
 }
 .Interest {
   width: 100%;
@@ -14,6 +16,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 48px;
+  line-height: 48px;
+}
+.Interest .back_header .back_header_inner .Interest_items{
+  height: 48px;
+}
+.Interest .back_header .back_header_inner .header_icon_item {
+  width: 48px;
+  height: 100%;
+}
+.Interest .back_header .back_header_inner .header_icon_item .icon_img {
+  height: 48px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.Interest .back_header .back_header_inner .header_icon_item.icon_back .icon_img{
+  justify-content: flex-start;
+}
+.Interest .back_header .back_header_inner .header_icon_item.icon_alarm_white .icon_img{
+  justify-content: flex-end;
 }
 .Interest .back_header .back_header_inner select {
   background: none;
