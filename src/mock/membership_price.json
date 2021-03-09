@@ -1,0 +1,236 @@
+[
+    {
+      "Membership_name": "88(팔팔)",
+      "Current_price": 22450,
+      "Number_of_registrations": 190,
+      "Base_price": 21500,
+      "High_price": 21550,
+      "Low_price": 21400,
+      "Total_transactions": 983
+    },
+    {
+      "Membership_name": "가평베네스트",
+      "Current_price": 71010,
+      "Number_of_registrations": 20,
+      "Base_price": 71000,
+      "High_price": 72500,
+      "Low_price": 70950,
+      "Total_transactions": 121
+    },
+    {
+      "Membership_name": "강남300",
+      "Current_price": 8810,
+      "Number_of_registrations": 4,
+      "Base_price": 8800,
+      "High_price": 8900,
+      "Low_price": 8800,
+      "Total_transactions": 87
+    },
+    {
+      "Membership_name": "강남300 주중가족",
+      "Current_price": 3010,
+      "Number_of_registrations": 2,
+      "Base_price": 3000,
+      "High_price": 3200,
+      "Low_price": 2950,
+      "Total_transactions": 10
+    },
+    {
+      "Membership_name": "강남300 주중개인",
+      "Current_price": 3050,
+      "Number_of_registrations": 3,
+      "Base_price": 2300,
+      "High_price": 3450,
+      "Low_price": 3000,
+      "Total_transactions": 3
+    },
+    {
+      "Membership_name": "강남300 호텔(7000)",
+      "Current_price": 4700,
+      "Number_of_registrations": 11,
+      "Base_price": 4700,
+      "High_price": 4850,
+      "Low_price": 4600,
+      "Total_transactions": 43
+    },
+    {
+      "Membership_name": "고성노벨",
+      "Current_price": 15500,
+      "Number_of_registrations": 3,
+      "Base_price": 16000,
+      "High_price": 16000,
+      "Low_price": 13500,
+      "Total_transactions": 92
+    },
+    {
+      "Membership_name": "골드 일반",
+      "Current_price": 7010,
+      "Number_of_registrations": 21,
+      "Base_price": 7200,
+      "High_price": 7150,
+      "Low_price": 6500,
+      "Total_transactions": 864
+    },
+    {
+      "Membership_name": "골드 주주",
+      "Current_price": 25000,
+      "Number_of_registrations": 22,
+      "Base_price": 27000,
+      "High_price": 26500,
+      "Low_price": 24000,
+      "Total_transactions": 56
+    },
+    {
+      "Membership_name": "골든베이",
+      "Current_price": 24500,
+      "Number_of_registrations": 61,
+      "Base_price": 20000,
+      "High_price": 25200,
+      "Low_price": 22000,
+      "Total_transactions": 211
+    },
+    {
+      "Membership_name": "광릉포레스트",
+      "Current_price": 6300,
+      "Number_of_registrations": 21,
+      "Base_price": 6000,
+      "High_price": 5400,
+      "Low_price": 5250,
+      "Total_transactions": 450
+    },
+    {
+      "Membership_name": "광릉포레스트 주중",
+      "Current_price": 2300,
+      "Number_of_registrations": 90,
+      "Base_price": 2800,
+      "High_price": 2500,
+      "Low_price": 2250,
+      "Total_transactions": 872
+    },
+    {
+      "Membership_name": "그랜드",
+      "Current_price": 12990,
+      "Number_of_registrations": 25,
+      "Base_price": 13000,
+      "High_price": 13100,
+      "Low_price": 12800,
+      "Total_transactions": 963
+    },
+    {
+      "Membership_name": "그린힐",
+      "Current_price": 15850,
+      "Number_of_registrations": 57,
+      "Base_price": 15800,
+      "High_price": 16100,
+      "Low_price": 15800,
+      "Total_transactions": 94
+    },
+    {
+      "Membership_name": "금강",
+      "Current_price": 12700,
+      "Number_of_registrations": 26,
+      "Base_price": 13200,
+      "High_price": 13300,
+      "Low_price": 12500,
+      "Total_transactions": 1021
+    },
+    {
+      "Membership_name": "기흥",
+      "Current_price": 11500,
+      "Number_of_registrations": 47,
+      "Base_price": 13500,
+      "High_price": 12500,
+      "Low_price": 11000,
+      "Total_transactions": 179
+    },
+    {
+      "Membership_name": "김포시사이드",
+      "Current_price": 3250,
+      "Number_of_registrations": 21,
+      "Base_price": 2500,
+      "High_price": 3500,
+      "Low_price": 2450,
+      "Total_transactions": 97
+    },
+    {
+      "Membership_name": "뉴서울",
+      "Current_price": 4350,
+      "Number_of_registrations": 51,
+      "Base_price": 4900,
+      "High_price": 4500,
+      "Low_price": 4350,
+      "Total_transactions": 989
+    },
+    {
+      "Membership_name": "동원썬밸리",
+      "Current_price": 42550,
+      "Number_of_registrations": 85,
+      "Base_price": 49000,
+      "High_price": 45000,
+      "Low_price": 42500,
+      "Total_transactions": 879
+    },
+    {
+      "Membership_name": "라데나",
+      "Current_price": 7550,
+      "Number_of_registrations": 9,
+      "Base_price": 8000,
+      "High_price": 7600,
+      "Low_price": 7500,
+      "Total_transactions": 143
+    },
+    {
+      "Membership_name": "레이크사이드",
+      "Current_price": 76500,
+      "Number_of_registrations": 33,
+      "Base_price": 73000,
+      "High_price": 76900,
+      "Low_price": 75900,
+      "Total_transactions": 209
+    },
+    {
+      "Membership_name": "레이크우드",
+      "Current_price": 33500,
+      "Number_of_registrations": 36,
+      "Base_price": 33000,
+      "High_price": 33150,
+      "Low_price": 33000,
+      "Total_transactions": 91
+    },
+    {
+      "Membership_name": "렉스필드",
+      "Current_price": 21150,
+      "Number_of_registrations": 9,
+      "Base_price": 20000,
+      "High_price": 21900,
+      "Low_price": 21050,
+      "Total_transactions": 74
+    },
+    {
+      "Membership_name": "로얄포레",
+      "Current_price": 19400,
+      "Number_of_registrations": 26,
+      "Base_price": 19500,
+      "High_price": 19650,
+      "Low_price": 19350,
+      "Total_transactions": 183
+    },
+    {
+      "Membership_name": "화산",
+      "Current_price": 70050,
+      "Number_of_registrations": 27,
+      "Base_price": 70000,
+      "High_price": 71500,
+      "Low_price": 69000,
+      "Total_transactions": 74
+    },
+    {
+      "Membership_name": "휘슬링락",
+      "Current_price": 140200,
+      "Number_of_registrations": 27,
+      "Base_price": 145000,
+      "High_price": 143500,
+      "Low_price": 140100,
+      "Total_transactions": 53
+    }
+   ]

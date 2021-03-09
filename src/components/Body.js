@@ -3,18 +3,20 @@ import "./Body.css";
 import img_banner1 from "../img/img_banner1.png";
 import Chart from "../Chart_top10"
 import Chart_down from "../Chart_down"
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import Membership_name from "../mock/Weekly_interest.json"
 
 
 class Body extends React.Component {
   render() {
     let owl_carousel = require('owl.carousel');
     window.fn = owl_carousel;
+
+    const item_name = Membership_name.map(Membership_name => (<p className="item_tit">{Membership_name}</p>))
     
   return(
   //   앱 실행 초기화면
