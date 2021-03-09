@@ -3,6 +3,9 @@
   box-sizing: border-box;
   width: 100%;
 }
+.Find_auth .back_header{
+  margin-bottom: 0;
+}
 .Find_auth .Find_auth_inner {
   padding: 0 16px;
   box-sizing: border-box;

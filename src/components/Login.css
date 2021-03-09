@@ -20,6 +20,9 @@
   position: relative;
   margin-bottom: 15px;
 }
+.Login form li span{
+  margin-left: 8px;
+}
 .Login form span {
   display: inline-block;
   margin: 3px;

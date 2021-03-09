@@ -8,8 +8,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 48px;
+  line-height: 48px;
 }
-
+.Order .back_header .back_header_inner .Order_items{
+  height: 48px;
+}
+.Order .back_header .back_header_inner .header_icon_item {
+  width: 48px;
+  height: 100%;
+}
+.Order .back_header .back_header_inner .header_icon_item .icon_img {
+  height: 48px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.Order .back_header .back_header_inner .header_icon_item.icon_back .icon_img{
+  justify-content: flex-start;
+}
+.Order .back_header .back_header_inner .header_icon_item.icon_favorites .icon_img{
+  justify-content: flex-end;
+}
 .Order .Order_inner {
   width: 100%;
 }

@@ -15,6 +15,7 @@ import Order from "./Order";
 import History from "./History";
 import Mypage from "./Mypage";
 import Notice from "./Notice";
+import Search from "./Search";
 import Tab1 from "./Tab1";
 import Tab2 from "./Tab2";
 import Tab3 from "./Tab3";
@@ -46,6 +47,7 @@ function App() {
         <Route path="/history" component={History} />
         <Route path="/mypage" component={Mypage} />
         <Route path="/notice" component={Notice} />
+        <Route path="/search" component={Search} />
 
         {/* Tab1 : 호가 */}
         <Route path="/tab1" component={Tab1} />

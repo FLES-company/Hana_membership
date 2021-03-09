@@ -1,0 +1,69 @@
+
+.Search {
+  background-image: linear-gradient(148deg, #0b234a 16%, #071021 98%);
+  height: 100vh;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.Search form {
+  padding: 4px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.Search form .input_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  line-height: 48px;
+}
+.Search form .input_wrapper .input_search {
+  width: 100%;
+}
+.Search form .input_wrapper .input_search input {
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.Search form .input_wrapper .input_search button {
+  background-image: url(./img/icon_search_white.png);
+}
+.Search form .input_wrapper .Btn_cancle {
+  padding-left: 14px;
+  height: 100%;
+}
+.Search form .input_wrapper .Btn_cancle button {
+  border: none;
+  width: max-content;
+  font-size: 15px;
+  font-weight: 400;
+  color: #96ea24;
+  background: none;
+}
+.Search .search_item {
+  margin: 25px 0;
+}
+.Search .search_item h2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+.Search .search_item .item {
+  padding: 16px 0;
+}
+.Search .search_item .item span {
+  margin-right: 12px;
+  margin-bottom: 12px;
+  padding: 10px 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: max-content;
+  height: 40px;
+  line-height: 1;
+  border-radius: 8px;
+  border: solid 1px #24395c;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cccccc;
+}
