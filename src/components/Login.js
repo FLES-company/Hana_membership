@@ -17,17 +17,16 @@ class Login extends Component {
     psw: "",
   };
 
-  onChange = (e) => {
+onChange = (e) => {
  const input_text = this.setState({[e.target.name]: e.target.value})
     if (input_text != ""){
-      this.setState(() => ({ 'className':"check_ok"}))
-    } else if (this.state.disabled) {
-      this.setState(() => ({ 'className':"check_error"}))
+      this.setState(() => ({'className':"check_ok"}))
+    } else if (!this.state.disabled) {
+      this.setState(() => ({'className':"check_error"}))
     } 
     }
-  };
-
-  render() {
+  
+  render(){
     return (
       <div className="Login">
         {/* back_header : s */}
