@@ -3,6 +3,8 @@ import "./SignUp.css";
 import "./components/Guide_ui.css";
 import Header_back from "./components/Header_back";
 import Btn_navy from "./components/Btn_navy";
+import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
+
 
 function SignUp() {
   return (
@@ -87,7 +89,9 @@ function SignUp() {
                 </li>
               </ul>
             </div>
-            <Btn_navy />
+            <Link to="/signUpComplete">
+              <Btn_navy text="로그인" />
+            </Link>
           </div>
         </form>
       </div>

@@ -14,4 +14,5 @@ export default Btn_default;
 
 Btn_default.defaultProps ={
   size: 'h47',
+  text:'로그아웃'
 }

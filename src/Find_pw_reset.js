@@ -2,16 +2,16 @@ import React from "react";
 import "./Find_pw_reset.css";
 import "./components/Guide_ui.css";
 import Header_back from "./components/Header_back";
-import Btn_navy from "./components/Btn_navy";
 import Btn_gray from "./components/Btn_gray";
+import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
 function Find_pw_reset() {
   return (
-    <div className="find_pw_reset">
+    <div className="Find_pw_reset checkAll">
       <Header_back />
 
       {/* contents : s */}
-      <div className="find_pw_reset_inner">
+      <div className="Find_pw_reset_inner">
         <h1>비밀번호 재설정</h1>
         <div className="inner_content_text">
           안녕하세요, <span className="user_name">홍길동</span>님!
@@ -47,8 +47,10 @@ function Find_pw_reset() {
           </form>
         </div>
         <div className="footer_fixed">
-          {/* 버튼 text '확인'으로 변경 필요 */}
-          <Btn_gray />
+          {/* 버튼 text 변경 필요 */}
+          <Link to="/">
+            <Btn_gray text="비밀번호 변경 후 로그인" />
+          </Link>
         </div>
       </div>
       {/* contents : e */}

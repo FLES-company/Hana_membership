@@ -1,9 +1,6 @@
 .Btn_default {
   margin: 10px 0;
   width: 100%;
-}
-.Btn_default input {
-  width: 100%;
   font-size: 14px;
   font-weight: 500;
   border: solid 1px #dbdbdb !important;

@@ -1,16 +1,16 @@
-.find_auth {
+.Find_auth {
   padding: 0 16px;
   box-sizing: border-box;
   width: 100%;
 }
-.find_auth .find_auth_inner {
+.Find_auth .Find_auth_inner {
   padding: 0 16px;
   box-sizing: border-box;
   width: 100%;
 }
 
-/* find_auth_inner > form */
-.find_auth .find_auth_inner span {
+/* Find_auth_inner > form */
+.Find_auth .Find_auth_inner span {
   display: inline-block;
   margin-bottom: 5px;
   padding: 0 8px;
@@ -18,24 +18,24 @@
   font-weight: 600;
   color: #aaaaaa;
 }
-.find_auth .find_auth_inner .input_email,
-.find_auth .find_auth_inner .input_name,
-.find_auth .find_auth_inner .input_number {
+.Find_auth .Find_auth_inner .input_email,
+.Find_auth .Find_auth_inner .input_name,
+.Find_auth .Find_auth_inner .input_number {
   margin: 17px 0;
 }
-.find_auth .find_auth_inner .input_number .input_wrap {
+.Find_auth .Find_auth_inner .input_number .input_wrap {
   margin: 5px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.find_auth .find_auth_inner .input_number .input_wrap .input_unit {
+.Find_auth .Find_auth_inner .input_number .input_wrap .input_unit {
   width: calc(100% - 96px);
 }
-.find_auth .find_auth_inner .input_number input {
+.Find_auth .Find_auth_inner .input_number input {
   width: calc(100% - 4px);
 }
-.find_auth .find_auth_inner .input_number button {
+.Find_auth .Find_auth_inner .input_number button {
   margin-left: 4px;
   padding: 0 5px;
   display: inline-block;
@@ -49,11 +49,11 @@
   font-weight: 400;
   border-radius: 8px;
 }
-.find_auth .find_auth_inner .input_number button.on {
+.Find_auth .Find_auth_inner .input_number button.on {
   background-color: #0b234a;
   color: #ffffff;
 }
-.find_auth .find_auth_inner .input_number .timer {
+.Find_auth .Find_auth_inner .input_number .timer {
   padding: 0;
   position: absolute;
   right: 17px;
@@ -61,12 +61,10 @@
   font-weight: 600;
   color: #0b234a;
 }
-
-.find_auth .find_auth_inner .Btn_navy {
-  position: fixed;
-  bottom: 31px;
-  width: 100%;
-  left: 0;
-  padding: 0 32px;
-  box-sizing: border-box;
+.Find_auth .Btn_gray{
+  color: #999999;
+}
+.Find_auth.checkAll .Btn_gray{
+  color: #ffffff;
+  background-color: #0b234a;
 }

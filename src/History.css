@@ -98,7 +98,7 @@
 /* empty */
 .History .empty {
   box-sizing: border-box;
-  padding: 77px 0;
+  padding: 77px 32px;
   text-align: center;
 }
 .History .empty h2 {
@@ -111,6 +111,6 @@
   font-weight: 400;
   color: #777777;
 }
-.History .empty .Btn_navy {
-  margin: 54px 32px;
+.History .empty .Btn_navy{
+  margin: 54px 0;
 }

@@ -28,7 +28,7 @@ function Mypage() {
       </div>
       {/* back_header : e */}
       {/* Mypage_contents : s */}
-      <div className="Mypage_contents">
+      <div className="Mypage_contents checkAll">
         <form action="">
           <div className="input_unit">
             <span>이름</span>
@@ -43,7 +43,7 @@ function Mypage() {
             <input type="text" placeholder="이메일" name="id" />
           </div>
           {/* 버튼 텍스트 변경 : 정보변경 */}
-          <Btn_gray />
+          <Btn_gray text="정보변경"/>
         </form>
         <div className="footer_fixed">
           {/* 버튼 텍스트 변경 : 로그아웃 */}

@@ -20,7 +20,7 @@ function SignUp_complete() {
       </div>
       <div className="footer_fixed">
         <Link to="/">
-          <Btn_navy />
+          <Btn_navy text="이용하러 가기"/>
         </Link>
       </div>
     </div>
