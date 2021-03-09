@@ -1,0 +1,52 @@
+[
+    {
+      "Membership_name": "88(팔팔)",
+      "Current_price": 22450,
+      "Base_price": 21500
+    },
+    {
+      "Membership_name": "고성노벨",
+      "Current_price": 15500,
+      "Base_price": 16000
+    },
+    {
+      "Membership_name": "광릉포레스트",
+      "Current_price": 6300,
+      "Base_price": 6000
+    },
+    {
+      "Membership_name": "그랜드",
+      "Current_price": 12990,
+      "Base_price": 13000
+    },
+    {
+      "Membership_name": "금강",
+      "Current_price": 12700,
+      "Base_price": 13200
+    },
+    {
+      "Membership_name": "뉴서울",
+      "Current_price": 4350,
+      "Base_price": 4900
+    },
+    {
+      "Membership_name": "레이크우드",
+      "Current_price": 33500,
+      "Base_price": 33000
+    },
+    {
+      "Membership_name": "로얄포레",
+      "Current_price": 19400,
+      "Base_price": 19500
+    },
+    {
+      "Membership_name": "화산",
+      "Current_price": 70050,
+      "Base_price": 70000
+    },
+    {
+      "Membership_name": "휘슬링락",
+      "Current_price": 140200,
+      "Base_price": 145000
+    }
+   ]
