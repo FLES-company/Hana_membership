@@ -1,11 +1,16 @@
-/* openModal */
+/* --------- .openModal 추가시 모달창 오픈 ------- */
 .Interest.openModal .modal_wrapper {
-  /* display: block; */
   display: none;
 }
+
+/* ------------------- Interest ---------------- */
+
 .Interest {
   width: 100%;
 }
+
+/* ---------------- back_header ---------------- */
+
 .Interest .back_header {
   margin-bottom: 0;
   padding: 0 16px;
@@ -19,18 +24,16 @@
   height: 48px;
   line-height: 48px;
 }
-.Interest .back_header .back_header_inner .Interest_items{
-  height: 48px;
-}
 .Interest .back_header .back_header_inner .header_icon_item {
   width: 48px;
   height: 100%;
 }
 .Interest .back_header .back_header_inner .header_icon_item .icon_img {
-  height: 48px;
-  text-align: center;
-  align-items: center;
   display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 .Interest .back_header .back_header_inner .header_icon_item.icon_back .icon_img{
   justify-content: flex-start;
@@ -39,11 +42,15 @@
   justify-content: flex-end;
 }
 .Interest .back_header .back_header_inner select {
+  height: 48px;
   background: none;
   font-size: 18px;
   font-weight: 500;
   color: #ebebeb;
 }
+
+/* ---------------- Interest_contents ---------------- */
+
 .Interest_contents {
   box-sizing: border-box;
 }
