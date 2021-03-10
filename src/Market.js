@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Interest.css";
+import "./Market.css";
 import icon_back from "./img/right-arrow.png";
 import icon_info from "./img/icon_info.png";
 import icon_favorites from "./img/icon_favorites.png";
@@ -8,7 +8,7 @@ import icon_alarm_white from "./img/icon_alarm_white.png";
 import icon_search_white from "./img/icon_search_white.png";
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 
-function Interest() {
+function Market() {
   const [modal, setModal] = useState(false);
   const openModal = () => {
     setModal(true);
@@ -17,7 +17,7 @@ function Interest() {
   };
 
   return (
-    <div className="Interest openModal">
+    <div className="Market openModal">
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
@@ -45,9 +45,9 @@ function Interest() {
       {/* back_header : e */}
 
       {/* 본 컨텐츠 : s */}
-      <div className="Interest_contents">
+      <div className="Market_contents">
         <table>
-          <caption hidden>관심회원권</caption>
+          <caption hidden>회원권시세</caption>
           <thead>
             <tr>
               <th>회원권명</th>
@@ -98,10 +98,10 @@ function Interest() {
       </div>
       {/* 본 컨텐츠 : e */}
 
-      {/* 관심회원권없음 empty : s */}
-      <div className="Interest_contents empty">
-        <h2>등록된 관심회원권이 없습니다.</h2>
-        <p>검색을 통해 관심회원권을 등록해보세요.</p>
+      {/* 회원권시세없음 empty : s */}
+      <div className="Market_contents empty">
+        <h2>등록된 회원권시세가 없습니다.</h2>
+        <p>검색을 통해 회원권시세를 등록해보세요.</p>
         <form>
           <div className="input_unit input_search">
             <button className="search-btn"></button>
@@ -109,10 +109,10 @@ function Interest() {
           </div>
         </form>
       </div>
-      {/* 관심회원권없음 empty : e */}
+      {/* 회원권시세없음 empty : e */}
 
-      {/* 관심회원권터치 : s ( 현재 modal_wrapper -> display:none; )*/}
-      <div className="Interest_contents modal_wrapper" open={modal}>
+      {/* 회원권시세터치 : s ( 현재 modal_wrapper -> display:none; )*/}
+      <div className="Market_contents modal_wrapper" open={modal}>
         <div className="modal">
           <div className="modal_favorite">
             <img src={img_favorite} alt="등록" />
@@ -158,8 +158,8 @@ function Interest() {
           </div>
         </div>
       </div>
-      {/* 관심회원권터치 : e */}
+      {/* 회원권시세터치 : e */}
     </div>
   );
 }
-export default Interest;
+export default Market;

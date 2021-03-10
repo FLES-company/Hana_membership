@@ -9,29 +9,19 @@ function Header() {
   return (
     <div className="header">
       <div className="header_inner">
-        <a href="#" className="header_logo">
+        {/* logo */}
+        <Link to="/" className="header_icon_item header_logo">
           <div className="header_logo_item">
             <img src={logo} />
           </div>
           <h1 hidden>HANA</h1>
-        </a>
-        <div className="header_icon">
-          {/* icon_alarm */}
-          <Link to="/notice">
-            <a href="#" className="header_icon_item icon_alarm has_alarm">
-              <div className="icon_img">
-                <img src={icon_alarm} />
-              </div>
-            </a>
-          </Link>
-
-          {/* icon_home */}
-          {/* <a href="#" className="header_icon_item icon_home" >
-            <div className="icon_img" >
-              <img src={icon_home} />
-            </div>
-          </a> */}
-        </div>
+        </Link>
+        {/* icon_alarm */}
+        <Link to="/notice" className="header_icon_item">
+          <div className="icon_img onAlarm">
+            <img src={icon_alarm} />
+          </div>
+        </Link>
       </div>
     </div>
   );

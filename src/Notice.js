@@ -2,23 +2,25 @@ import React from "react";
 import "./Notice.css";
 import icon_back from "./img/right-arrow.png";
 import icon_favorites from "./img/icon_favorites.png";
+import { Link, Route, BrowserRouter as Router } from "react-router-dom";
+
 function Notice() {
   return (
     <div className="Notice">
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
-          <a href="/" className="header_icon_item icon_back">
+          <Link to="/" className="header_icon_item icon_back">
             <div className="icon_img">
-              <img src={icon_back} Link to="/" />
+              <img src={icon_back} />
             </div>
-          </a>
+          </Link>
           <h1>알림</h1>
-          <a href="/login" className="header_icon_item icon_favorites">
+          <Link to="/login" className="header_icon_item icon_favorites">
             <div className="icon_img">
-              <img src={icon_favorites} Link to="/login" hidden />
+              <img src={icon_favorites} hidden />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       {/* back_header : e */}

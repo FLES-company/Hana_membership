@@ -5,6 +5,8 @@ import icon_favorites from "./img/icon_favorites.png";
 import icon_history_new from "./img/icon_history_new.png";
 import icon_history_soon from "./img/icon_history_soon.png";
 import Btn_navy from "./components/Btn_navy";
+import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
+
 
 function History() {
   return (
@@ -12,17 +14,17 @@ function History() {
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
-          <a href="/login" className="header_icon_item icon_back">
+          <Link to="/login" className="header_icon_item icon_back">
             <div className="icon_img">
-              <img src={icon_back} Link to="/login" />
+              <img src={icon_back} hidden/>
             </div>
-          </a>
+          </Link>
           <h1>회원권 거래내역</h1>
-          <a href="/login" className="header_icon_item icon_favorites">
+          <Link to="/login" className="header_icon_item icon_favorites">
             <div className="icon_img">
-              <img src={icon_favorites} Link to="/login" />
+              <img src={icon_favorites} hidden/>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       {/* back_header : e */}
@@ -73,7 +75,7 @@ function History() {
       <div className="History_contents empty">
         <h2>회원권 거래내역이 없습니다.</h2>
         <p>주문을 통해 회원권을 거래해보세요.</p>
-        <Btn_navy text="주문하러 가기"/>
+        <Btn_navy text="주문하러 가기" />
       </div>
       {/* 거래내역없음 empty : e */}
     </div>

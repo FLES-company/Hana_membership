@@ -1,7 +1,11 @@
+/* ------------------- History ---------------- */
+
 .History {
-  box-sizing: border-box;
   width: 100%;
 }
+
+/* ---------------- back_header ---------------- */
+
 .History .back_header {
   padding: 0 16px;
   margin: 0 auto;
@@ -10,10 +14,9 @@
 .History .back_header .back_header_inner {
   justify-content: center;
 }
-.History .back_header .back_header_inner .header_icon_item {
-  display: none;
-}
-/* 거래내역 */
+
+/* ---------------- History_contents ---------------- */
+
 .History .History_contents .month {
   padding: 0 24px;
   height: 32px;

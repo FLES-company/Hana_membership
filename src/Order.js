@@ -30,19 +30,20 @@ function Order() {
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
-          <a href="/login" className="header_icon_item icon_back">
+          <Link to="/login" className="header_icon_item icon_back">
             <div className="icon_img">
-              <img src={icon_back} Link to="/login" />
+              <img src={icon_back} />
             </div>
-          </a>
+          </Link>
           <select className="Order_items">
             <option value="88(팔팔)">88(팔팔)</option>
+            <option value="99(구구)">99(구구)</option>
           </select>
-          <a href="/login" className="header_icon_item icon_favorites">
+          <Link to="/login" className="header_icon_item icon_favorites">
             <div className="icon_img">
-              <img src={icon_favorites_cancle} Link to="/login" />
+              <img src={icon_favorites_cancle} />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       {/* back_header : e */}

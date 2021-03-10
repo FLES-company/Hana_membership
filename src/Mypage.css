@@ -1,7 +1,10 @@
+/* ------------------- Mypage ---------------- */
+
 .Mypage {
-  box-sizing: border-box;
   width: 100%;
 }
+/* ---------------- back_header ---------------- */
+
 .Mypage .back_header {
   padding: 0 16px;
   margin: 0 auto;
@@ -10,6 +13,8 @@
 .Mypage .back_header .back_header_inner {
   justify-content: center;
 }
+
+/* ---------------- Mypage_contents ---------------- */
 
 .Mypage_contents {
   margin: 20px 0;

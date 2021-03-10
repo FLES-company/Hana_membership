@@ -21,49 +21,40 @@ function Footer() {
       <div className="footer_inner">
         <ul>
           <li className="footer_inner_item on">
+            {/* Link태그 = a태그 */}
             <Link to="/interest">
-              <a href="#">
-                <img src={icon_f_on_1} Link to="/" />
-                <span>관심</span>
-              </a>
+              <img src={icon_f_on_1} />
+              <span>관심</span>
             </Link>
           </li>
           <li className="footer_inner_item">
-            <a href="#">
-              <img src={icon_f_off_2} Link to="/" />
+            <Link to="/market">
+              <img src={icon_f_off_2} />
               <span>시세</span>
-            </a>
+            </Link>
           </li>
           <li className="footer_inner_item">
             <Link to="/order">
-              <a href="#">
-                <img src={icon_f_off_3} />
-                <span>주문</span>
-              </a>
+              <img src={icon_f_off_3} />
+              <span>주문</span>
             </Link>
           </li>
           <li className="footer_inner_item">
             <Link to="/tab2">
-              <a href="#">
-                <img src={icon_f_off_4} />
-                <span>차트</span>
-              </a>
+              <img src={icon_f_off_4} />
+              <span>차트</span>
             </Link>
           </li>
           <li className="footer_inner_item">
             <Link to="/history">
-              <a href="#">
-                <img src={icon_f_off_5} Link to="/" />
-                <span>내역</span>
-              </a>
+              <img src={icon_f_off_5} />
+              <span>내역</span>
             </Link>
           </li>
           <li className="footer_inner_item">
             <Link to="/mypage">
-              <a href="#">
-                <img src={icon_f_off_6} Link to="/" />
-                <span>정보</span>
-              </a>
+              <img src={icon_f_off_6} />
+              <span>정보</span>
             </Link>
           </li>
         </ul>

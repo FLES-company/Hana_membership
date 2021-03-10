@@ -346,7 +346,6 @@ form .checkbox input[type="checkbox"] + label {
   border: solid 1px #dbdbdb;
   cursor: pointer;
   border-radius: 2px;
-  float: right;
 }
 form .checkbox input[type="checkbox"]:checked + label {
   border: solid 1px #dbdbdb;
@@ -374,6 +373,7 @@ form .checkbox input[type="checkbox"] + label span {
 }
 .Policy_inner ul li {
   width: 100%;
+    display: flex;
 }
 .Policy_inner::after {
   display: block;
@@ -395,7 +395,6 @@ form .checkbox input[type="checkbox"] + label span {
   border: solid 1px #dbdbdb;
   border-radius: 50%;
   cursor: pointer;
-  float: left;
 }
 
 .Policy_inner input[type="checkbox"]:checked + label {

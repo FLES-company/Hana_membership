@@ -13,17 +13,17 @@ function Mypage() {
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
-          <a href="/login" className="header_icon_item icon_back">
+          <Link to="/login" className="header_icon_item icon_back">
             <div className="icon_img">
-              <img src={icon_back} Link to="/login" hidden />
+              <img src={icon_back} hidden />
             </div>
-          </a>
+          </Link>
           <h1>내 정보</h1>
-          <a href="/login" className="header_icon_item icon_favorites">
+          <Link to="/login" className="header_icon_item icon_favorites">
             <div className="icon_img">
-              <img src={icon_favorites} Link to="/login" hidden />
+              <img src={icon_favorites} hidden />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       {/* back_header : e */}
@@ -43,7 +43,7 @@ function Mypage() {
             <input type="text" placeholder="이메일" name="id" />
           </div>
           {/* 버튼 텍스트 변경 : 정보변경 */}
-          <Btn_gray text="정보변경"/>
+          <Btn_gray text="정보변경" />
         </form>
         <div className="footer_fixed">
           {/* 버튼 텍스트 변경 : 로그아웃 */}

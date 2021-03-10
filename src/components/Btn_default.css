@@ -5,10 +5,13 @@
   font-weight: 500;
   border: solid 1px #dbdbdb !important;
   border-radius: 2px !important;
+  box-sizing: border-box;
+  white-space: nowrap;
+  vertical-align: middle;
   background-color: #ffffff;
   color: #999999;
 }
-.Btn_default.h47{
+.Btn_default.h47 {
   height: 47px;
   line-height: 47px;
 }
@@ -24,3 +27,53 @@
   background-image: linear-gradient(99deg, #e20e2f, #bc001d 100%);
   color: #ffffff;
 }
+
+/* ---------------예시--------------------- */
+.Btn_default.outline {
+  background-color: #ffffff;
+  color: #0b234a;
+  border: solid 1px #0b234a !important;
+}
+.Btn_default.fullWidth {
+  width: 100%;
+  display: inline-flex;
+  margin-left: 0;
+  margin-top: 1rem;
+}
+.Btn_default.large {
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+}
+.Btn_default.medium {
+  height: 2.25rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.Btn_default.small {
+  height: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+}
+/* blue */
+/* .Btn_default.blue {
+  background-color: blue;
+}
+.Btn_default.blue:hover {
+  background-color: rgba(0, 0, 255, 0.267);
+}
+.Btn_default.blue:active {
+  background-color: rgba(0, 0, 255, 0.603);
+} */
+/* red */
+/* .Btn_default.red {
+  background-color: red;
+}
+.Btn_default.red:hover {
+  background-color: rgba(255, 0, 0, 0.275);
+}
+.Btn_default.red:active {
+  background-color: rgba(255, 0, 0, 0.623);
+} */

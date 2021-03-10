@@ -1,8 +1,14 @@
+/* ------------------- Order ---------------- */
+
 .Order {
   width: 100%;
 }
+
+/* ---------------- back_header ---------------- */
+
 .Order .back_header {
   padding: 0 16px;
+  box-sizing: border-box;
 }
 .Order .back_header .back_header_inner {
   display: flex;
@@ -19,10 +25,10 @@
   height: 100%;
 }
 .Order .back_header .back_header_inner .header_icon_item .icon_img {
+  display: flex;
+  align-items: center;
   height: 48px;
   text-align: center;
-  align-items: center;
-  display: flex;
 }
 .Order .back_header .back_header_inner .header_icon_item.icon_back .icon_img{
   justify-content: flex-start;
@@ -30,6 +36,9 @@
 .Order .back_header .back_header_inner .header_icon_item.icon_favorites .icon_img{
   justify-content: flex-end;
 }
+
+/* ---------------- Order_contents ---------------- */
+
 .Order .Order_inner {
   width: 100%;
 }
