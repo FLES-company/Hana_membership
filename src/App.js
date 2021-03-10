@@ -11,6 +11,7 @@ import Find_id_complete from "./Find_id_complete";
 import Find_pw_reset from "./Find_pw_reset";
 import Splash from "./Splash";
 import Interest from "./Interest";
+import Market from "./Market";
 import Order from "./Order";
 import History from "./History";
 import Mypage from "./Mypage";
@@ -42,6 +43,7 @@ function App() {
         <Route path="/findAuth" component={Find_auth} />
         <Route path="/findidComplete" component={Find_id_complete} />
         <Route path="/findpwReset" component={Find_pw_reset} />
+        <Route path="/market" component={Market} />
         <Route path="/interest" component={Interest} />
         <Route path="/order" component={Order} />
         <Route path="/history" component={History} />

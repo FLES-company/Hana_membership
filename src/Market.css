@@ -1,0 +1,245 @@
+/* --------- .openModal 추가시 모달창 오픈 ------- */
+.Market.openModal .modal_wrapper {
+  display: none;
+}
+
+/* ------------------- Market ---------------- */
+
+.Market {
+  width: 100%;
+}
+
+/* ---------------- back_header ---------------- */
+
+.Market .back_header {
+  margin-bottom: 0;
+  padding: 0 16px;
+  background-color: #0b234a;
+  box-sizing: border-box;
+}
+.Market .back_header .back_header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  line-height: 48px;
+}
+.Market .back_header .back_header_inner .header_icon_item {
+  width: 48px;
+  height: 100%;
+}
+.Market .back_header .back_header_inner .header_icon_item .icon_img {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.Market .back_header .back_header_inner .header_icon_item.icon_back .icon_img{
+  justify-content: flex-start;
+}
+.Market .back_header .back_header_inner .header_icon_item.icon_alarm_white .icon_img{
+  justify-content: flex-end;
+}
+.Market .back_header .back_header_inner select {
+  height: 48px;
+  background: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ebebeb;
+}
+
+/* ---------------- Market_contents ---------------- */
+
+.Market_contents {
+  box-sizing: border-box;
+}
+.Market_contents table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.Market_contents table thead {
+  text-align: left;
+  background-color: #0b234a;
+}
+
+.Market_contents table thead th {
+  padding: 11px 16px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 300;
+  color: #cccccc;
+}
+.Market_contents table tbody tr {
+  height: 56px;
+  border-bottom: 1px solid #ebebeb;
+}
+.Market_contents table tbody th {
+  padding: 0 16px;
+  text-align: left;
+  font-size: 15px;
+}
+.Market_contents table tbody .productName {
+  font-weight: 600;
+  color: #222222;
+}
+.Market_contents table tbody .price {
+  font-weight: 500;
+  color: #333333;
+}
+
+.Market_contents table tbody .info_compared {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+}
+.Market_contents table tbody .info_compared.up {
+  color: #ff1414;
+}
+.Market_contents table tbody .info_compared.down {
+  color: #1e66ed;
+}
+.Market_contents table tbody .info_compared::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 6px;
+  background-image: url(./img/icon_equal_flow.png);
+  background-repeat: no-repeat;
+}
+.Market_contents table tbody .info_compared.up::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 6px;
+  background-image: url(./img/icon_up_flow.png);
+  background-repeat: no-repeat;
+}
+.Market_contents table tbody .info_compared.down::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 6px;
+  background-image: url(./img/icon_down_flow.png);
+  background-repeat: no-repeat;
+}
+.Market_contents table tbody .info_compared span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #777777;
+}
+.Market_contents table tbody .regi_quantity {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+}
+
+/* empty */
+.Market_contents.empty {
+  padding: 0 32px;
+  margin: 50px 0;
+  text-align: center;
+}
+.Market_contents.empty h2 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+}
+.Market_contents.empty p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+.Market_contents.empty .input_search {
+  margin: 54px 0;
+}
+
+/* modal */
+
+.Market_contents .modal {
+  padding: 24px 16px 30px;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+.Market_contents .modal .modal_favorite {
+  position: absolute;
+  top: -44px;
+  width: 100%;
+  box-sizing: border-box;
+  left: 0;
+  padding: 0 24px;
+}
+.Market_contents .modal .modal_tit {
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222222;
+}
+.Market_contents .modal .modal_tit .modal_icon img {
+  margin-left: 14px;
+}
+.Market_contents .modal .modal_content table {
+  margin-bottom: 12px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+}
+
+.Market_contents .modal .modal_content table th {
+  margin: 15px 0;
+  color: #222222;
+}
+.Market_contents .modal .modal_content table th:first-child {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+.Market_contents .modal .modal_content table th:last-child {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: right;
+}
+.Market_contents .modal .modal_content .btn_wrapper {
+  margin: 12px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Market_contents .modal .modal_content .Btn button {
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  border: none;
+}
+.Market_contents .modal .modal_content .Btn .w72 {
+  width: 72px;
+}
+.Market_contents .modal .modal_content .Btn .w168 {
+  width: 168px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
