@@ -7,6 +7,7 @@ import img_favorite from "./img/img_favorite.png";
 import icon_alarm_white from "./img/icon_alarm_white.png";
 import icon_search_white from "./img/icon_search_white.png";
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function Interest() {
   const [modal, setModal] = useState(false);
