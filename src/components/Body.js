@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import Membership_name from "../mock/Weekly_interest.json"
+import item from "../mock/weekly_interest.json"
 
 
 class Body extends React.Component {
@@ -16,7 +16,9 @@ class Body extends React.Component {
     let owl_carousel = require('owl.carousel');
     window.fn = owl_carousel;
 
-    const item_name = Membership_name.map(Membership_name => (<p className="item_tit">{Membership_name}</p>))
+    
+    const item_name = item.map(item => (<p className="item_tit">{item.Membership_name}</p>))
+    const item_current = item.map(item => (<p className="item_dec">{item.Current_price}<span className="price_up">{item.Current_price-item.Base_price}(<span className="percent">{((item.Current_price-item.Base_price)/item.Base_price*100).toFixed(2)}%</span>)<Chart /></span></p>))
     
   return(
   //   앱 실행 초기화면
@@ -38,11 +40,11 @@ class Body extends React.Component {
         <ul>
         <OwlCarousel  margin={10} autoWidth loop items={2}>
           
-          <li className="item week_item">
+        <li className="item week_item">
             <a href="#">
-              <p className="item_tit">이포</p>
+              <p className="item_tit">{item_name[0]}</p>
               <p className="item_dec">
-                4,550
+                {item_current[0]}
                 <span className="price_up">
                   37,450 (<span className="percent">823%</span>)
                   <Chart />
@@ -55,9 +57,9 @@ class Body extends React.Component {
           
           <li className="item week_item">
             <a href="#">
-              <p className="item_tit">아시아나2800</p>
+              <p className="item_tit">{item_name[1]}</p>
               <p className="item_dec">
-                4,550
+              {item_current[1]}
                 <span className="price_up">
                   37,450 (<span className="percent">823%</span>)
                   <Chart />
@@ -71,9 +73,9 @@ class Body extends React.Component {
           
           <li className="item week_item">
             <a href="#">
-              <p className="item_tit">이포</p>
+              <p className="item_tit">{item_name[2]}</p>
               <p className="item_dec">
-                4,550
+              {item_current[2]}
                 <span className="price_up">
                   37,450 (<span className="percent">823%</span>)
                   <Chart />
@@ -87,9 +89,9 @@ class Body extends React.Component {
           
           <li className="item week_item">
             <a href="#">
-              <p className="item_tit">아시아나2800</p>
+              <p className="item_tit">{item_name[3]}</p>
               <p className="item_dec">
-                4,550
+              {item_current[3]}
                 <span className="price_up">
                   37,450 (<span className="percent">823%</span>)
                   <Chart />
