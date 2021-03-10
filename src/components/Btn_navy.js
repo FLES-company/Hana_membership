@@ -12,6 +12,8 @@ function Btn_navy({ text, color }) {
     />
     // <button className={classNames('Btn_navy', text, color)} type="button" >{text}</button>
 
+  
+
   );
 }
 export default Btn_navy;
