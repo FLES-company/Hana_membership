@@ -28,8 +28,7 @@ function Interest() {
           </a>
           <select className="Order_items">
             <option value="관심회원권">관심회원권</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
+            <option value="회원권시세">회원권시세</option>
           </select>
           {/* <a href="/notice" className="header_icon_item icon_alarm_white">
             <div className="icon_img">
