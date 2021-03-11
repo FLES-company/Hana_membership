@@ -117,7 +117,7 @@ function Interest() {
       {/* 관심회원권없음 empty : e */}
 
       {/* 관심회원권터치 : s ( 현재 modal_wrapper -> display:none; )*/}
-      <div id="modal" className={modalState ? "on" : ""}>
+      <div id="modal" className={modalState ? "on" : ""} onClick={closeModal}>
         <div className="Interest_contents modal_wrapper">
           <div className="modal">
             <div className="modal_favorite">
