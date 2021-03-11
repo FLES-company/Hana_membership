@@ -28,12 +28,12 @@ import Guide_ui from "./components/Guide_ui";
 
 import "./App.css";
 
-
 function App() {
   return (
     <Router>
       <div className="App">
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Login} />
+        <Route path="/home" component={Home} />
         <Route path="/splash" component={Splash} />
         <Route path="/login" component={Login} />
         <Route path="/loginMain" component={Login_main} />

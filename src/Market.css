@@ -38,6 +38,9 @@
 .Market .back_header .back_header_inner .header_icon_item.icon_back .icon_img{
   justify-content: flex-start;
 }
+.Market .back_header .back_header_inner .header_icon_item.icon_back .icon_img img{
+  width: 16px; height: 16px; display: inline-block;
+}
 .Market .back_header .back_header_inner .header_icon_item.icon_alarm_white .icon_img{
   justify-content: flex-end;
 }
@@ -165,81 +168,4 @@
 }
 .Market_contents.empty .input_search {
   margin: 54px 0;
-}
-
-/* modal */
-
-.Market_contents .modal {
-  padding: 24px 16px 30px;
-  position: absolute;
-  bottom: 0;
-  box-sizing: border-box;
-  width: 100%;
-}
-.Market_contents .modal .modal_favorite {
-  position: absolute;
-  top: -44px;
-  width: 100%;
-  box-sizing: border-box;
-  left: 0;
-  padding: 0 24px;
-}
-.Market_contents .modal .modal_tit {
-  margin-bottom: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 600;
-  color: #222222;
-}
-.Market_contents .modal .modal_tit .modal_icon img {
-  margin-left: 14px;
-}
-.Market_contents .modal .modal_content table {
-  margin-bottom: 12px;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 14px;
-}
-
-.Market_contents .modal .modal_content table th {
-  margin: 15px 0;
-  color: #222222;
-}
-.Market_contents .modal .modal_content table th:first-child {
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-}
-.Market_contents .modal .modal_content table th:last-child {
-  font-size: 15px;
-  font-weight: 500;
-  text-align: right;
-}
-.Market_contents .modal .modal_content .btn_wrapper {
-  margin: 12px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.Market_contents .modal .modal_content .Btn button {
-  display: inline-block;
-  height: 48px;
-  line-height: 48px;
-  font-size: 15px;
-  font-weight: 400;
-  color: #333333;
-  border-radius: 10px;
-  background-color: #f5f5f5;
-  border: none;
-}
-.Market_contents .modal .modal_content .Btn .w72 {
-  width: 72px;
-}
-.Market_contents .modal .modal_content .Btn .w168 {
-  width: 168px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
 }

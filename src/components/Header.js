@@ -10,7 +10,7 @@ function Header() {
     <div className="header">
       <div className="header_inner">
         {/* logo */}
-        <Link to="/" className="header_icon_item header_logo">
+        <Link to="/home" className="header_icon_item header_logo">
           <div className="header_logo_item">
             <img src={logo} />
           </div>

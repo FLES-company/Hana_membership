@@ -1,4 +1,7 @@
 .Tab2 {
+  
+}
+.Tab2 .Tab2_contents{
   padding: 34px 32px;
   box-sizing: border-box;
   width: 100%;
@@ -87,4 +90,39 @@
 }
 .Tab2 .terms ul li.on a {
   border-bottom: 3px solid #0b234a;
+}
+
+
+
+/* ---------------- back_header ---------------- */
+
+.Tab2 .back_header {
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.Tab2 .back_header .back_header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  line-height: 48px;
+}
+.Tab2 .back_header .back_header_inner .Order_items{
+  height: 48px;
+}
+.Tab2 .back_header .back_header_inner .header_icon_item {
+  width: 48px;
+  height: 100%;
+}
+.Tab2 .back_header .back_header_inner .header_icon_item .icon_img {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  text-align: center;
+}
+.Tab2 .back_header .back_header_inner .header_icon_item.icon_back .icon_img{
+  justify-content: flex-start;
+}
+.Tab2 .back_header .back_header_inner .header_icon_item.icon_favorites .icon_img{
+  justify-content: flex-end;
 }

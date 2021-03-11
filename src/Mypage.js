@@ -8,6 +8,7 @@ import Btn_default from "./components/Btn_default";
 import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
 function Mypage() {
+  const user = JSON.parse( window.localStorage.getItem("userinfo") );
   return (
     <div className="Mypage">
       {/* back_header : s */}
@@ -30,19 +31,21 @@ function Mypage() {
       {/* Mypage_contents : s */}
       <div className="Mypage_contents checkAll">
         <form action="">
-          <div className="input_unit">
+          {/* <div className="input_unit">
             <span>이름</span>
             <input type="text" placeholder="이름" name="name" minlength="2" />
-          </div>
-          <div className="input_unit">
+          </div> */}
+          {/* <div className="input_unit">
             <span>휴대전화</span>
             <input type="text" placeholder="휴대전화" name="phone" />
-          </div>
+          </div> */}
           <div className="input_unit">
             <span>이메일</span>
-            <input type="text" placeholder="이메일" name="id" />
+            <input type="text" placeholder="이메일" name="id" value={user.email}/>
           </div>
-          <Btn_gray text="정보변경" />
+          <Link to="/findpwReset">
+            <Btn_gray text="정보변경" />
+          </Link>
         </form>
         <div className="footer_fixed">
           <Link to="/">

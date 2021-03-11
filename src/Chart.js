@@ -1,10 +1,32 @@
 import React from "react";
 import "./Tab2.css";
+import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
+import icon_back from "./img/right-arrow.png";
+import icon_favorites_cancle from "./img/icon_favorites_cancle.png";
 
-
-function Tab2() {
+function Chart() {
   return (
     <div className="Tab2">
+      {/* back_header : s */}
+        <div className="back_header">
+        <div className="back_header_inner">
+          <a href="/home" className="header_icon_item icon_back">
+            <div className="icon_img">
+              <img src={icon_back} />
+            </div>
+          </a>
+          <select className="Order_items">
+            <option value="88(팔팔)">88(팔팔)</option>
+            <option value="99(구구)">99(구구)</option>
+          </select>
+          <a to="/login" className="header_icon_item icon_favorites">
+            <div className="icon_img">
+              <img src={icon_favorites_cancle} />
+            </div>
+          </a>
+        </div>
+      </div>
+      {/* back_header : e */}
       <div className="Tab2_contents">
         {/* Order_items : s */}
         <div className="Order_items">
@@ -24,6 +46,7 @@ function Tab2() {
         {/* Order_items : e */}
 
         <div className="Order_items_graph"></div>
+
         <div className="terms">
           <ul>
             <li className="item on"><a href="#">1D</a></li>
@@ -40,4 +63,4 @@ function Tab2() {
   );
 }
 
-export default Tab2;
+export default Chart;

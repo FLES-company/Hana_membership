@@ -42,6 +42,15 @@
 .Interest
   .back_header
   .back_header_inner
+  .header_icon_item.icon_back
+  .icon_img img{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.Interest
+  .back_header
+  .back_header_inner
   .header_icon_item.icon_alarm_white
   .icon_img {
   justify-content: flex-end;
@@ -170,87 +179,4 @@
 }
 .Interest_contents.empty .input_search {
   margin: 54px 0;
-}
-
-/* --------------------------- modal ---------------------- */
-.Interest #modal.on .modal_wrapper {
-  display: block;
-}
-.Interest .modal_wrapper {
-  display: none;
-}
-.Interest_contents .modal {
-  padding: 24px 16px 30px;
-  position: absolute;
-  bottom: 0;
-  box-sizing: border-box;
-  width: 100%;
-}
-.Interest_contents .modal .modal_favorite {
-  padding: 0 24px;
-  position: absolute;
-  top: -44px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-}
-.Interest_contents .modal .modal_tit {
-  margin-bottom: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 600;
-  color: #222222;
-}
-.Interest_contents .modal .modal_tit .modal_icon img {
-  margin-left: 14px;
-}
-.Interest_contents .modal .modal_content table {
-  margin-bottom: 12px;
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 14px;
-}
-
-.Interest_contents .modal .modal_content table th {
-  margin: 15px 0;
-  color: #222222;
-}
-.Interest_contents .modal .modal_content table th:first-child {
-  font-size: 14px;
-  font-weight: 400;
-  text-align: left;
-}
-.Interest_contents .modal .modal_content table th:last-child {
-  font-size: 15px;
-  font-weight: 500;
-  text-align: right;
-}
-.Interest_contents .modal .modal_content .btn_wrapper {
-  margin: 12px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.Interest_contents .modal .modal_content .Btn button {
-  display: inline-block;
-  height: 48px;
-  line-height: 48px;
-  font-size: 15px;
-  font-weight: 400;
-  color: #333333;
-  border-radius: 10px;
-  background-color: #f5f5f5;
-  border: none;
-}
-.Interest_contents .modal .modal_content .Btn .w72 {
-  width: 72px;
-}
-.Interest_contents .modal .modal_content .Btn .w168 {
-  width: 168px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
 }

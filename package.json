@@ -1,5 +1,6 @@
 {
     "name": "hana_membership",
+    "homepage": "http://hana.fles.co.kr",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
