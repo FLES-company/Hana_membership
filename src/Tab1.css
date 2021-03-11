@@ -124,8 +124,7 @@
   justify-content: flex-end;
   width: 100%;
 }
-.Tab1_contents.top .side_item > div {
-}
+
 .Tab1_contents.top .side_item .side_standard {
   padding: 8px;
   border-bottom: 1px solid #ebebeb;
@@ -187,12 +186,17 @@
 }
 
 /* 회원권 호가 터치 모달창 : .Tab1 .modal_wrapper */
-.Tab1 .modal_wrapper{
+.Tab1 #modal.on .modal_wrapper {
   display: block;
 }
-.Tab1 .modal_wrapper .modal{
+.Tab1 .modal_wrapper {
+  display: none;
+}
+.Tab1 .modal_wrapper .modal {
   padding: 12px 0;
   margin: 0 auto;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
 }

@@ -1,4 +1,6 @@
-import React from "react";
+import React, { Component, useState, useEffect, useHistory } from "react";
+import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
+
 import "./Tab1.css";
 import btn_sell from "./img/btn_sell.png";
 import btn_cancle from "./img/btn_cancle.png";
@@ -7,18 +9,22 @@ import btn_buy from "./img/btn_buy.png";
 // 호가 탭 내 가격(li) 터치 시 팝업
 // 이미지 보이면 버튼으로 변경하기
 
-function touch() {
-  console.log("hi");
-}
-
 function Tab1() {
+  const [modalState, setModalState] = useState(false);
+  const openModal = () => {
+    setModalState(true);
+  };
+
+  const closeModal = () => {
+    setModalState(false);
+  };
   return (
     <div className="Tab1">
       {/* 호가 */}
       <div className="Tab1_contents top">
         <div className="content sell_items">
           <ul>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -27,7 +33,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -36,7 +42,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -45,7 +51,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -54,7 +60,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -63,7 +69,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -72,7 +78,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -81,7 +87,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -90,7 +96,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -99,7 +105,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -108,7 +114,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -117,7 +123,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -126,7 +132,7 @@ function Tab1() {
                 </li>
               </ul>
             </li>
-            <li className="sell_item up" onClick={touch}>
+            <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
@@ -296,12 +302,21 @@ function Tab1() {
         </div>
       </div>
 
-      <div id="modal">
+      <div id="modal" className={modalState ? "on" : ""}>
         <div className="modal_wrapper">
           <div className="modal">
-            <input className="Btn_navy w80 blue" type="button" value="매도" />
-            <input className="Btn_navy w80 gray" type="button" value="취소" />
-            <input className="Btn_navy w80 red" type="button" value="매수" />
+            <Link to="/Tab4">
+              <input className="Btn_navy w80 blue" type="button" value="매도" />
+            </Link>
+            <input
+              className="Btn_navy w80 gray"
+              type="button"
+              value="취소"
+              onClick={closeModal}
+            />
+            <Link to="/Tab5">
+              <input className="Btn_navy w80 red" type="button" value="매수" />
+            </Link>
           </div>
         </div>
       </div>

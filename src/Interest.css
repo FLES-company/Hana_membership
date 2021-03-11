@@ -1,7 +1,4 @@
 /* --------- .openModal 추가시 모달창 오픈 ------- */
-.Interest.openModal .modal_wrapper {
-  display: none;
-}
 
 /* ------------------- Interest ---------------- */
 
@@ -35,10 +32,18 @@
   height: 100%;
   text-align: center;
 }
-.Interest .back_header .back_header_inner .header_icon_item.icon_back .icon_img{
+.Interest
+  .back_header
+  .back_header_inner
+  .header_icon_item.icon_back
+  .icon_img {
   justify-content: flex-start;
 }
-.Interest .back_header .back_header_inner .header_icon_item.icon_alarm_white .icon_img{
+.Interest
+  .back_header
+  .back_header_inner
+  .header_icon_item.icon_alarm_white
+  .icon_img {
   justify-content: flex-end;
 }
 .Interest .back_header .back_header_inner select {
@@ -167,8 +172,13 @@
   margin: 54px 0;
 }
 
-/* modal */
-
+/* --------------------------- modal ---------------------- */
+.Interest #modal.on .modal_wrapper {
+  display: block;
+}
+.Interest .modal_wrapper {
+  display: none;
+}
 .Interest_contents .modal {
   padding: 24px 16px 30px;
   position: absolute;
@@ -177,12 +187,13 @@
   width: 100%;
 }
 .Interest_contents .modal .modal_favorite {
+  padding: 0 24px;
   position: absolute;
   top: -44px;
-  width: 100%;
-  box-sizing: border-box;
   left: 0;
-  padding: 0 24px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
 }
 .Interest_contents .modal .modal_tit {
   margin-bottom: 7px;
