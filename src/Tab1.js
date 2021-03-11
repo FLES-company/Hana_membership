@@ -9,14 +9,6 @@ import btn_buy from "./img/btn_buy.png";
 
 function touch() {
   console.log("hi");
-
-  return (
-    <div className="touch">
-      <img src={btn_sell} Link to="/" />
-      <img src={btn_cancle} Link to="/" />
-      <img src={btn_buy} Link to="/" />
-    </div>
-  );
 }
 
 function Tab1() {
@@ -301,6 +293,16 @@ function Tab1() {
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+
+      <div id="modal">
+        <div className="modal_wrapper">
+          <div className="modal">
+            <input className="Btn_navy w80 blue" type="button" value="매도" />
+            <input className="Btn_navy w80 gray" type="button" value="취소" />
+            <input className="Btn_navy w80 red" type="button" value="매수" />
+          </div>
         </div>
       </div>
     </div>

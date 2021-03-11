@@ -185,3 +185,14 @@
   font-weight: 400;
   color: #bc001d;
 }
+
+/* 회원권 호가 터치 모달창 : .Tab1 .modal_wrapper */
+.Tab1 .modal_wrapper{
+  display: block;
+}
+.Tab1 .modal_wrapper .modal{
+  padding: 12px 0;
+  margin: 0 auto;
+  width: fit-content;
+  background: transparent;
+}

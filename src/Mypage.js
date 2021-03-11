@@ -42,13 +42,11 @@ function Mypage() {
             <span>이메일</span>
             <input type="text" placeholder="이메일" name="id" />
           </div>
-          {/* 버튼 텍스트 변경 : 정보변경 */}
           <Btn_gray text="정보변경" />
         </form>
         <div className="footer_fixed">
-          {/* 버튼 텍스트 변경 : 로그아웃 */}
           <Link to="/">
-            <Btn_default />
+            <Btn_default text="로그아웃" />
           </Link>
         </div>
       </div>
