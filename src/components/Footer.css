@@ -29,7 +29,8 @@
   background-color: #fff;
 }
 
-.footer .footer_inner .footer_inner_item a {
+.footer .footer_inner .footer_inner_item a,
+.footer .footer_inner .footer_inner_item p {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -41,7 +42,8 @@
   font-weight: 400;
 
 }
-.footer .footer_inner .footer_inner_item.on a{
+.footer .footer_inner .footer_inner_item.on a,
+.footer .footer_inner .footer_inner_item.on p{
   color: #0b234a;
   font-weight: 600;
 

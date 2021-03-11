@@ -54,7 +54,8 @@
   line-height: 38px;
   text-align: center;
 }
-.Order .Order_inner ul li a {
+.Order .Order_inner ul li a,
+.Order .Order_inner ul li span {
   font-size: 15px;
   font-weight: 400;
   color: #777777;
