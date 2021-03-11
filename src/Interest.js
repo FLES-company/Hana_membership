@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
+
 import "./Interest.css";
 import icon_back from "./img/right-arrow.png";
 import icon_info from "./img/icon_info.png";
@@ -6,19 +8,21 @@ import icon_favorites from "./img/icon_favorites.png";
 import img_favorite from "./img/img_favorite.png";
 import icon_alarm_white from "./img/icon_alarm_white.png";
 import icon_search_white from "./img/icon_search_white.png";
-import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 import Footer from "./components/Footer";
 
 function Interest() {
-  const [modal, setModal] = useState(false);
+  const [modalState, setModalState] = useState(false);
   const openModal = () => {
-    setModal(true);
-    console.log(modal);
-    // 최상단에 클래스네임.openModal으로 모달창 띄우기
+    console.log(this)
+    setModalState(true);
+  };
+
+  const closeModal = () => {
+    setModalState(false);
   };
 
   return (
-    <div className="Interest openModal">
+    <div className="Interest">
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
@@ -113,52 +117,55 @@ function Interest() {
       {/* 관심회원권없음 empty : e */}
 
       {/* 관심회원권터치 : s ( 현재 modal_wrapper -> display:none; )*/}
-      <div className="Interest_contents modal_wrapper" open={modal}>
-        <div className="modal">
-          <div className="modal_favorite">
-            <img src={img_favorite} alt="등록" />
-          </div>
-          <div className="modal_tit">
-            <span className="product">88(팔팔)</span>
-            <div className="modal_icon">
-              <img src={icon_info} alt="info" />
-              <img src={icon_favorites} alt="favorites" />
+      <div id="modal" className={modalState ? "on" : ""}>
+        <div className="Interest_contents modal_wrapper">
+          <div className="modal">
+            <div className="modal_favorite">
+              <img src={img_favorite} alt="등록" />
             </div>
-          </div>
-          <div className="modal_content">
-            <table>
-              <tr>
-                <th>기준가(만원)</th>
-                <th className="standard_price">20,000</th>
-              </tr>
-              <tr>
-                <th>고가(만원)</th>
-                <th className="high_price">24,000</th>
-              </tr>
-              <tr>
-                <th>저가(만원)</th>
-                <th className="low_price">19,900</th>
-              </tr>
-              <tr>
-                <th>총 거래량</th>
-                <th className="total_quantity">320</th>
-              </tr>
-            </table>
-            <div className="btn_wrapper Btn">
-              {/* 호가,차트,매수 */}
-              <button className="w72 bgGf5" type="button">
-                호가
-              </button>
-              <button className="w72 bgGf5" type="button">
-                차트
-              </button>
-              <button className="w168 bgN" type="button">
-                매수
-              </button>
+            <div className="modal_tit">
+              <span className="product">88(팔팔)</span>
+              <div className="modal_icon">
+                <img src={icon_info} alt="info" />
+                <img src={icon_favorites} alt="favorites" />
+              </div>
+            </div>
+            <div className="modal_content">
+              <table>
+                <tr>
+                  <th>기준가(만원)</th>
+                  <th className="standard_price">20,000</th>
+                </tr>
+                <tr>
+                  <th>고가(만원)</th>
+                  <th className="high_price">24,000</th>
+                </tr>
+                <tr>
+                  <th>저가(만원)</th>
+                  <th className="low_price">19,900</th>
+                </tr>
+                <tr>
+                  <th>총 거래량</th>
+                  <th className="total_quantity">320</th>
+                </tr>
+              </table>
+              <div className="btn_wrapper Btn">
+                {/* 호가,차트,매수 */}
+                <button className="w72 bgGf5" type="button">
+                  호가
+                </button>
+                <button className="w72 bgGf5" type="button">
+                  차트
+                </button>
+                <button className="w168 bgN" type="button">
+                  매수
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* 관심회원권터치 : e */}
     </div>
   );
