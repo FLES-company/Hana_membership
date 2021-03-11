@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+
 import "./Notice.css";
 import icon_back from "./img/right-arrow.png";
 import icon_favorites from "./img/icon_favorites.png";
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 
 function Notice() {
+  const [collapsed, setCollapsed] = useState(false);
+  const click = () => {
+    console.log(collapsed)
+    setCollapsed(!collapsed);
+  }
   return (
     <div className="Notice">
       {/* back_header : s */}
@@ -28,7 +34,7 @@ function Notice() {
         <p className="Notice_text">최근 14일의 알림을 확인할 수 있습니다.</p>
         <div className="accordion_inner">
           <ul className="accordion-list qna">
-            <li className="on">
+            <li className={collapsed ? "on" : ""} onClick={click}>
               <div className="header-area">
                 <div className="tagImg notice"></div>
                 <div className="tit">
@@ -59,7 +65,7 @@ function Notice() {
                 </p>
               </div>
             </li>
-            <li>
+            <li className={collapsed ? "on" : ""} onClick={click}>
               <div className="header-area">
                 <div className="tagImg event"></div>
                 <div className="tit">
