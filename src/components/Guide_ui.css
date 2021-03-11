@@ -549,6 +549,7 @@ form .checkbox input[type="checkbox"] + label span {
   align-items: center;
   justify-content: center;
   display: none;
+  z-index: 999;
 }
 .modal {
   background-color: #ffffff;
