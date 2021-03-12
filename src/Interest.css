@@ -4,63 +4,21 @@
 
 .Interest {
   width: 100%;
+  margin-top: 48px;
 }
 
 /* ---------------- back_header ---------------- */
 
 .Interest .back_header {
-  margin-bottom: 0;
-  padding: 0 16px;
   background-color: #0b234a;
-  box-sizing: border-box;
-}
-.Interest .back_header .back_header_inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 48px;
-  line-height: 48px;
-}
-.Interest .back_header .back_header_inner .header_icon_item {
-  width: 48px;
-  height: 100%;
-}
-.Interest .back_header .back_header_inner .header_icon_item .icon_img {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-.Interest
-  .back_header
-  .back_header_inner
-  .header_icon_item.icon_back
-  .icon_img {
-  justify-content: flex-start;
-}
-.Interest
-  .back_header
-  .back_header_inner
-  .header_icon_item.icon_back
-  .icon_img img{
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-}
-.Interest
-  .back_header
-  .back_header_inner
-  .header_icon_item.icon_alarm_white
-  .icon_img {
-  justify-content: flex-end;
 }
 .Interest .back_header .back_header_inner select {
-  height: 48px;
-  background: none;
   font-size: 18px;
   font-weight: 500;
   color: #ebebeb;
+}
+.Interest .back_header .back_header_inner .header_icon_item.icon_back{
+  visibility: hidden;
 }
 
 /* ---------------- Interest_contents ---------------- */

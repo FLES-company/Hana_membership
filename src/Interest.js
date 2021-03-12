@@ -7,35 +7,12 @@ import icon_info from "./img/icon_info.png";
 import icon_favorites from "./img/icon_favorites.png";
 import img_favorite from "./img/img_favorite.png";
 import icon_search_white from "./img/icon_search_white.png";
+import Header_sub from "./components/Header_sub";
 
 function Interest() {
   return (
     <div className="Interest">
-      {/* back_header : s */}
-      <div className="back_header">
-        <div className="back_header_inner">
-          <a href="/home" className="header_icon_item icon_back">
-            <div className="icon_img">
-              <img src={icon_back} Link to="/login" hidden />
-            </div>
-          </a>
-          <select className="Order_items">
-            <option value="관심회원권">관심회원권</option>
-            {/* <option value="회원권시세">회원권시세</option> */}
-          </select>
-          {/* <a href="/notice" className="header_icon_item icon_alarm_white">
-            <div className="icon_img">
-              <img src={icon_alarm_white} />
-            </div>
-          </a> */}
-          <a href="/search" className="header_icon_item icon_alarm_white">
-            <div className="icon_img">
-              <img src={icon_search_white} />
-            </div>
-          </a>
-        </div>
-      </div>
-      {/* back_header : e */}
+      <Header_sub />
 
       {/* 본 컨텐츠 : s */}
       <div className="Interest_contents">
