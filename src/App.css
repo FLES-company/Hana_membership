@@ -7,28 +7,37 @@
 }
 
 /* tab1~5 공통 css*/
-.Tab_item{
+.Tab_item {
   width: 100%;
 }
-.Tab_item .Tab_content{
+.Tab_item .Tab_content {
   margin: 40px 0;
 }
 
 /* --------------------------- modal ---------------------- */
-#modal.on .modal_wrapper {
-  display: block;
-}
-.modal_wrapper {
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 999;
   display: none;
 }
-.modal {
+#modal.on {
+  display: block;
+}
+.modal_inner {
+  background-color: #ffffff;
+  border-radius: 4px;
   padding: 24px 16px 30px;
   position: absolute;
   bottom: 0;
   box-sizing: border-box;
   width: 100%;
 }
-.modal .modal_favorite {
+.modal_inner .modal_favorite {
   padding: 0 24px;
   position: absolute;
   top: -44px;
@@ -37,7 +46,10 @@
   text-align: center;
   box-sizing: border-box;
 }
-.modal .modal_tit {
+.modal_inner .modal_tit {
+  font-size: 24px;
+}
+.modal_inner .modal_tit {
   margin-bottom: 7px;
   display: flex;
   align-items: center;
@@ -46,37 +58,37 @@
   font-weight: 600;
   color: #222222;
 }
-.modal .modal_tit .modal_icon img {
+.modal_inner .modal_tit .modal_icon img {
   margin-left: 14px;
 }
-.modal .modal_content table {
+.modal_inner .modal_content table {
   margin-bottom: 12px;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 14px;
 }
 
-.modal .modal_content table th {
+.modal_inner .modal_content table th {
   margin: 15px 0;
   color: #222222;
 }
-.modal .modal_content table th:first-child {
+.modal_inner .modal_content table th:first-child {
   font-size: 14px;
   font-weight: 400;
   text-align: left;
 }
-.modal .modal_content table th:last-child {
+.modal_inner .modal_content table th:last-child {
   font-size: 15px;
   font-weight: 500;
   text-align: right;
 }
-.modal .modal_content .btn_wrapper {
+.modal_inner .modal_content .btn_wrapper {
   margin: 12px 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.modal .modal_content .Btn button {
+.modal_inner .modal_content .Btn button {
   display: inline-block;
   height: 48px;
   line-height: 48px;
@@ -87,10 +99,10 @@
   background-color: #f5f5f5;
   border: none;
 }
-.modal .modal_content .Btn .w72 {
+.modal_inner .modal_content .Btn .w72 {
   width: 72px;
 }
-.modal .modal_content .Btn .w168 {
+.modal_inner .modal_content .Btn .w168 {
   width: 168px;
   font-size: 16px;
   font-weight: 600;

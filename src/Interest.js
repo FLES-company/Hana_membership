@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
 import "./Interest.css";
-import icon_back from "./img/left-arrow.png";
-import icon_info from "./img/icon_info.png";
-import icon_favorites from "./img/icon_favorites.png";
-import img_favorite from "./img/img_favorite.png";
-import icon_search_white from "./img/icon_search_white.png";
+
+import memberships from "./mock/membership_price.json";
 import Header_sub from "./components/Header_sub";
 
-function Interest() {
+function Interest({Membership_name, Current_price, Base_price, Total_transactions}) {
+
+  const onCreate = () => {
+  }
+
   return (
     <div className="Interest">
       <Header_sub />
@@ -28,15 +28,17 @@ function Interest() {
           </thead>
           <tbody>
             <tr>
-              <th className="productName">88(팔팔)</th>
-              <th className="price">21,000</th>
-              <th className="info_compared up">
-                37,450
+              <th className="productName">{Membership_name}</th>
+              <th className="price">{Current_price}</th>
+              <th className={
+                    Current_price % 3 == 0 ? "info_compared up" : "info_compared down"
+                  }>
+                {Base_price}
                 <br />
-                <span className="percent">(823%)</span>
+                <span className="percent">({Math.round(Math.random() * 20)}%)</span>
               </th>
               <th className="regi_quantity">
-                <span>1,979</span>
+                <span>{Total_transactions}</span>
               </th>
             </tr>
           </tbody>
@@ -44,7 +46,7 @@ function Interest() {
       </div>
       {/* 본 컨텐츠 : e */}
 
-      {/* 관심회원권없음 empty : s  */}
+      {/* 관심회원권없음 empty : s  , on으로 작동 */}
       <div className="Interest_contents empty">
         <h2>등록된 관심회원권이 없습니다.</h2>
         <p>검색을 통해 관심회원권을 등록해보세요.</p>
