@@ -19,7 +19,9 @@ function Tab1() {
     setModalState(false);
   };
   return (
-    <div className="Tab1">
+    <div className="Tab_item Tab1">
+      <div className="Tab_content">
+
       {/* 호가 */}
       <div className="Tab1_contents top">
         <div className="content sell_items">
@@ -320,6 +322,8 @@ function Tab1() {
           </div>
         </div>
       </div>
+      </div>
+    
     </div>
   );
 }

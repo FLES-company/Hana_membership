@@ -4,8 +4,8 @@ import "./Tab2.css";
 
 function Tab2() {
   return (
-    <div className="Tab2">
-      <div className="Tab2_contents">
+    <div className="Tab_item Tab2">
+      <div className="Tab_content Tab2_contents">
         {/* Order_items : s */}
         <div className="Order_items">
           <p className="tit">88(팔팔)</p>

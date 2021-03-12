@@ -6,6 +6,13 @@
   overflow: hidden;
 }
 
+/* tab1~5 공통 css*/
+.Tab_item{
+  width: 100%;
+}
+.Tab_item .Tab_content{
+  margin: 40px 0;
+}
 
 /* --------------------------- modal ---------------------- */
 #modal.on .modal_wrapper {

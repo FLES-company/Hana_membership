@@ -16,8 +16,6 @@
   z-index: 999;
   background: #ffffff;
 }
-.Order .Order_contents {
-}
 .Order .Order_inner ul {
   display: flex;
   justify-content: space-between;
