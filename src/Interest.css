@@ -4,7 +4,6 @@
 
 .Interest {
   width: 100%;
-  margin-top: 48px;
 }
 
 /* ---------------- back_header ---------------- */
@@ -25,7 +24,9 @@
 /* ---------------- Interest_contents ---------------- */
 
 .Interest_contents {
-  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 .Interest_contents table {
   width: 100%;
@@ -55,15 +56,12 @@
 }
 .Interest_contents table tbody {
   position: absolute;
-  top: 90px;
+  top: 42px;
   left: 0;
   width: 100%;
 }
 .Interest_contents table tbody tr {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 56px;
   border-bottom: 1px solid #ebebeb;
 }
@@ -73,15 +71,20 @@
   font-size: 15px;
 }
 .Interest_contents table tbody .productName {
+  width: 20%;
   font-weight: 600;
   color: #222222;
 }
 .Interest_contents table tbody .price {
+  width: 10%;
+
   font-weight: 500;
   color: #333333;
 }
 
 .Interest_contents table tbody .info_compared {
+  width: 10%;
+
   position: relative;
   font-size: 14px;
   font-weight: 600;
@@ -134,18 +137,25 @@
   color: #777777;
 }
 .Interest_contents table tbody .regi_quantity {
+  width: 10%;
+
   font-size: 14px;
   font-weight: 400;
   color: #555555;
 }
 
 /* empty */
+.Interest_contents.empty.on{
+  display: block;
+}
 .Interest_contents.empty {
   padding: 0 32px;
-  margin: 200px 0;
-  text-align: center;
-  position: absolute;
+  margin: 70px 0;
   width: 100%;
+  height: unset;
+  box-sizing: border-box;
+  text-align: center;
+  display: none;
 }
 .Interest_contents.empty h2 {
   margin-bottom: 8px;
