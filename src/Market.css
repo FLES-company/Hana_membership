@@ -12,60 +12,43 @@
 /* ---------------- back_header ---------------- */
 
 .Market .back_header {
-  margin-bottom: 0;
-  padding: 0 16px;
-  background-color: #0b234a;
-  box-sizing: border-box;
-}
-.Market .back_header .back_header_inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 48px;
-  line-height: 48px;
-}
-.Market .back_header .back_header_inner .header_icon_item {
-  width: 48px;
-  height: 100%;
-}
-.Market .back_header .back_header_inner .header_icon_item .icon_img {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-.Market .back_header .back_header_inner .header_icon_item.icon_back .icon_img{
-  justify-content: flex-start;
-}
-.Market .back_header .back_header_inner .header_icon_item.icon_back .icon_img img{
-  width: 16px; height: 16px; display: inline-block;
-}
-.Market .back_header .back_header_inner .header_icon_item.icon_alarm_white .icon_img{
-  justify-content: flex-end;
+  background-color: #0b234a !important;
 }
 .Market .back_header .back_header_inner select {
-  height: 48px;
-  background: none;
   font-size: 18px;
   font-weight: 500;
   color: #ebebeb;
+}
+.Market .back_header .back_header_inner .header_icon_item.icon_back {
+  visibility: hidden;
 }
 
 /* ---------------- Market_contents ---------------- */
 
 .Market_contents {
-  box-sizing: border-box;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 .Market_contents table {
   width: 100%;
   border-collapse: collapse;
 }
 .Market_contents table thead {
+  position: fixed;
+  width: 100%;
+  top: 48px;
+  left: 0;
+  z-index: 9;
   text-align: left;
   background-color: #0b234a;
 }
-
+.Market_contents table thead tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .Market_contents table thead th {
   padding: 11px 16px;
   box-sizing: border-box;
@@ -73,7 +56,14 @@
   font-weight: 300;
   color: #cccccc;
 }
+.Market_contents table tbody {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  width: 100%;
+}
 .Market_contents table tbody tr {
+  width: 100%;
   height: 56px;
   border-bottom: 1px solid #ebebeb;
 }
@@ -83,6 +73,7 @@
   font-size: 15px;
 }
 .Market_contents table tbody .productName {
+  width: 30%;
   font-weight: 600;
   color: #222222;
 }

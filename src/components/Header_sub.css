@@ -1,0 +1,84 @@
+.Header_sub{
+  height: 48px;
+}
+.Header_sub .back_header {
+  margin: 0px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 48px;
+  background-color: #ffffff;
+  z-index: 999;
+}
+.Header_sub .back_header .back_header_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  line-height: 48px;
+}
+.Header_sub .back_header .back_header_inner .Header_sub_items{
+  height: 48px;
+}
+.Header_sub .back_header .back_header_inner .header_icon_item {
+  width: 48px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.Header_sub .back_header .back_header_inner .header_icon_item:first-child{
+  justify-content: flex-start;
+}
+.Header_sub .back_header .back_header_inner .header_icon_item:last-child{
+  justify-content: flex-end;
+}
+.Header_sub .back_header .back_header_inner .header_icon_item .icon_img {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+/* icon_favorites */
+.Header_sub .back_header .back_header_inner .header_icon_item.icon_favorites .icon_img{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icon_favorites_cancle.png);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.Header_sub .back_header .back_header_inner .header_icon_item.icon_alarm_white .icon_img{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icon_search_white.png);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.Header_sub .back_header .back_header_inner .header_icon_item.icon_search_white .icon_img{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icon_search_white.png);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.Header_sub .back_header .back_header_inner .header_icon_item.icon_search_white .icon_img{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icon_search_white.png);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.Header_sub .back_header .back_header_inner .header_icon_item.icon_alarm_white .icon_img{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icon_alarm_white.png);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+.Header_sub .back_header .back_header_inner .header_icon_item.icon_home .icon_img{
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icon_home.png);
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}

@@ -8,6 +8,7 @@ import icon_search_white from "./img/icon_search_white.png";
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 
 import memberships from "./mock/membership_price.json";
+import Header_sub from "./components/Header_sub";
 
 function Market() {
   const [modalData, setModalData] = useState(false);
@@ -20,7 +21,9 @@ function Market() {
     //가상의 데이터에 구분되는 식별 ID 가 없어서 중복되지 않는 PRICE 값으로 선택된 회원권 값을 가져오도록 처리
     const ms_price = e.currentTarget.dataset.price;
     // console.log(memberships.filter(ms => ms.Current_price == ms_price));
-    const selected_ms = memberships.filter(ms => ms.Current_price == ms_price);
+    const selected_ms = memberships.filter(
+      (ms) => ms.Current_price == ms_price
+    );
     setModalData(selected_ms[0]);
     setModalState(true);
   };
@@ -31,28 +34,7 @@ function Market() {
   return (
     <div className="Market">
       {/* back_header : s */}
-      <div className="back_header">
-        <div className="back_header_inner">
-          <a href="/home" className="header_icon_item icon_back">
-            <div className="icon_img">
-              <img src={icon_back} Link to="/home" hidden />
-            </div>
-          </a>
-          <select className="Order_items">
-            <option value="회원권시세">회원권시세</option>
-          </select>
-          {/* <a href="/notice" className="header_icon_item icon_alarm_white">
-            <div className="icon_img">
-              <img src={icon_alarm_white} />
-            </div>
-          </a> */}
-          <a href="/search" className="header_icon_item icon_alarm_white">
-            <div className="icon_img">
-              <img src={icon_search_white} />
-            </div>
-          </a>
-        </div>
-      </div>
+      <Header_sub />
       {/* back_header : e */}
 
       {/* 본 컨텐츠 : s */}
@@ -61,31 +43,37 @@ function Market() {
           <caption hidden>회원권시세</caption>
           <thead>
             <tr>
-              <th>회원권명</th>
-              <th>현재가</th>
-              <th>전일대비</th>
-              <th>등록량</th>
+              <th className="productName">회원권명</th>
+              <th class="price">현재가</th>
+              <th class="info_compared">전일대비</th>
+              <th class="regi_quantity">등록량</th>
             </tr>
           </thead>
           <tbody>
-            {
-              memberships.map(
-                  (ms, index) => (
-                    <tr onClick={openModal} data-index={index} data-price={ms.Current_price}>
-                      <th className="productName">{ms.Membership_name}</th>
-                      <th className="price">{ms.Current_price}</th>
-                      <th className={ index % 3 == 0 ? 'info_compared up' : 'info_compared down'}>
-                        {ms.Base_price}
-                        <br />
-                        <span className="percent">({ Math.round(Math.random() * 20) }%)</span>
-                      </th>
-                      <th className="regi_quantity">
-                        <span>{ms.Total_transactions}</span>
-                      </th>
-                    </tr>
-                  )
-                )
-              }
+            {memberships.map((ms, index) => (
+              <tr
+                onClick={openModal}
+                data-index={index}
+                data-price={ms.Current_price}
+              >
+                <th className="productName">{ms.Membership_name}</th>
+                <th className="price">{ms.Current_price}</th>
+                <th
+                  className={
+                    index % 3 == 0 ? "info_compared up" : "info_compared down"
+                  }
+                >
+                  {ms.Base_price}
+                  <br />
+                  <span className="percent">
+                    ({Math.round(Math.random() * 20)}%)
+                  </span>
+                </th>
+                <th className="regi_quantity">
+                  <span>{ms.Total_transactions}</span>
+                </th>
+              </tr>
+            ))}
 
             {/* <tr onClick={openModal}>
               <th className="productName">88(팔팔)</th>
@@ -130,8 +118,8 @@ function Market() {
       */}
       {/* 회원권시세없음 empty : e */}
 
-       {/* 관심회원권터치 : s ( 현재 modal_wrapper -> display:none; )*/}
-       <div id="modal" className={modalState ? "on" : ""} onClick={closeModal}>
+      {/* 관심회원권터치 : s ( 현재 modal_wrapper -> display:none; )*/}
+      <div id="modal" className={modalState ? "on" : ""} onClick={closeModal}>
         <div className="Interest_contents modal_wrapper">
           <div className="modal">
             {/* <div className="modal_favorite">
@@ -160,7 +148,9 @@ function Market() {
                 </tr>
                 <tr>
                   <th>총 거래량</th>
-                  <th className="total_quantity">{modalData.Total_transactions}</th>
+                  <th className="total_quantity">
+                    {modalData.Total_transactions}
+                  </th>
                 </tr>
               </table>
               <div className="btn_wrapper Btn">
@@ -180,7 +170,6 @@ function Market() {
         </div>
       </div>
       {/* 관심회원권터치 : e */}
-
     </div>
   );
 }

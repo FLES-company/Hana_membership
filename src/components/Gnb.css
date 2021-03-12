@@ -1,9 +1,21 @@
 .gnb {
+  margin-top: 48px;
   padding: 0 16px;
   height: 48px;
   overflow-x: auto;
   white-space: nowrap;
   position: relative;
+  
+  /* gnb fix일경우 */
+  /* margin-top: 40px;
+  padding: 0 16px;
+  height: 48px;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  background: #ffffff;
+  z-index: 999; */
 }
 
 .gnb .gnb_inner {

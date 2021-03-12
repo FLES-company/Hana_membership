@@ -6,53 +6,17 @@
 
 /* ---------------- back_header ---------------- */
 
-.Order .back_header {
-  padding: 0 16px;
-  box-sizing: border-box;
-
-  position: fixed;
-  width: 100%;
-  height: 45px;
-  top: 0px;
-  margin: 0px;
-}
-.Order .back_header .back_header_inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 48px;
-  line-height: 48px;
-}
-.Order .back_header .back_header_inner .Order_items{
-  height: 48px;
-}
-.Order .back_header .back_header_inner .header_icon_item {
-  width: 48px;
-  height: 100%;
-}
-.Order .back_header .back_header_inner .header_icon_item .icon_img {
-  display: flex;
-  align-items: center;
-  height: 48px;
-  text-align: center;
-}
-.Order .back_header .back_header_inner .header_icon_item.icon_back .icon_img{
-  justify-content: flex-start;
-}
-.Order .back_header .back_header_inner .header_icon_item.icon_favorites .icon_img{
-  justify-content: flex-end;
-}
-
 /* ---------------- Order_contents ---------------- */
 
 .Order .Order_inner {
-  width: 100%;
   position: fixed;
-  top: 50px;
+  top: 48px;
   width: 100%;
+  height: 40px;
+  z-index: 999;
+  background: #ffffff;
 }
-.Order .Order_contents{
-  padding-top: 90px;
+.Order .Order_contents {
 }
 .Order .Order_inner ul {
   display: flex;

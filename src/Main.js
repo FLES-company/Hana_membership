@@ -71,7 +71,7 @@ function Main() {
     return (
       <>
         { header_obj[header] }
-        {/* { gnb_obj[gnb] } */}
+        { gnb_obj[gnb] }
         { obj[mainTab] }
         <div className="footer">
           <div className="footer_inner">

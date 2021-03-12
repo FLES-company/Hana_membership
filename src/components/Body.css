@@ -1,8 +1,11 @@
 .Body {
   padding: 0 16px;
+  box-sizing: border-box;
 }
 .Body .Body_inner{
   padding-bottom: 56px;
+  /* gnb fix일경우 */
+  /* margin-top: 90px; */
 }
 /* Body_inner_banner */
 .Body .Body_inner_banner {
