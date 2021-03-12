@@ -2,6 +2,11 @@
   padding: 0 16px;
   width: 100%;
   box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  height: 48px;
+  background: #ffffff;
+  z-index: 9;
 }
 .header .header_inner {
   display: flex;
