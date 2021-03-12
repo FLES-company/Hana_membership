@@ -1,11 +1,13 @@
 .Header_sub .back_header {
+  margin: 0px;
   padding: 0 16px;
   box-sizing: border-box;
   position: fixed;
+  top: 0px;
   width: 100%;
   height: 48px;
-  top: 0px;
-  margin: 0px;
+  background-color: #ffffff;
+  z-index: 999;
 }
 .Header_sub .back_header .back_header_inner {
   display: flex;

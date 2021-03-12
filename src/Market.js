@@ -43,10 +43,10 @@ function Market() {
           <caption hidden>회원권시세</caption>
           <thead>
             <tr>
-              <th>회원권명</th>
-              <th>현재가</th>
-              <th>전일대비</th>
-              <th>등록량</th>
+              <th className="productName">회원권명</th>
+              <th class="price">현재가</th>
+              <th class="info_compared">전일대비</th>
+              <th class="regi_quantity">등록량</th>
             </tr>
           </thead>
           <tbody>
