@@ -1,8 +1,7 @@
-.Tab4 {
+.Tab_item.Tab4 .Tab_content {
+  height: 100vh;
   padding: 24px 32px;
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
 }
 /* 배경 -> 매도 : blue / 매수 : red */
 .Tab4.blue {
@@ -74,4 +73,8 @@
 .Tab4 .content.disabled input {
   background-color: transparent;
   color: #dbdbdb;
+}
+
+.Tab4 .footer_fixed {
+  bottom: 100px;
 }

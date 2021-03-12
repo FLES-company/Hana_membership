@@ -5,8 +5,8 @@ import img_guide from "./img/img_guide.png";
 
 function Tab3() {
   return (
-    <div className="Tab3">
-      <div className="Tab3_contents">
+    <div className="Tab_item Tab3">
+      <div className="Tab_content Tab3_contents">
         <table className="info">
           <caption>기본 정보</caption>
           <tbody>

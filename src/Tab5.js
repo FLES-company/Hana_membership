@@ -26,8 +26,8 @@ function Tab5() {
     // 배경 -> 매도 : blue / 매수 : red
     // 체크박스 -> 매도 : chk_blue / 매수 : chk_red
 
-    <div className="Tab5 red">
-      <div className="Tab5_contents">
+    <div className="Tab_item Tab5 red">
+      <div className="Tab_content Tab5_contents">
         <form>
           {/* 구분 */}
           <div className="content division">

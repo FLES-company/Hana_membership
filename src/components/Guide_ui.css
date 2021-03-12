@@ -538,30 +538,4 @@ form .checkbox input[type="checkbox"] + label span {
   color: #777777;
 }
 
-.modal_wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-.modal {
-  background-color: #ffffff;
-  padding: 24px 16px;
-  border-radius: 4px;
-  width: 320px;
-}
-.modal_tit {
-  font-size: 24px;
-}
-.modal_close_wrapper {
-  text-align: right;
-}
-.modal_close_wrapper button {
-  width: auto;
-}
+

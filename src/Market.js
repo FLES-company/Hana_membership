@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import "./Market.css";
-import icon_back from "./img/left-arrow.png";
+import img_favorite from "./img/img_favorite.png";
+import img_favorite_cancle from "./img/img_favorite_cancle.png";
 import icon_info from "./img/icon_info.png";
 import icon_favorites from "./img/icon_favorites.png";
-import img_favorite from "./img/img_favorite.png";
-import icon_search_white from "./img/icon_search_white.png";
-import { Link, Route, BrowserRouter as Router } from "react-router-dom";
+import icon_favorites_cancle from "./img/icon_favorites_cancle.png";
 
 import memberships from "./mock/membership_price.json";
 import Header_sub from "./components/Header_sub";
+import { Link } from "react-router-dom";
 
 function Market() {
+  // 관심회원권으로 등록/해제 되었습니다.
+  const [favorite, setFavorite] = useState(false);
+  const favoriteHandler = (e) => {
+    setFavorite(!favorite);
+  };
+
   const [modalData, setModalData] = useState(false);
   const [modalState, setModalState] = useState(false);
   const openModal = (e) => {
@@ -27,15 +33,16 @@ function Market() {
     setModalData(selected_ms[0]);
     setModalState(true);
   };
-  const closeModal = () => {
-    setModalState(false);
+  const closeModal = (e) => {
+    console.log(e.target, e.currentTarget);
+    if(e.target === e.currentTarget){
+      setModalState(false);
+    };
   };
 
   return (
     <div className="Market">
-      {/* back_header : s */}
       <Header_sub />
-      {/* back_header : e */}
 
       {/* 본 컨텐츠 : s */}
       <div className="Market_contents">
@@ -104,67 +111,57 @@ function Market() {
       </div>
       {/* 본 컨텐츠 : e */}
 
-      {/* 회원권시세없음 empty : s 
-      <div className="Market_contents empty">
-        <h2>등록된 회원권시세가 없습니다.</h2>
-        <p>검색을 통해 회원권시세를 등록해보세요.</p>
-        <form>
-          <div className="input_unit input_search">
-            <button className="search-btn"></button>
-            <input type="text" placeholder="회원권 검색하기" />
-          </div>
-        </form>
-      </div>
-      */}
-      {/* 회원권시세없음 empty : e */}
-
-      {/* 관심회원권터치 : s ( 현재 modal_wrapper -> display:none; )*/}
+      {/* 관심회원권터치 : s */}
       <div id="modal" className={modalState ? "on" : ""} onClick={closeModal}>
-        <div className="Interest_contents modal_wrapper">
-          <div className="modal">
-            {/* <div className="modal_favorite">
-              <img src={img_favorite} alt="등록" />
-            </div> */}
-            <div className="modal_tit">
-              <span className="product">{modalData.Membership_name}</span>
-              <div className="modal_icon">
-                <img src={icon_info} alt="info" />
-                <img src={icon_favorites} alt="favorites" />
-              </div>
+        <div className="modal_inner" >
+          <div className="modal_favorite">
+            <img
+              src={favorite ? img_favorite : img_favorite_cancle}
+              alt="등록"
+            />
+          </div>
+          <div className="modal_tit">
+            <span className="product">{modalData.Membership_name}</span>
+            <div className="modal_icon">
+              <img src={icon_info} alt="info" />
+              <img
+                src={favorite ? icon_favorites : icon_favorites_cancle}
+                onClick={favoriteHandler}
+              />
             </div>
-            <div className="modal_content">
-              <table>
-                <tr>
-                  <th>기준가(만원)</th>
-                  <th className="standard_price">{modalData.Current_price}</th>
-                </tr>
-                <tr>
-                  <th>고가(만원)</th>
-                  <th className="high_price">{modalData.High_price}</th>
-                </tr>
-                <tr>
-                  <th>저가(만원)</th>
-                  <th className="low_price">{modalData.Low_price}</th>
-                </tr>
-                <tr>
-                  <th>총 거래량</th>
-                  <th className="total_quantity">
-                    {modalData.Total_transactions}
-                  </th>
-                </tr>
-              </table>
-              <div className="btn_wrapper Btn">
-                {/* 호가,차트,매수 */}
-                <button className="w72 bgGf5" type="button">
-                  호가
-                </button>
-                <button className="w72 bgGf5" type="button">
-                  차트
-                </button>
-                <button className="w168 bgN" type="button">
-                  매수
-                </button>
-              </div>
+          </div>
+          <div className="modal_content">
+            <table>
+              <tr>
+                <th>기준가(만원)</th>
+                <th className="standard_price">{modalData.Current_price}</th>
+              </tr>
+              <tr>
+                <th>고가(만원)</th>
+                <th className="high_price">{modalData.High_price}</th>
+              </tr>
+              <tr>
+                <th>저가(만원)</th>
+                <th className="low_price">{modalData.Low_price}</th>
+              </tr>
+              <tr>
+                <th>총 거래량</th>
+                <th className="total_quantity">
+                  {modalData.Total_transactions}
+                </th>
+              </tr>
+            </table>
+            <div className="btn_wrapper Btn">
+              {/* 호가,차트,매수 */}
+              <button className="w72 bgGf5" type="button">
+                호가
+              </button>
+              <button className="w72 bgGf5" type="button">
+                차트
+              </button>
+              <button className="w168 bgN" type="button">
+                매수
+              </button>
             </div>
           </div>
         </div>
