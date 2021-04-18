@@ -17,9 +17,9 @@
   font-weight: 500;
   color: #ebebeb;
 }
-.Interest .back_header .back_header_inner .header_icon_item.icon_back{
+/* .Interest .back_header .back_header_inner .header_icon_item.icon_back{
   visibility: hidden;
-}
+} */
 
 /* ---------------- Interest_contents ---------------- */
 
@@ -27,6 +27,10 @@
   position: relative;
   height: 100vh;
   width: 100%;
+  display: none;
+}
+.Interest_contents.on{
+  display: block;
 }
 .Interest_contents table {
   width: 100%;
@@ -145,7 +149,7 @@
 }
 
 /* empty */
-.Interest_contents.empty.on{
+.Interest_contents.empty{
   display: block;
 }
 .Interest_contents.empty {
@@ -155,7 +159,7 @@
   height: unset;
   box-sizing: border-box;
   text-align: center;
-  display: none;
+  /* display: none; */
 }
 .Interest_contents.empty h2 {
   margin-bottom: 8px;

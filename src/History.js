@@ -9,6 +9,9 @@ import { Routes, Link, Switch, Route, BrowserRouter } from "react-router-dom";
 
 
 function History() {
+  const buy = JSON.parse( window.localStorage.getItem("buy") );
+  const sell = JSON.parse( window.localStorage.getItem("sell") );
+  console.log( "buy : " + buy + "/ sell : " + sell );
   return (
     <div className="History">
       {/* back_header : s */}
@@ -32,35 +35,35 @@ function History() {
       <div className="History_contents">
         <div className="content_monthly">
           <div className="month">
-            <span>1월</span>
+            <span>4월</span>
           </div>
           <ul>
-            <li className="item">
-              <span className="date">2021년 2월 1일</span>
+            <li className={buy != null ? 'item on' : 'item'}>
+              <span className="date">2021년 4월</span>
               <div className="icon_product">
                 <img className="new" src={icon_history_new} alt="신" />
-                <p className="product">베이사이드(프리미어)</p>
+                <p className="product">골든베이</p>
               </div>
               <div className="info">
                 <p className="amount">
                   <span>1</span>개
-                  <span className="conclusion buy"> 매수체결</span>
+                  <span className="conclusion buy"> 매수신청</span>
                 </p>
                 <p className="price">
                   <span>21,000</span> 원
                 </p>
               </div>
             </li>
-            <li className="item">
-              <span className="date">2021년 2월 1일</span>
+            <li className={sell != null ? 'item on' : 'item'}>
+              <span className="date">2021년 4월</span>
               <div className="icon_product">
                 <img className="soon" src={icon_history_soon} alt="신" />
-                <p className="product">베이사이드(프리미어)</p>
+                <p className="product">골든베이</p>
               </div>
               <div className="info">
                 <p className="amount">
                   <span>1</span>개
-                  <span className="conclusion sell"> 매수체결</span>
+                  <span className="conclusion sell"> 매도신청</span>
                 </p>
                 <p className="price">
                   <span>21,000</span> 원
@@ -72,7 +75,7 @@ function History() {
       </div>
       {/* 거래내역 : e */}
       {/* 거래내역없음 empty : s */}
-      <div className="History_contents empty">
+      <div className={buy != null || sell != null ? 'History_contents empty' : 'History_contents empty on'}>
         <h2>회원권 거래내역이 없습니다.</h2>
         <p>주문을 통해 회원권을 거래해보세요.</p>
         <Btn_navy text="주문하러 가기" />

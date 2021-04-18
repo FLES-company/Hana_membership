@@ -1,6 +1,45 @@
 import React from "react";
 import "./Tab2.css";
+import {Line} from 'react-chartjs-2';
+const data = {
+  labels: ["1", "2", "3", "4", "5"],
+  datasets: [
+    {
+      fill: true,
+      data: [7, 5, 6, 4, 9],
+      pointRadius: 0,
+      backgroundColor: '#B3BDFD'
+    }
+  ]
+  
+};
 
+const options = {
+    fillColor : "#FFFFFF",
+    scales: {
+      yAxes: [{
+        gridLines: {
+          display: false
+        },
+        ticks: {
+            display: false,
+            beginAtZero: true,
+         },
+      }],
+      xAxes: [{
+        gridLines: {
+          display: false
+        },
+        ticks: {
+            display: false,
+            beginAtZero: true,}
+      }]
+    },
+    legend: {
+      display: false
+    },
+  
+  }
 
 function Tab2() {
   return (
@@ -8,16 +47,16 @@ function Tab2() {
       <div className="Tab_content Tab2_contents">
         {/* Order_items : s */}
         <div className="Order_items">
-          <p className="tit">88(팔팔)</p>
+          <p className="tit">골든베이</p>
           <p className="price">
-            <span>42,000</span>원
+            <span>20,000</span>원
           </p>
           <div className="info">
             <p className="flow up">
-              37,450<span>(823%)</span>
+              10,000<span>(5%)</span>
             </p>
             <p className="quantity">
-              거래량 <span>1,979</span>
+              거래량 <span>22</span>
             </p>
           </div>
         </div>
@@ -25,7 +64,7 @@ function Tab2() {
 
         <div className="Order_items_graph"></div>
         <div className="terms">
-          <ul>
+          {/* <ul>
             <li className="item on"><a href="#">1D</a></li>
             <li className="item"><a href="#">7D</a></li>
             <li className="item"><a href="#">1M</a></li>
@@ -33,8 +72,13 @@ function Tab2() {
             <li className="item"><a href="#">1Y</a></li>
             <li className="item"><a href="#">3Y</a></li>
             <li className="item"><a href="#">MAX</a></li>
-          </ul>
+          </ul> */}
+          <div>          
+            <Line data={data}
+            options={options} />
+          </div>
         </div>
+
       </div>
     </div>
   );

@@ -54,24 +54,28 @@ const obj = {
 
 
 function Main() {
-  console.log(window.localStorage.getItem("userinfo"));
     const [ gnb, setGnb ] = useState(999);
     const [ header, setHeader ] = useState(999);
     const [ mainTab, setMainTab ] = useState(999);
     const ClickHandler = (e) => {
-      setMainTab(e.target.dataset.id);
-      if(e.target.dataset.id == 0){
-        setGnb(0);
-        setHeader(0);
+      if(e.target.dataset.id == '2'){
+        window.location.href="../order";
       }else{
-        setGnb(1);
-        setHeader(1);
+        setMainTab(e.target.dataset.id);
+        if(e.target.dataset.id == 0){
+          setGnb(0);
+          setHeader(0);
+        }else{
+          setGnb(1);
+          setHeader(1);
+        }
       }
+      
     }
     return (
       <>
         { header_obj[header] }
-        { gnb_obj[gnb] }
+        {/* { gnb_obj[gnb] } */}
         { obj[mainTab] }
         <div className="footer">
           <div className="footer_inner">
@@ -89,7 +93,7 @@ function Main() {
                   <span data-id="1">시세</span>
                 </p>
               </li>
-              <li className={mainTab == 2 ? 'footer_inner_item on' : 'footer_inner_item'} onClick={ClickHandler} data-id="2">
+              <li className="footer_inner_item" onClick={ClickHandler} data-id="2">
                 <p data-id="2">
                   <img data-id="2" src={mainTab == 2 ? icon_f_on_3 : icon_f_off_3}  />
                   <span data-id="2">주문</span>

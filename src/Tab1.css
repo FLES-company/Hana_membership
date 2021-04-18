@@ -199,4 +199,7 @@
   align-items: center;
   justify-content: center;
   background: transparent;
+  position: absolute;
+  bottom: 60px;
+  left: 20%;
 }

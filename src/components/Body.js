@@ -110,11 +110,11 @@ class Body extends React.Component {
         <OwlCarousel  margin={10} autoWidth loop items={2}>
           <li className="month_item">
             <a href="#">
-              <p className="item_tit">베이사이드(프리미어)</p>
+              <p className="item_tit">서원밸리</p>
               <p className="item_dec">
-                4,550
-                <span className="price_down">
-                  37,450 (<span className="percent">823%</span>)
+                40,000
+                <span className="price_up">
+                  9,000 (<span className="percent">23%</span>)
                   <Chart_down />
                 </span>
               </p>
@@ -123,11 +123,11 @@ class Body extends React.Component {
           </li>
           <li className="month_item">
             <a href="#">
-              <p className="item_tit">화산</p>
+              <p className="item_tit">가평베네스트</p>
               <p className="item_dec">
-                4,550
-                <span className="price_down">
-                  37,450 (<span className="percent">823%</span>)
+                74,000
+                <span className="price_up">
+                  3,000 (<span className="percent">4%</span>)
                   <Chart_down />
                 </span>
               </p>
@@ -136,11 +136,11 @@ class Body extends React.Component {
           </li>
           <li className="month_item">
             <a href="#">
-              <p className="item_tit">베이사이드(프리미어)</p>
+              <p className="item_tit">송추</p>
               <p className="item_dec">
-                4,550
-                <span className="price_down">
-                  37,450 (<span className="percent">823%</span>)
+                53,000
+                <span className="price_up">
+                  5,000 (<span className="percent">9%</span>)
                   <Chart_down />
                 </span>
               </p>
@@ -149,11 +149,11 @@ class Body extends React.Component {
           </li>
           <li className="month_item">
             <a href="#">
-              <p className="item_tit">화산</p>
+              <p className="item_tit">블루원용인</p>
               <p className="item_dec">
-                4,550
-                <span className="price_down">
-                  37,450 (<span className="percent">823%</span>)
+                26,000
+                <span className="price_up">
+                  4,500 (<span className="percent">17%</span>)
                   <Chart_down />
                 </span>
               </p>
@@ -173,9 +173,9 @@ class Body extends React.Component {
           <li className="recommend_item">
             <a href="#">
               <p className="item_tit">
-                청평마이다스 주중<span className="tit_price">(16500)</span>
+                우정힐스<span className="tit_price">(32,500)</span>
               </p>
-              <p className="item_dec">4,550</p>
+              <p className="item_dec">32,500</p>
               <div className="item_hashtags">
                 <span className="hashtag">#골프회원</span>
                 <span className="hashtag">#골프회원</span>
@@ -185,9 +185,9 @@ class Body extends React.Component {
           <li className="recommend_item">
             <a href="#">
               <p className="item_tit">
-                청평마이다스 주중<span className="tit_price">(16500)</span>
+                뉴서울<span className="tit_price">(29,500)</span>
               </p>
-              <p className="item_dec">4,550</p>
+              <p className="item_dec">29,500</p>
               <div className="item_hashtags">
                 <span className="hashtag">#골프회원</span>
                 <span className="hashtag">#골프회원</span>
@@ -197,9 +197,9 @@ class Body extends React.Component {
           <li className="recommend_item">
             <a href="#">
               <p className="item_tit">
-                청평마이다스 주중<span className="tit_price">(16500)</span>
+                남서울<span className="tit_price">(23,500)</span>
               </p>
-              <p className="item_dec">4,550</p>
+              <p className="item_dec">23,500</p>
               <div className="item_hashtags">
                 <span className="hashtag">#골프회원</span>
                 <span className="hashtag">#골프회원</span>
@@ -209,9 +209,9 @@ class Body extends React.Component {
           <li className="recommend_item">
             <a href="#">
               <p className="item_tit">
-                청평마이다스 주중<span className="tit_price">(16500)</span>
+                남서울 여자<span className="tit_price">(35,000)</span>
               </p>
-              <p className="item_dec">4,550</p>
+              <p className="item_dec">35,000</p>
               <div className="item_hashtags">
                 <span className="hashtag">#골프회원</span>
                 <span className="hashtag">#골프회원</span>

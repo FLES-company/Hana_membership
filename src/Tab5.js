@@ -14,7 +14,7 @@ function Tab5() {
     setquantity(quantity - 1);
   };
   // 가격 카운트
-  const [price, setprice] = useState(42000);
+  const [price, setprice] = useState(21000);
 
   const onIn_price = () => {
     setprice(price + 1);
@@ -22,6 +22,7 @@ function Tab5() {
   const onDe_price = () => {
     setprice(price - 1);
   };
+
   return (
     // 배경 -> 매도 : blue / 매수 : red
     // 체크박스 -> 매도 : chk_blue / 매수 : chk_red
@@ -35,10 +36,8 @@ function Tab5() {
             <div className="input_unit select">
               <select>
                 <option value="1">개인/법인 매수 선택</option>
-                <option value="2">1</option>
-                <option value="3">2</option>
-                <option value="4">3</option>
-                <option value="5">4</option>
+                <option value="2">개인</option>
+                <option value="3">법인</option>
               </select>
             </div>
           </div>
@@ -48,10 +47,8 @@ function Tab5() {
             <div className="input_unit select">
               <select>
                 <option value="1">현금/신용 선택</option>
-                <option value="2">1</option>
-                <option value="3">2</option>
-                <option value="4">3</option>
-                <option value="5">4</option>
+                <option value="2">현금</option>
+                <option value="3">신용</option>
               </select>
             </div>
           </div>
@@ -68,9 +65,9 @@ function Tab5() {
           <div className="content quantity disabled">
             <span>가격(만원)</span>
             <div className="input_unit count">
-              <button type="button" className="dec" onClick={onDe_price} disabled></button>
+              <button type="button" className="dec" onClick={onDe_price}></button>
               <input type="text" value={price} disabled/>
-              <button type="button" className="inc" onClick={onIn_price} disabled></button>
+              <button type="button" className="inc" onClick={onIn_price}></button>
             </div>
           </div>
           {/* 시장가 */}
@@ -87,7 +84,7 @@ function Tab5() {
             <div className="content total">
               <span>총액</span>
               <div className="input_unit">
-                <input type="text" placeholder="42,000" name="total" readOnly />
+                <input type="text" placeholder="21,000" name="total" readOnly />
               </div>
             </div>
             {/*  버튼텍스트 : 매도(blue)/매수 신청(red) */}

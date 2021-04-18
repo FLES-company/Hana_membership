@@ -71,8 +71,8 @@
   background-color: transparent;
 }
 .Tab4 .content.disabled input {
-  background-color: transparent;
-  color: #dbdbdb;
+  /* background-color: transparent; */
+  color: #333;
 }
 
 .Tab4 .footer_fixed {

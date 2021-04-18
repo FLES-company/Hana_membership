@@ -28,10 +28,64 @@ function Tab1() {
           <ul>
             <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
+                <li className="sell price">19,500</li>
                 <li className="sell quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
+                  <span>1</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={openModal}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">19,300</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>2</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={openModal}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">19,400</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>3</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={openModal}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">19,500</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>8</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={openModal}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">19,700</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>3</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={openModal}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">19,800</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>2</span>
+                </li>
+              </ul>
+            </li>
+            <li className="sell_item up" onClick={openModal}>
+              <ul className="sell_sellQuantity_item">
+                <li className="sell price">19,900</li>
+                <li className="sell quantity">
+                  <div className="width"></div>
+                  <span>12</span>
                 </li>
               </ul>
             </li>
@@ -40,7 +94,7 @@ function Tab1() {
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
+                  <span>10</span>
                 </li>
               </ul>
             </li>
@@ -49,97 +103,16 @@ function Tab1() {
                 <li className="sell price">20,950</li>
                 <li className="sell quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
+                  <span>3</span>
                 </li>
               </ul>
             </li>
             <li className="sell_item up" onClick={openModal}>
               <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
+                <li className="sell price">21,500</li>
                 <li className="sell quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="sell_item up" onClick={openModal}>
-              <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
-                <li className="sell quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="sell_item up" onClick={openModal}>
-              <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
-                <li className="sell quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="sell_item up" onClick={openModal}>
-              <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
-                <li className="sell quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="sell_item up" onClick={openModal}>
-              <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
-                <li className="sell quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="sell_item up" onClick={openModal}>
-              <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
-                <li className="sell quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="sell_item up" onClick={openModal}>
-              <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
-                <li className="sell quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="sell_item up" onClick={openModal}>
-              <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
-                <li className="sell quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="sell_item up" onClick={openModal}>
-              <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
-                <li className="sell quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="sell_item up" onClick={openModal}>
-              <ul className="sell_sellQuantity_item">
-                <li className="sell price">20,950</li>
-                <li className="sell quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
+                  <span>1</span>
                 </li>
               </ul>
             </li>
@@ -150,7 +123,7 @@ function Tab1() {
             <p className="tit">
               기준가<span>(만원)</span>
             </p>
-            <p className="price">24,000</p>
+            <p className="price">20,000</p>
             <p className="flow">
               1,000<span>(5%)</span>
             </p>
@@ -160,13 +133,13 @@ function Tab1() {
               <p className="tit">
                 고가<span>(만원)</span>
               </p>
-              <p className="price">24,000</p>
+              <p className="price">21,500</p>
             </div>
             <div className="low">
               <p className="tit">
                 저가<span>(만원)</span>
               </p>
-              <p className="price">19,000</p>
+              <p className="price">19,500</p>
             </div>
           </div>
         </div>
@@ -176,19 +149,37 @@ function Tab1() {
           <ul>
             <li className="buy_item up">
               <ul className="buy_buyQuantity_item">
-                <li className="buy price">20,950</li>
+                <li className="buy price">22,000</li>
                 <li className="buy quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
+                  <span>1</span>
                 </li>
               </ul>
             </li>
             <li className="buy_item">
               <ul className="buy_buyQuantity_item">
-                <li className="buy price">20,950</li>
+                <li className="buy price">21,950</li>
                 <li className="buy quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
+                  <span>3</span>
+                </li>
+              </ul>
+            </li>
+            <li className="buy_item down">
+              <ul className="buy_buyQuantity_item">
+                <li className="buy price">21,800</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>5</span>
+                </li>
+              </ul>
+            </li>
+            <li className="buy_item down">
+              <ul className="buy_buyQuantity_item">
+                <li className="buy price">21,000</li>
+                <li className="buy quantity">
+                  <div className="width"></div>
+                  <span>15</span>
                 </li>
               </ul>
             </li>
@@ -197,7 +188,7 @@ function Tab1() {
                 <li className="buy price">20,950</li>
                 <li className="buy quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
+                  <span>2</span>
                 </li>
               </ul>
             </li>
@@ -206,7 +197,7 @@ function Tab1() {
                 <li className="buy price">20,950</li>
                 <li className="buy quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
+                  <span>2</span>
                 </li>
               </ul>
             </li>
@@ -215,52 +206,25 @@ function Tab1() {
                 <li className="buy price">20,950</li>
                 <li className="buy quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
+                  <span>1</span>
                 </li>
               </ul>
             </li>
             <li className="buy_item down">
               <ul className="buy_buyQuantity_item">
-                <li className="buy price">20,950</li>
+                <li className="buy price">20,100</li>
                 <li className="buy quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
+                  <span>1</span>
                 </li>
               </ul>
             </li>
             <li className="buy_item down">
               <ul className="buy_buyQuantity_item">
-                <li className="buy price">20,950</li>
+                <li className="buy price">19,950</li>
                 <li className="buy quantity">
                   <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="buy_item down">
-              <ul className="buy_buyQuantity_item">
-                <li className="buy price">20,950</li>
-                <li className="buy quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="buy_item down">
-              <ul className="buy_buyQuantity_item">
-                <li className="buy price">20,950</li>
-                <li className="buy quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
-                </li>
-              </ul>
-            </li>
-            <li className="buy_item down">
-              <ul className="buy_buyQuantity_item">
-                <li className="buy price">20,950</li>
-                <li className="buy quantity">
-                  <div className="width"></div>
-                  <span>9,542</span>
+                  <span>1</span>
                 </li>
               </ul>
             </li>
@@ -276,28 +240,28 @@ function Tab1() {
             </thead>
             <tbody>
               <tr>
-                <th className="conclusion_price">20,700</th>
-                <td className="conclusion_quantity">100</td>
+                <th className="conclusion_price">20,950</th>
+                <td className="conclusion_quantity">3</td>
               </tr>
               <tr>
                 <th className="conclusion_price">20,700</th>
-                <td className="conclusion_quantity">100</td>
+                <td className="conclusion_quantity">5</td>
               </tr>
               <tr>
-                <th className="conclusion_price">20,700</th>
-                <td className="conclusion_quantity">100</td>
+                <th className="conclusion_price">20,000</th>
+                <td className="conclusion_quantity">10</td>
               </tr>
               <tr>
-                <th className="conclusion_price">20,700</th>
-                <td className="conclusion_quantity">100</td>
+                <th className="conclusion_price">19,500</th>
+                <td className="conclusion_quantity">1</td>
               </tr>
               <tr>
-                <th className="conclusion_price">20,700</th>
-                <td className="conclusion_quantity">100</td>
+                <th className="conclusion_price">19,350</th>
+                <td className="conclusion_quantity">10</td>
               </tr>
               <tr>
-                <th className="conclusion_price">20,700</th>
-                <td className="conclusion_quantity">100</td>
+                <th className="conclusion_price">19,000</th>
+                <td className="conclusion_quantity">2</td>
               </tr>
             </tbody>
           </table>

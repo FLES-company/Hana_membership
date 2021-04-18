@@ -7,16 +7,23 @@ import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 
 function Notice() {
   const [collapsed, setCollapsed] = useState(false);
+  const [event, setEvented] = useState(false);
+  const [alarm, setAlarmed] = useState(false);
   const click = () => {
-    console.log(collapsed)
     setCollapsed(!collapsed);
+  }
+  const eventClick = () => {
+    setEvented(!event);
+  }
+  const alarmClick = () => {
+    setAlarmed(!alarm);
   }
   return (
     <div className="Notice">
       {/* back_header : s */}
       <div className="back_header">
         <div className="back_header_inner">
-          <Link to="/" className="header_icon_item icon_back">
+          <Link to="/home" className="header_icon_item icon_back">
             <div className="icon_img">
               <img src={icon_back} />
             </div>
@@ -38,14 +45,14 @@ function Notice() {
               <div className="header-area">
                 <div className="tagImg notice"></div>
                 <div className="tit">
-                  2021년 설 연휴 휴무 안내입니다.
+                  2021년 테스트 공지입니다.
                   <div className="sub">
                     <div className="item dateNtime">
-                      <span>2021-10-19</span>
-                      <span>17:52</span>
+                      <span>2021-04-10</span>
+                      <span>15:52</span>
                     </div>
                     <div className="item view">
-                      조회수<span>234</span>
+                      조회수<span>30</span>
                     </div>
                   </div>
                 </div>
@@ -55,8 +62,7 @@ function Notice() {
                 <p className="qna_cont">
                   안녕하세요. 하나회원권거래소 운영팀입니다.
                   <br />
-                  <br /> 2021년 설 연휴로 인하여 2021년 2월 11일(목)부터
-                  13일(일)까지 휴무인 점 안내해드립니다.
+                  <br /> 테스트 공지사항을 등록합니다.
                   <br />
                   <br /> 2021년에도 밝은 희망이 넘치고 행복한 기운이 가득한
                   한해가 되시길 기원합니다. 새해 복 많이 받으세요! <br />
@@ -65,18 +71,18 @@ function Notice() {
                 </p>
               </div>
             </li>
-            <li className={collapsed ? "on" : ""} onClick={click}>
+            <li className={event ? "on" : ""} onClick={eventClick}>
               <div className="header-area">
                 <div className="tagImg event"></div>
                 <div className="tit">
-                  2021년 설 연휴 휴무 안내입니다.
+                  이벤트 등록 테스트입니다.
                   <div className="sub">
                     <div className="item dateNtime">
-                      <span>2021-10-19</span>
-                      <span>17:52</span>
+                      <span>2021-04-10</span>
+                      <span>16:00</span>
                     </div>
                     <div className="item view">
-                      조회수<span>234</span>
+                      조회수<span>11</span>
                     </div>
                   </div>
                 </div>
@@ -84,30 +90,24 @@ function Notice() {
               </div>
               <div className="con-area">
                 <p className="qna_cont">
-                  안녕하세요. 하나회원권거래소 운영팀입니다.
+                  이벤트 등록 테스트입니다.
                   <br />
-                  <br /> 2021년 설 연휴로 인하여 2021년 2월 11일(목)부터
-                  13일(일)까지 휴무인 점 안내해드립니다.
-                  <br />
-                  <br /> 2021년에도 밝은 희망이 넘치고 행복한 기운이 가득한
-                  한해가 되시길 기원합니다. 새해 복 많이 받으세요! <br />
-                  <br />
-                  운영팀 드림.
+                  <br /> 이벤트 등록 테스트입니다. 이벤트 등록 테스트입니다.
                 </p>
               </div>
             </li>
-            <li>
+            <li className={alarm ? "on" : ""} onClick={alarmClick}>
               <div className="header-area">
                 <div className="tagImg alarm"></div>
                 <div className="tit">
-                  2021년 설 연휴 휴무 안내입니다.
+                  알림 메시지 테스트
                   <div className="sub">
                     <div className="item dateNtime">
-                      <span>2021-10-19</span>
+                      <span>2021-04-10</span>
                       <span>17:52</span>
                     </div>
                     <div className="item view">
-                      조회수<span>234</span>
+                      조회수<span>12</span>
                     </div>
                   </div>
                 </div>
@@ -115,19 +115,14 @@ function Notice() {
               </div>
               <div className="con-area">
                 <p className="qna_cont">
-                  안녕하세요. 하나회원권거래소 운영팀입니다.
+                  안녕하세요. 푸시알림 확인내용입니다.
                   <br />
-                  <br /> 2021년 설 연휴로 인하여 2021년 2월 11일(목)부터
-                  13일(일)까지 휴무인 점 안내해드립니다.
-                  <br />
-                  <br /> 2021년에도 밝은 희망이 넘치고 행복한 기운이 가득한
-                  한해가 되시길 기원합니다. 새해 복 많이 받으세요! <br />
-                  <br />
+                  <br /> 코로나로 인해 13일(일)까지 휴무인 점 안내해드립니다.
                   운영팀 드림.
                 </p>
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="header-area">
                 <div className="tagImg"></div>
                 <div className="tit">
@@ -157,7 +152,7 @@ function Notice() {
                   운영팀 드림.
                 </p>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

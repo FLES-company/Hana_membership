@@ -310,7 +310,7 @@ form .count button {
   width: 12px;
   height: 12px;
   background-repeat: no-repeat;
-  background-color: transparent;
+  /* background-color: transparent; */
   background-position: center;
   border: none;
 }
@@ -469,6 +469,9 @@ form .checkbox input[type="checkbox"] + label span {
 }
 .accordion_inner .header-area .tit .sub .dateNtime {
   color: #aaaaaa;
+}
+.accordion_inner .header-area .tit .sub .dateNtime span{
+  margin-right: 5px;
 }
 .accordion_inner .header-area .tit .sub .view {
   color: #cccccc;

@@ -3,7 +3,9 @@
 .Order {
   width: 100%;
 }
-
+.Order.off{
+  display: none;
+}
 /* ---------------- back_header ---------------- */
 
 /* ---------------- Order_contents ---------------- */
@@ -41,4 +43,12 @@
 .Order .Order_inner ul li.on a {
   font-weight: 600;
   color: #0b234a;
+}
+
+.Order .Order_contents{
+  padding-top: 40px;
+}
+
+.Order .Order_contents .modal_inner{
+  bottom: 57px;
 }

@@ -71,8 +71,8 @@
   background-color: transparent;
 }
 .Tab5 .content.disabled input {
-  background-color: transparent;
-  color: #dbdbdb;
+  /* background-color: transparent; */
+  color: #333;
 }
 
 

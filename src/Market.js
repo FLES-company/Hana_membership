@@ -12,8 +12,12 @@ import { Link } from "react-router-dom";
 
 function Market() {
   // 관심회원권으로 등록/해제 되었습니다.
+  // window.localStorage.removeItem("interest");
   const [favorite, setFavorite] = useState(false);
   const favoriteHandler = (e) => {
+    const membership = e.target.getAttribute('data-membership');
+    window.localStorage.setItem("interest", JSON.stringify(membership));
+    console.log( JSON.parse( window.localStorage.getItem("interest") ));
     setFavorite(!favorite);
   };
 
@@ -21,7 +25,7 @@ function Market() {
   const [modalState, setModalState] = useState(false);
   const openModal = (e) => {
     //react 에서 선택된 해당 Dom만 target으로 잡는 방법
-    console.log(e.currentTarget.dataset.index);
+    // console.log(e.currentTarget.dataset.index);
     const ms_index = e.currentTarget.dataset.index;
 
     //가상의 데이터에 구분되는 식별 ID 가 없어서 중복되지 않는 PRICE 값으로 선택된 회원권 값을 가져오도록 처리
@@ -34,15 +38,19 @@ function Market() {
     setModalState(true);
   };
   const closeModal = (e) => {
-    console.log(e.target, e.currentTarget);
     if(e.target === e.currentTarget){
+      setFavorite(false);
       setModalState(false);
     };
   };
+  
+  const OrderStart = (e) => {
+    window.location.href="../order";
+  }
 
   return (
     <div className="Market">
-      <Header_sub />
+      <Header_sub title="시세확인"/>
 
       {/* 본 컨텐츠 : s */}
       <div className="Market_contents">
@@ -51,9 +59,9 @@ function Market() {
           <thead>
             <tr>
               <th className="productName">회원권명</th>
-              <th class="price">현재가</th>
-              <th class="info_compared">전일대비</th>
-              <th class="regi_quantity">등록량</th>
+              <th className="price">현재가</th>
+              <th className="info_compared">전일대비</th>
+              <th className="regi_quantity">등록량</th>
             </tr>
           </thead>
           <tbody>
@@ -116,8 +124,7 @@ function Market() {
         <div className="modal_inner" >
           <div className="modal_favorite">
             <img
-              src={favorite ? img_favorite : img_favorite_cancle}
-              alt="등록"
+              src={favorite ? img_favorite : ''}
             />
           </div>
           <div className="modal_tit">
@@ -126,6 +133,7 @@ function Market() {
               <img src={icon_info} alt="info" />
               <img
                 src={favorite ? icon_favorites : icon_favorites_cancle}
+                data-membership={modalData.Membership_name} 
                 onClick={favoriteHandler}
               />
             </div>
@@ -159,7 +167,7 @@ function Market() {
               <button className="w72 bgGf5" type="button">
                 차트
               </button>
-              <button className="w168 bgN" type="button">
+              <button className="w168 bgN" type="button" onClick={OrderStart}>
                 매수
               </button>
             </div>

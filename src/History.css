@@ -35,9 +35,13 @@
 }
 .History .History_contents ul li.item {
   position: relative;
+  display: none;
   padding: 19px 20px 23px;
   box-sizing: border-box;
   width: 100%;
+}
+.History .History_contents ul li.on{
+  display: block;
 }
 .History .History_contents ul li::after {
   content: "";
@@ -100,9 +104,13 @@
 }
 /* empty */
 .History .empty {
+  display: none;
   box-sizing: border-box;
   padding: 77px 32px;
   text-align: center;
+}
+.History .empty.on{
+  display: block;
 }
 .History .empty h2 {
   font-size: 18px;
